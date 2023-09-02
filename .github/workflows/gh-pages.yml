@@ -4,9 +4,17 @@ on:
   push:
     branches:
       - master
+    paths:
+      - "lib/**"
+      - "web/**"
+      - "pubspec.yaml"
   pull_request:
     branches:
       - master
+    paths:
+      - "lib/**"
+      - "web/**"
+      - "pubspec.yaml"
 
 jobs:
   build:
