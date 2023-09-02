@@ -30,7 +30,7 @@ class GlobalModel extends ChangeNotifier {
   }
 
   static Future<String> getLatestHash() async {
-    const String hashLink = "http://10.0.2.2:8000/out.txt";
+    const String hashLink = "https://github.com/kphanipavan/IIITB_Menu/releases/download/latest/out.txt";
     try {
       Response ret = await get(Uri.parse(hashLink));
       if (ret.statusCode == 200) {
@@ -46,7 +46,7 @@ class GlobalModel extends ChangeNotifier {
   }
 
   static Future<String> getLatestData() async {
-    const String dataLink = "http://10.0.2.2:8000/out.json";
+    const String dataLink = "https://github.com/kphanipavan/IIITB_Menu/releases/download/latest/out.json";
     try {
       Response ret = await get(Uri.parse(dataLink));
       return ret.body;
