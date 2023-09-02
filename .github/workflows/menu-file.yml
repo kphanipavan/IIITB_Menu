@@ -1,6 +1,7 @@
 name: Update Menu JSON Database File.
 
 on:
+  workflow_dispatch:  
   push:
     branches:
       - menu_scraper
