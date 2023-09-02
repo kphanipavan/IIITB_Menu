@@ -23704,7 +23704,7 @@ a0i(){var s=0,r=A.Z(t.N),q,p=2,o,n,m,l,k
 var $async$a0i=A.a_(function(a,b){if(a===1){o=b
 s=p}while(true)switch(s){case 0:p=4
 s=7
-return A.a1(A.atf(A.hp("http://10.0.2.2:8000/out.txt")),$async$a0i)
+return A.a1(A.atf(A.hp("https://github.com/kphanipavan/IIITB_Menu/releases/download/latest/out.txt")),$async$a0i)
 case 7:n=b
 if(n.b===200){m=n
 m=A.at2(A.arX(m.e).c.a.h(0,"charset")).ez(0,m.w)
@@ -23730,7 +23730,7 @@ a0h(){var s=0,r=A.Z(t.N),q,p=2,o,n,m,l,k
 var $async$a0h=A.a_(function(a,b){if(a===1){o=b
 s=p}while(true)switch(s){case 0:p=4
 s=7
-return A.a1(A.atf(A.hp("http://10.0.2.2:8000/out.json")),$async$a0h)
+return A.a1(A.atf(A.hp("https://github.com/kphanipavan/IIITB_Menu/releases/download/latest/out.json")),$async$a0h)
 case 7:n=b
 m=n
 m=A.at2(A.arX(m.e).c.a.h(0,"charset")).ez(0,m.w)
