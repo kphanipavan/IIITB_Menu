@@ -1,7 +1,10 @@
 # iiitb_menu
 
-A new Flutter project.
-
+Bi-Weekly Menu as a web app, with automated CI and CD.
+<br>
+[![Build & Deploy to GitHub Pages](https://github.com/kphanipavan/IIITB_Menu/actions/workflows/gh-pages.yml/badge.svg?branch=master)](https://github.com/kphanipavan/IIITB_Menu/actions/workflows/gh-pages.yml)
+[![Update Menu JSON Database File.](https://github.com/kphanipavan/IIITB_Menu/actions/workflows/menu-file.yml/badge.svg)](https://github.com/kphanipavan/IIITB_Menu/actions/workflows/menu-file.yml)
+[![pages-build-deployment](https://github.com/kphanipavan/IIITB_Menu/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/kphanipavan/IIITB_Menu/actions/workflows/pages/pages-build-deployment)
 ## Getting Started
 
 This project is a starting point for a Flutter application.
