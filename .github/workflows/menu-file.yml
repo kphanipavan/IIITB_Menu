@@ -1,0 +1,45 @@
+name: Update Menu JSON Database File.
+
+on:
+  workflow_dispatch:  
+  push:
+    branches:
+      - menu_scraper
+  pull_request:
+    branches:
+      - menu_scraper
+
+jobs:
+  compile:
+    name: Compile
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v3.6.0
+        with:
+          ref: "menu_scraper"
+
+      - name: Setup Python
+        uses: actions/setup-python@v4.7.0
+        with:
+          python-version: "3.11"
+
+      - name: Install Packages
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Compile Menu
+        run: python scrapeToJson.py
+
+      - name: Create Release
+        uses: marvinpinto/action-automatic-releases@v1.2.1
+        with:
+          repo_token: "${{ secrets.GITHUB_TOKEN }}"
+          automatic_release_tag: "latest"
+          prerelease: false
+          draft: false
+          title: "Bi-Weekly Release"
+          files: |
+            out.txt
+            out.json
