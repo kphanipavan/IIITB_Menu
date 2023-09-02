@@ -14,3 +14,9 @@ const String storageKey = "FullMenu";
 const Center noMenuWidget = Center(
     child: Text("Menu not available for this session",
         style: TextStyle(fontSize: 20, fontStyle: FontStyle.italic)));
+
+const String hashLink =
+    "http://github.com/kphanipavan/IIITB_Menu/releases/download/latest/out.txt";
+
+const String dataLink =
+    "http://github.com/kphanipavan/IIITB_Menu/releases/download/latest/out.json";

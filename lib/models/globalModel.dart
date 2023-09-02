@@ -1,15 +1,17 @@
 // ignore_for_file: unnecessary_this, file_names
 
 import "dart:convert";
-import "dart:io";
+// import "dart:io";
 import "package:iiitb_menu/constants.dart";
 // import "package:path_provider/path_provider.dart";
 // import 'dart:io';
 import "package:flutter/material.dart";
-import "package:crypto/crypto.dart";
-import "package:http/http.dart";
+// import "package:crypto/crypto.dart";
+// import "package:http/http.dart";
 import "package:intl/intl.dart";
-import "package:shared_preferences/shared_preferences.dart";
+// import "package:shared_preferences/shared_preferences.dart";
+// import "package:dio/dio.dart";
+import "package:iiitb_menu/data.dart" as menuData;
 
 class GlobalModel extends ChangeNotifier {
   late Map<dynamic, dynamic> mainData;
@@ -29,76 +31,88 @@ class GlobalModel extends ChangeNotifier {
     });
   }
 
-  static Future<String> getLatestHash() async {
-    const String hashLink = "https://github.com/kphanipavan/IIITB_Menu/releases/download/latest/out.txt";
-    try {
-      Response ret = await get(Uri.parse(hashLink));
-      if (ret.statusCode == 200) {
-        return ret.body.replaceAll("\n", "");
-      } else {
-        return "";
-      }
-    } on SocketException catch (exce) {
-      print("Unable to download hash");
-      print(exce);
-      return "";
-    }
-  }
+//   static Future<String> getLatestHash() async {
+//     try {
+// // Request hashRequest = Request("get", Uri.parse(hashLink));
+//       Response ret = await Dio().request(hashLink,
+//           options: Options(method: 'GET', headers: {
+//             HttpHeaders.acceptHeader: "text/plain",
+//             "Access-Control-Allow-Origin": "*",
+//             "Access-Control-Allow-Methods": "GET",
+//             "Access-Control-Allow-Headers": "*",
+//             "Access-Control-Max-Age": "1000"
+//           }));
+//       if (ret.statusCode == 200) {
+//         return ret.data.replaceAll("\n", "");
+//       } else {
+//         return "";
+//       }
+//     } on SocketException catch (exce) {
+//       print("Unable to download hash");
+//       print(exce);
+//       return "";
+//     }
+//   }
 
-  static Future<String> getLatestData() async {
-    const String dataLink = "https://github.com/kphanipavan/IIITB_Menu/releases/download/latest/out.json";
-    try {
-      Response ret = await get(Uri.parse(dataLink));
-      return ret.body;
-    } on SocketException catch (exce) {
-      print("Unable to download any data");
-      print(exce);
-      return "";
-    }
-  }
+  // static Future<String> getLatestData() async {
+  //   try {
+  //     Response ret = await Dio().request(dataLink,
+  //         options: Options(method: "GET", headers: {
+  //           HttpHeaders.acceptHeader: "text/plain",
+  //           "Access-Control-Allow-Origin": "*"
+  //         }));
+  //     return ret.data;
+  //   } on SocketException catch (exce) {
+  //     print("Unable to download any data");
+  //     print(exce);
+  //     return "";
+  //   }
+  // }
 
   static Future<Map> loadData() async {
     late Map returnData;
     // Directory appDir = await getApplicationDocumentsDirectory();
-    final SharedPreferences prefs = await SharedPreferences.getInstance();
-    String? rawData;
-    String rawHash;
+    // final SharedPreferences prefs = await SharedPreferences.getInstance();
+    // String? rawData;
+    // String rawHash;
     // String fileName = "${appDir.path}/menu.json";
     // print(fileName);
     // File fileLink = File(fileName);
-    rawData = prefs.getString(storageKey);
-    print(rawData);
-    if (rawData != null) {
-      print("data found");
-      // rawData = localStor.getItem("fullMenu");
-      rawHash = md5.convert(utf8.encode(rawData)).toString();
-      print("Hash of Raw Data:");
-      print(rawHash);
-      // print("RawData: ");
-      // print(rawData);
-      returnData = jsonDecode(rawData);
-      // menuAvailable = true;
-    } else {
-      print("File Not Found");
-      returnData = {};
-      rawHash = "";
-    }
-    String remoteHash = await GlobalModel.getLatestHash();
-    if (remoteHash == "") {
-    } else if (remoteHash == rawHash) {
-      // print("Remote hash $remoteHash is same as local hash $rawHash");
-    } else {
-      // print("Remote hash $remoteHash is NOT the same as local hash $rawHash");
-      // print("Getting data from remote");
-      rawData = await getLatestData();
-      if (rawData == "") {
-        return {};
-      }
-      returnData = jsonDecode(rawData);
-      // fileLink.writeAsStringSync(rawData, mode: FileMode.write);
-      prefs.setString(storageKey, rawData);
-    }
-
+    // rawData = prefs.getString("asdasdasd");
+    // print(rawData);
+    // if (rawData != null) {
+    //   print("data found");
+    //   // rawData = localStor.getItem("fullMenu");
+    //   rawHash = md5.convert(utf8.encode(rawData)).toString();
+    //   print("Hash of Raw Data:");
+    //   print(rawHash);
+    //   // print("RawData: ");
+    //   // print(rawData);
+    //   returnData = jsonDecode(rawData);
+    //   // menuAvailable = true;
+    // } else {
+    //   print("Data Not Found");
+    //   returnData = {};
+    //   rawHash = "";
+    // }
+    // // String remoteHash = await GlobalModel.getLatestHash();
+    // String remoteHash = "asd";
+    // print("Remote Hash: $remoteHash");
+    // if (remoteHash == "") {
+    // } else if (remoteHash == rawHash) {
+    //   print("Remote hash $remoteHash is same as local hash $rawHash");
+    // } else {
+    //   print("Remote hash $remoteHash is NOT the same as local hash $rawHash");
+    //   print("Getting data from remote");
+    //   rawData = await getLatestData();
+    //   if (rawData == "") {
+    //     return {};
+    //   }
+    //   returnData = jsonDecode(rawData);
+    //   // fileLink.writeAsStringSync(rawData, mode: FileMode.write);
+    //   prefs.setString(storageKey, rawData);
+    // }
+    returnData = jsonDecode(menuData.data);
     return returnData;
   }
 
