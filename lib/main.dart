@@ -20,6 +20,7 @@ class MainApp extends StatelessWidget {
       create: (context) => GlobalModel(),
       builder: (BuildContext context, child) {
         return const MaterialApp(
+          title: "IIITB Menu",
           home: HomePage(),
         );
       },
