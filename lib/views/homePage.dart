@@ -22,6 +22,7 @@ class HomePage extends StatelessWidget {
             appBar: AppBar(
               title: Text("Daily ${data.menuTime} Menu"),
               bottom: TabBar(
+                  splashFactory: NoSplash.splashFactory,
                   indicator: const UnderlineTabIndicator(
                       insets: EdgeInsets.fromLTRB(10, 3, 10, 3)),
                   onTap: (int index) {
@@ -36,6 +37,7 @@ class HomePage extends StatelessWidget {
                   ]),
               actions: [
                 InkWell(
+                    splashFactory: NoSplash.splashFactory,
                     onTap: () {
                       data.decrDate();
                     },
@@ -44,6 +46,7 @@ class HomePage extends StatelessWidget {
                       size: 30,
                     )),
                 InkWell(
+                  splashFactory: NoSplash.splashFactory,
                   onLongPress: () {
                     showDatePicker(
                         context: context,
@@ -63,6 +66,7 @@ class HomePage extends StatelessWidget {
                   ),
                 ),
                 InkWell(
+                    splashFactory: NoSplash.splashFactory,
                     onTap: () {
                       data.incrDate();
                     },
