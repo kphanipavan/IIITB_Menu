@@ -74,5 +74,7 @@ if __name__ == "__main__":
     with open("data.dart", "w+") as dataWriter:
         allData = "String data = r'" + json.dumps(finalData) + "';"
         dataWriter.write(allData)
-    # with open("out.txt", "w+") as hashWriter:
-    #     hashWriter.write(hashlib.md5(json.dumps(finalData).encode("utf-8")).hexdigest())
+    with open("out.json", "w+") as jsonWriter:
+        json.dump(finalData, jsonWriter)
+    with open("out.txt", "w+") as hashWriter:
+        hashWriter.write(hashlib.md5(json.dumps(finalData).encode("utf-8")).hexdigest())

@@ -68,6 +68,18 @@ jobs:
     - name: Build release project
       run: flutter build web --base-href "/IIITB_Menu/" --web-renderer html
 
+    - name: Create Release
+      uses: marvinpinto/action-automatic-releases@v1.2.1
+      with:
+        repo_token: "${{ secrets.GITHUB_TOKEN }}"
+        automatic_release_tag: "latest"
+        prerelease: false
+        draft: false
+        title: "Bi-Weekly Release"
+        files: |
+          ./scripts/out.txt
+          ./scripts/out.json
+
     - name: Upload production-ready build files
       uses: actions/upload-artifact@v3.1.2
       with:
