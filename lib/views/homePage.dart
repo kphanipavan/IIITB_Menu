@@ -49,15 +49,18 @@ class HomePage extends StatelessWidget {
                   splashFactory: NoSplash.splashFactory,
                   onLongPress: () {
                     showDatePicker(
-                        context: context,
-                        initialDate: data.currentDate,
-                        firstDate:
-                            data.currentDate.add(const Duration(days: -30)),
-                        lastDate:
-                            data.currentDate.add(const Duration(days: 30)));
+                            context: context,
+                            initialDate: data.currentDate,
+                            firstDate:
+                                data.currentDate.add(const Duration(days: -30)),
+                            lastDate:
+                                data.currentDate.add(const Duration(days: 30)))
+                        .then((value) {
+                      data.setDateToADay(value ?? data.currentDate);
+                    });
                   },
                   onTap: () {
-                    data.setDateToToday();
+                    data.setDateToADay();
                   },
                   child: Center(
                     child: Text(

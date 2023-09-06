@@ -162,8 +162,8 @@ class GlobalModel extends ChangeNotifier {
     }
   }
 
-  void setDateToToday() {
-    this.currentDate = DateTime.now();
+  void setDateToADay([DateTime? aDay]) {
+    this.currentDate = aDay ?? DateTime.now();
     this.isMenuAvailable();
     notifyListeners();
   }
