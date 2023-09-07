@@ -12,7 +12,7 @@ Link to the webpage/app: [IIITB Menu](https://kphanipavan.github.io/IIITB_Menu/)
 ## Webpage as app
 The website/app can be added as an app to the device, as a PWA.
 ### Android:
-Open the webpage in chrome, brave and similar browsers on an android device, click on the 3 vertical dots, select `Install app` and click on the `Install` button in the popup.
+Open the webpage in chrome, brave or similar browsers on an android device, click on the 3 vertical dots, select `Install app` and click on the `Install` button in the popup.
 ### iOS:
-PWA functionality only works in Safari. Open the website in Safari, select the share button and select `Add to Home Screen` option. Follow the prompt to add the webpage as an app.
+PWA functionality only works in Safari. Open the website in Safari, click the share button and select `Add to Home Screen` option. Follow the prompt to add the webpage as an app.
 
