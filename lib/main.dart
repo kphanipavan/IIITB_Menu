@@ -14,7 +14,6 @@ class MainApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    // getData();
     return ChangeNotifierProvider<GlobalModel>(
       lazy: false,
       create: (context) => GlobalModel(),

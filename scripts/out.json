@@ -1,1 +1,1140 @@
-{"menu": {"0": {"bf": {"BREAKFAST 1": {"name": "Aloo Gobi Paratha", "eggy": "VEG"}, "BREAKFAST 2": {"name": "Mt", "eggy": "VEG"}, "SAMBAR OR KETCHUP": {"name": "Mt", "eggy": "VEG"}, "CURD": {"name": "Curd", "eggy": "VEG"}, "CHUTNEY": {"name": "Mint Chutney", "eggy": "VEG"}, "EGG": {"name": "Mt", "eggy": "VEG"}, "JUICE/MILK SHAKE": {"name": "Pineapple Juice", "eggy": "VEG"}}, "ln": {"INDIAN BREAD": {"name": "Bhature", "eggy": "VEG"}, "VEG GRAVY": {"name": "Pindi Chole", "eggy": "VEG"}, "VEG DRY/ STARTERS": {"name": "Hara Bhara Kebab", "eggy": "VEG"}, "FLAVORED RICE": {"name": "Veg Pulao", "eggy": "VEG"}, "PLAIN RICE": {"name": "Plain Rice", "eggy": "VEG"}, "DAL": {"name": "Dal Panchmel", "eggy": "VEG"}, "SAMBAR OR RASAM": {"name": "Garlic Rasam", "eggy": "VEG"}, "CURD BASE": {"name": "Sweet Lassi", "eggy": "VEG"}, "SALAD/SPROUTS": {"name": "Onion\\Chilli\\Lemon", "eggy": "VEG"}, "SWEETS": {"name": "Gulabjamun", "eggy": "VEG"}}, "sk": {"SNACKS": {"name": "Samosa", "eggy": "VEG"}, "ACCOMPANIMENTS": {"name": "Mt", "eggy": "VEG"}, "TEA/COFFEE/MILK": {"name": "Tea/Coffee/Milk", "eggy": "VEG"}}, "dn": {"INDIAN BREAD": {"name": "Methi Chapati", "eggy": "VEG"}, "VEG GRAVY": {"name": "Mt", "eggy": "VEG"}, "VEG DRY/ STARTERS": {"name": "Kadai Veg", "eggy": "VEG"}, "FLAVORED RICE": {"name": "Mexican Rice", "eggy": "VEG"}, "PLAIN RICE": {"name": "Plain Rice", "eggy": "VEG"}, "DAL": {"name": "Green Moong Dal", "eggy": "VEG"}, "SAMBAR OR RASAM": {"name": "Tamarind Sambhar", "eggy": "VEG"}, "CURD BASE": {"name": "Plain Buttermilk", "eggy": "VEG"}, "SALAD/SPROUTS": {"name": "Green Salad", "eggy": "VEG"}, "SWEETS": {"name": "Moti Malai", "eggy": "VEG"}, "PANEER": {"name": "Paneer Kurchan", "eggy": "VEG"}, "CHICKEN": {"name": "Chicken Kurchan", "eggy": "NON"}}}, "1": {"bf": {"BREAKFAST 1": {"name": "Onion Tomato Uttapam", "eggy": "VEG"}, "BREAKFAST 2": {"name": "Mt", "eggy": "VEG"}, "SAMBAR OR KETCHUP": {"name": "Sambar", "eggy": "VEG"}, "CURD": {"name": "Mt", "eggy": "VEG"}, "CHUTNEY": {"name": "Coconut Chutney", "eggy": "VEG"}, "EGG": {"name": "Boiled Egg", "eggy": "EGG"}, "JUICE/MILK SHAKE": {"name": "Mt", "eggy": "VEG"}}, "ln": {"INDIAN BREAD": {"name": "Dal Chapati", "eggy": "VEG"}, "VEG GRAVY": {"name": "Kadai Vegetable", "eggy": "VEG"}, "VEG DRY/ STARTERS": {"name": "Cabbage Poriyal", "eggy": "VEG"}, "FLAVORED RICE": {"name": "Curd Rice", "eggy": "VEG"}, "PLAIN RICE": {"name": "Plain Rice", "eggy": "VEG"}, "DAL": {"name": "Dal Tadka", "eggy": "VEG"}, "SAMBAR OR RASAM": {"name": "Pepper Rasam", "eggy": "VEG"}, "CURD BASE": {"name": "Lemonade", "eggy": "VEG"}, "SALAD/SPROUTS": {"name": "Green Salad", "eggy": "VEG"}, "SWEETS": {"name": "Rasgulla", "eggy": "VEG"}}, "sk": {"SNACKS": {"name": "Pani Puri", "eggy": "VEG"}, "ACCOMPANIMENTS": {"name": "Mt", "eggy": "VEG"}, "TEA/COFFEE/MILK": {"name": "Tea/Coffee/Milk", "eggy": "VEG"}}, "dn": {"INDIAN BREAD": {"name": "Methi Chapati", "eggy": "VEG"}, "VEG GRAVY": {"name": "Mix Veg Curry", "eggy": "VEG"}, "VEG DRY/ STARTERS": {"name": "Aloo Jeera", "eggy": "VEG"}, "FLAVORED RICE": {"name": "Veg Shezwaan Noodles", "eggy": "VEG"}, "PLAIN RICE": {"name": "Rice", "eggy": "VEG"}, "DAL": {"name": "Yellow Dal Tadka", "eggy": "VEG"}, "SAMBAR OR RASAM": {"name": "Tamarind Sambar", "eggy": "VEG"}, "CURD BASE": {"name": "Curd", "eggy": "VEG"}, "SALAD/SPROUTS": {"name": "Green Salad", "eggy": "VEG"}, "SWEETS": {"name": "Badushah", "eggy": "VEG"}, "PANEER": {"name": "Mt", "eggy": "VEG"}, "CHICKEN": {"name": "Mt", "eggy": "VEG"}}}, "2": {"bf": {"BREAKFAST 1": {"name": "Aloo Onion Paratha", "eggy": "VEG"}, "BREAKFAST 2": {"name": "Cut Fruits", "eggy": "VEG"}, "SAMBAR OR KETCHUP": {"name": "Mt", "eggy": "VEG"}, "CURD": {"name": "Curd", "eggy": "VEG"}, "CHUTNEY": {"name": "Peanut Garlic Chutney", "eggy": "VEG"}, "EGG": {"name": "Mt", "eggy": "VEG"}, "JUICE/MILK SHAKE": {"name": "Mt", "eggy": "VEG"}}, "ln": {"INDIAN BREAD": {"name": "Methi Chapati", "eggy": "VEG"}, "VEG GRAVY": {"name": "Mix Veg Gravy", "eggy": "VEG"}, "VEG DRY/ STARTERS": {"name": "Gobi Mutter", "eggy": "VEG"}, "FLAVORED RICE": {"name": "Jeera Rice", "eggy": "VEG"}, "PLAIN RICE": {"name": "Plain Rice", "eggy": "VEG"}, "DAL": {"name": "Arhar Daal", "eggy": "VEG"}, "SAMBAR OR RASAM": {"name": "Vegetable Sambhar", "eggy": "VEG"}, "CURD BASE": {"name": "Curd", "eggy": "VEG"}, "SALAD/SPROUTS": {"name": "Sprouts Salad", "eggy": "VEG"}, "SWEETS": {"name": "Dry Fruit Barfi", "eggy": "VEG"}}, "sk": {"SNACKS": {"name": "Dal Pakwan", "eggy": "VEG"}, "ACCOMPANIMENTS": {"name": "Mt", "eggy": "VEG"}, "TEA/COFFEE/MILK": {"name": "Tea/Coffee/Milk", "eggy": "VEG"}}, "dn": {"INDIAN BREAD": {"name": "Ajwain Chapati", "eggy": "VEG"}, "VEG GRAVY": {"name": "Methi Mutter Malai", "eggy": "VEG"}, "VEG DRY/ STARTERS": {"name": "Aalo Gobi 65", "eggy": "VEG"}, "FLAVORED RICE": {"name": "Achari Dum Biryani", "eggy": "VEG"}, "PLAIN RICE": {"name": "Rice", "eggy": "VEG"}, "DAL": {"name": "Rajma Masala", "eggy": "VEG"}, "SAMBAR OR RASAM": {"name": "Onion Sambar", "eggy": "VEG"}, "CURD BASE": {"name": "Boondi Raita", "eggy": "VEG"}, "SALAD/SPROUTS": {"name": "Pasta Salad", "eggy": "VEG"}, "SWEETS": {"name": "Jalebi+Rabri", "eggy": "VEG"}, "PANEER": {"name": "Mt", "eggy": "VEG"}, "CHICKEN": {"name": "Mt", "eggy": "VEG"}}}, "3": {"bf": {"BREAKFAST 1": {"name": "Idli", "eggy": "VEG"}, "BREAKFAST 2": {"name": "Uddin Vada", "eggy": "VEG"}, "SAMBAR OR KETCHUP": {"name": "Veg Sambar", "eggy": "VEG"}, "CURD": {"name": "Mt", "eggy": "VEG"}, "CHUTNEY": {"name": "Coconut Chutney", "eggy": "VEG"}, "EGG": {"name": "Boiled Egg", "eggy": "EGG"}, "JUICE/MILK SHAKE": {"name": "Mt", "eggy": "VEG"}}, "ln": {"INDIAN BREAD": {"name": "Beetroot Poori", "eggy": "VEG"}, "VEG GRAVY": {"name": "Aloo Bhajji", "eggy": "VEG"}, "VEG DRY/ STARTERS": {"name": "Carrot Beans Poriyal", "eggy": "VEG"}, "FLAVORED RICE": {"name": "Bisibilla Bhat", "eggy": "VEG"}, "PLAIN RICE": {"name": "Plain Rice", "eggy": "VEG"}, "DAL": {"name": "Yellow Urad Daal", "eggy": "VEG"}, "SAMBAR OR RASAM": {"name": "Coriander Jeera Rasam", "eggy": "VEG"}, "CURD BASE": {"name": "Curd", "eggy": "VEG"}, "SALAD/SPROUTS": {"name": "Chickpea Salad", "eggy": "VEG"}, "SWEETS": {"name": "Ice Cream", "eggy": "VEG"}}, "sk": {"SNACKS": {"name": "Mix Bhajiya", "eggy": "VEG"}, "ACCOMPANIMENTS": {"name": "Ketchup", "eggy": "VEG"}, "TEA/COFFEE/MILK": {"name": "Tea/Coffee/Milk", "eggy": "VEG"}}, "dn": {"INDIAN BREAD": {"name": "Tawa Paratha", "eggy": "VEG"}, "VEG GRAVY": {"name": "Mt", "eggy": "VEG"}, "VEG DRY/ STARTERS": {"name": "Honey Chilli Potato", "eggy": "VEG"}, "FLAVORED RICE": {"name": "Jeera Mutter Pulao", "eggy": "VEG"}, "PLAIN RICE": {"name": "Plain Rice", "eggy": "VEG"}, "DAL": {"name": "Dal Makhani", "eggy": "VEG"}, "SAMBAR OR RASAM": {"name": "Drumstick Sambar", "eggy": "VEG"}, "CURD BASE": {"name": "Mix Veg Raita", "eggy": "VEG"}, "SALAD/SPROUTS": {"name": "Sprouts Salad", "eggy": "VEG"}, "SWEETS": {"name": "Rasmalai", "eggy": "VEG"}, "PANEER": {"name": "Panner Butter Masala", "eggy": "VEG"}, "CHICKEN": {"name": "Chicken Butter Masala", "eggy": "NON"}}}, "4": {"bf": {"BREAKFAST 1": {"name": "Vermicilli Upma", "eggy": "VEG"}, "BREAKFAST 2": {"name": "Dhokla", "eggy": "VEG"}, "SAMBAR OR KETCHUP": {"name": "Mt", "eggy": "VEG"}, "CURD": {"name": "Mt", "eggy": "VEG"}, "CHUTNEY": {"name": "Coconut Chutney", "eggy": "VEG"}, "EGG": {"name": "Mt", "eggy": "VEG"}, "JUICE/MILK SHAKE": {"name": "Mt", "eggy": "VEG"}}, "ln": {"INDIAN BREAD": {"name": "Pudina Chapati", "eggy": "VEG"}, "VEG GRAVY": {"name": "Aloo Drumstick Curry", "eggy": "VEG"}, "VEG DRY/ STARTERS": {"name": "Bhindi Do Pyaza", "eggy": "VEG"}, "FLAVORED RICE": {"name": "Hyderabadi Dum Biryani", "eggy": "VEG"}, "PLAIN RICE": {"name": "Plain Rice", "eggy": "VEG"}, "DAL": {"name": "Hara Moong Daal", "eggy": "VEG"}, "SAMBAR OR RASAM": {"name": "Pumpkin Sambar", "eggy": "VEG"}, "CURD BASE": {"name": "Burani Raita", "eggy": "VEG"}, "SALAD/SPROUTS": {"name": "Green Salad", "eggy": "VEG"}, "SWEETS": {"name": "Assoreted Pastry", "eggy": "VEG"}}, "sk": {"SNACKS": {"name": "Pav Bhaji", "eggy": "VEG"}, "ACCOMPANIMENTS": {"name": "Lemon+Onion", "eggy": "VEG"}, "TEA/COFFEE/MILK": {"name": "Tea/Coffee/Milk", "eggy": "VEG"}}, "dn": {"INDIAN BREAD": {"name": "Ajwain Chapati", "eggy": "VEG"}, "VEG GRAVY": {"name": "Aloo Gobi Mutter", "eggy": "VEG"}, "VEG DRY/ STARTERS": {"name": "Veg Manchurian", "eggy": "VEG"}, "FLAVORED RICE": {"name": "Veg Pulao", "eggy": "VEG"}, "PLAIN RICE": {"name": "Rice", "eggy": "VEG"}, "DAL": {"name": "Live Dal Tadka", "eggy": "VEG"}, "SAMBAR OR RASAM": {"name": "Methi Leaves Sambar", "eggy": "VEG"}, "CURD BASE": {"name": "Curd", "eggy": "VEG"}, "SALAD/SPROUTS": {"name": "Punjabi Salad", "eggy": "VEG"}, "SWEETS": {"name": "Marble Cake", "eggy": "VEG"}, "PANEER": {"name": "Mt", "eggy": "VEG"}, "CHICKEN": {"name": "Mt", "eggy": "VEG"}}}, "5": {"bf": {"BREAKFAST 1": {"name": "Pesarattu", "eggy": "VEG"}, "BREAKFAST 2": {"name": "Rawa Upma", "eggy": "VEG"}, "SAMBAR OR KETCHUP": {"name": "Mt", "eggy": "VEG"}, "CURD": {"name": "Mt", "eggy": "VEG"}, "CHUTNEY": {"name": "Green Chutney", "eggy": "VEG"}, "EGG": {"name": "Omlette", "eggy": "EGG"}, "JUICE/MILK SHAKE": {"name": "Mt", "eggy": "VEG"}}, "ln": {"INDIAN BREAD": {"name": "Ajwain Chapati", "eggy": "VEG"}, "VEG GRAVY": {"name": "Veg Jalfrezi", "eggy": "VEG"}, "VEG DRY/ STARTERS": {"name": "Chow Chow Poriyal", "eggy": "VEG"}, "FLAVORED RICE": {"name": "Green Peas Pulao", "eggy": "VEG"}, "PLAIN RICE": {"name": "Plain Rice", "eggy": "VEG"}, "DAL": {"name": "Dal Tadka", "eggy": "VEG"}, "SAMBAR OR RASAM": {"name": "Rasam", "eggy": "VEG"}, "CURD BASE": {"name": "Curd", "eggy": "VEG"}, "SALAD/SPROUTS": {"name": "Green Salad", "eggy": "VEG"}, "SWEETS": {"name": "Ras Malai", "eggy": "VEG"}}, "sk": {"SNACKS": {"name": "Misal Pav", "eggy": "VEG"}, "ACCOMPANIMENTS": {"name": "Mt", "eggy": "VEG"}, "TEA/COFFEE/MILK": {"name": "Tea/Coffee/Milk", "eggy": "VEG"}}, "dn": {"INDIAN BREAD": {"name": "Tawa Paratha", "eggy": "VEG"}, "VEG GRAVY": {"name": "Achari Subzi", "eggy": "VEG"}, "VEG DRY/ STARTERS": {"name": "Tawa Vegetables", "eggy": "VEG"}, "FLAVORED RICE": {"name": "Mt", "eggy": "VEG"}, "PLAIN RICE": {"name": "Plain Rice", "eggy": "VEG"}, "DAL": {"name": "Masoor Daal", "eggy": "VEG"}, "SAMBAR OR RASAM": {"name": "Vendakkai Sambar", "eggy": "VEG"}, "CURD BASE": {"name": "Mix Veg Raita", "eggy": "VEG"}, "SALAD/SPROUTS": {"name": "Green Salad", "eggy": "VEG"}, "SWEETS": {"name": "Rasgulla", "eggy": "VEG"}, "PANEER": {"name": "Kadhai Paneer\\Veg Biryani", "eggy": "VEG"}, "CHICKEN": {"name": "Chicken Biryani", "eggy": "NON"}}}, "6": {"bf": {"BREAKFAST 1": {"name": "Podi Masala Dosa", "eggy": "VEG"}, "BREAKFAST 2": {"name": "Poha", "eggy": "VEG"}, "SAMBAR OR KETCHUP": {"name": "Veg Sambar", "eggy": "VEG"}, "CURD": {"name": "Mt", "eggy": "VEG"}, "CHUTNEY": {"name": "Coconut Chutney", "eggy": "VEG"}, "EGG": {"name": "Mt", "eggy": "VEG"}, "JUICE/MILK SHAKE": {"name": "Mt", "eggy": "VEG"}}, "ln": {"INDIAN BREAD": {"name": "Chapati", "eggy": "VEG"}, "VEG GRAVY": {"name": "Bhindi Aloo", "eggy": "VEG"}, "VEG DRY/ STARTERS": {"name": "Egg Curry/Soyabean Curry", "eggy": "EGG"}, "FLAVORED RICE": {"name": "Pongal", "eggy": "VEG"}, "PLAIN RICE": {"name": "Plain Rice", "eggy": "VEG"}, "DAL": {"name": "Toor Daal", "eggy": "VEG"}, "SAMBAR OR RASAM": {"name": "Carrot Sambhar", "eggy": "VEG"}, "CURD BASE": {"name": "Curd", "eggy": "VEG"}, "SALAD/SPROUTS": {"name": "Veg Corn Salad", "eggy": "VEG"}, "SWEETS": {"name": "Icecream", "eggy": "VEG"}}, "sk": {"SNACKS": {"name": "Kachori", "eggy": "VEG"}, "ACCOMPANIMENTS": {"name": "Imly Chutney", "eggy": "VEG"}, "TEA/COFFEE/MILK": {"name": "Tea/Coffee/Milk", "eggy": "VEG"}}, "dn": {"INDIAN BREAD": {"name": "Ajwain Chapati", "eggy": "VEG"}, "VEG GRAVY": {"name": "Corn Masala", "eggy": "VEG"}, "VEG DRY/ STARTERS": {"name": "Pudina Aalo Tikki", "eggy": "VEG"}, "FLAVORED RICE": {"name": "Fried Rice", "eggy": "VEG"}, "PLAIN RICE": {"name": "Plain Rice", "eggy": "VEG"}, "DAL": {"name": "Lobia Masala", "eggy": "VEG"}, "SAMBAR OR RASAM": {"name": "Veg Rasam", "eggy": "VEG"}, "CURD BASE": {"name": "Boondi Raita", "eggy": "VEG"}, "SALAD/SPROUTS": {"name": "Russian Salad", "eggy": "VEG"}, "SWEETS": {"name": "Shrikhand", "eggy": "VEG"}, "PANEER": {"name": "Mt", "eggy": "VEG"}, "CHICKEN": {"name": "Mt", "eggy": "VEG"}}}}, "dates": {"03-09-2023": "0", "10-09-2023": "0", "28-08-2023": "1", "04-09-2023": "1", "29-08-2023": "2", "05-09-2023": "2", "30-08-2023": "3", "06-09-2023": "3", "31-08-2023": "4", "07-09-2023": "4", "01-09-2023": "5", "08-09-2023": "5", "02-09-2023": "6", "09-09-2023": "6"}, "items": {"bf": ["BREAKFAST 1", "BREAKFAST 2", "SAMBAR OR KETCHUP", "CURD", "CHUTNEY", "EGG", "JUICE/MILK SHAKE"], "ln": ["INDIAN BREAD", "VEG GRAVY", "VEG DRY/ STARTERS", "FLAVORED RICE", "PLAIN RICE", "DAL", "SAMBAR OR RASAM", "CURD BASE", "SALAD/SPROUTS", "SWEETS"], "sk": ["SNACKS", "ACCOMPANIMENTS", "TEA/COFFEE/MILK"], "dn": ["INDIAN BREAD", "VEG GRAVY", "VEG DRY/ STARTERS", "FLAVORED RICE", "PLAIN RICE", "DAL", "SAMBAR OR RASAM", "CURD BASE", "SALAD/SPROUTS", "SWEETS", "PANEER", "CHICKEN"]}}
+{
+    "menu": {
+        "0": {
+            "bf": {
+                "BREAKFAST 1": {
+                    "name": "Aloo Gobi Paratha",
+                    "eggy": "VEG"
+                },
+                "BREAKFAST 2": {
+                    "name": "Mt",
+                    "eggy": "VEG"
+                },
+                "SAMBAR OR KETCHUP": {
+                    "name": "Mt",
+                    "eggy": "VEG"
+                },
+                "CURD": {
+                    "name": "Curd",
+                    "eggy": "VEG"
+                },
+                "CHUTNEY": {
+                    "name": "Mint Chutney",
+                    "eggy": "VEG"
+                },
+                "EGG": {
+                    "name": "Mt",
+                    "eggy": "VEG"
+                },
+                "JUICE/MILK SHAKE": {
+                    "name": "Mixed Fruit Juice",
+                    "eggy": "VEG"
+                }
+            },
+            "ln": {
+                "INDIAN BREAD": {
+                    "name": "Bhature",
+                    "eggy": "VEG"
+                },
+                "VEG GRAVY": {
+                    "name": "Pindi Chole",
+                    "eggy": "VEG"
+                },
+                "VEG DRY/ STARTERS": {
+                    "name": "Hara Bhara Kebab",
+                    "eggy": "VEG"
+                },
+                "FLAVORED RICE": {
+                    "name": "Veg Pulao",
+                    "eggy": "VEG"
+                },
+                "PLAIN RICE": {
+                    "name": "Plain Rice",
+                    "eggy": "VEG"
+                },
+                "DAL": {
+                    "name": "Dal Panchmel",
+                    "eggy": "VEG"
+                },
+                "SAMBAR OR RASAM": {
+                    "name": "Garlic Rasam",
+                    "eggy": "VEG"
+                },
+                "CURD BASE": {
+                    "name": "Sweet Lassi",
+                    "eggy": "VEG"
+                },
+                "SALAD/SPROUTS": {
+                    "name": "Onion\\Chilli\\Lemon",
+                    "eggy": "VEG"
+                },
+                "SWEETS": {
+                    "name": "Gulab Jamun",
+                    "eggy": "VEG"
+                }
+            },
+            "sk": {
+                "SNACKS": {
+                    "name": "Samosa",
+                    "eggy": "VEG"
+                },
+                "ACCOMPANIMENTS": {
+                    "name": "Imly Chutney",
+                    "eggy": "VEG"
+                },
+                "TEA/COFFEE/MILK": {
+                    "name": "Tea/Coffee/Milk",
+                    "eggy": "VEG"
+                }
+            },
+            "dn": {
+                "INDIAN BREAD": {
+                    "name": "Methi Chapati",
+                    "eggy": "VEG"
+                },
+                "VEG GRAVY": {
+                    "name": "Corn Palak Masala",
+                    "eggy": "VEG"
+                },
+                "VEG DRY/ STARTERS": {
+                    "name": "Mt",
+                    "eggy": "VEG"
+                },
+                "FLAVORED RICE": {
+                    "name": "Mexican Rice",
+                    "eggy": "VEG"
+                },
+                "PLAIN RICE": {
+                    "name": "Plain Rice",
+                    "eggy": "VEG"
+                },
+                "DAL": {
+                    "name": "Green Moong Dal",
+                    "eggy": "VEG"
+                },
+                "SAMBAR OR RASAM": {
+                    "name": "Tamarind Sambar",
+                    "eggy": "VEG"
+                },
+                "CURD BASE": {
+                    "name": "Plain Buttermilk",
+                    "eggy": "VEG"
+                },
+                "SALAD/SPROUTS": {
+                    "name": "Green Salad",
+                    "eggy": "VEG"
+                },
+                "SWEETS": {
+                    "name": "Boondi Laddoo",
+                    "eggy": "VEG"
+                },
+                "PANEER": {
+                    "name": "Paneer Kurchan",
+                    "eggy": "VEG"
+                },
+                "CHICKEN": {
+                    "name": "Chicken Kurchan",
+                    "eggy": "NON"
+                }
+            },
+            "bfTimings": {
+                "start": "07:45AM",
+                "end": "10:00AM"
+            },
+            "lnTimings": {
+                "start": "12:45PM",
+                "end": "02:30PM"
+            },
+            "skTimings": {
+                "start": "04:30PM",
+                "end": "05:45PM"
+            },
+            "dnTimings": {
+                "start": "07:30PM",
+                "end": "09:30PM"
+            }
+        },
+        "1": {
+            "bf": {
+                "BREAKFAST 1": {
+                    "name": "Idli",
+                    "eggy": "VEG"
+                },
+                "BREAKFAST 2": {
+                    "name": "Uddin Vada",
+                    "eggy": "VEG"
+                },
+                "SAMBAR OR KETCHUP": {
+                    "name": "Veg Sambar",
+                    "eggy": "VEG"
+                },
+                "CURD": {
+                    "name": "Mt",
+                    "eggy": "VEG"
+                },
+                "CHUTNEY": {
+                    "name": "Coconut Chutney",
+                    "eggy": "VEG"
+                },
+                "EGG": {
+                    "name": "Boiled Egg",
+                    "eggy": "EGG"
+                },
+                "JUICE/MILK SHAKE": {
+                    "name": "Mt",
+                    "eggy": "VEG"
+                }
+            },
+            "ln": {
+                "INDIAN BREAD": {
+                    "name": "Dal Chapati",
+                    "eggy": "VEG"
+                },
+                "VEG GRAVY": {
+                    "name": "Gutti Vankaya Curry",
+                    "eggy": "VEG"
+                },
+                "VEG DRY/ STARTERS": {
+                    "name": "Subz Maloni",
+                    "eggy": "VEG"
+                },
+                "FLAVORED RICE": {
+                    "name": "Curd Rice",
+                    "eggy": "VEG"
+                },
+                "PLAIN RICE": {
+                    "name": "Plain Rice",
+                    "eggy": "VEG"
+                },
+                "DAL": {
+                    "name": "Dal Tadka",
+                    "eggy": "VEG"
+                },
+                "SAMBAR OR RASAM": {
+                    "name": "Pepper Rasam",
+                    "eggy": "VEG"
+                },
+                "CURD BASE": {
+                    "name": "Lemonade",
+                    "eggy": "VEG"
+                },
+                "SALAD/SPROUTS": {
+                    "name": "Green Salad",
+                    "eggy": "VEG"
+                },
+                "SWEETS": {
+                    "name": "Rasgulla",
+                    "eggy": "VEG"
+                }
+            },
+            "sk": {
+                "SNACKS": {
+                    "name": "Colesaw Sandwich",
+                    "eggy": "VEG"
+                },
+                "ACCOMPANIMENTS": {
+                    "name": "Ketchup",
+                    "eggy": "VEG"
+                },
+                "TEA/COFFEE/MILK": {
+                    "name": "Tea/Coffee/Milk",
+                    "eggy": "VEG"
+                }
+            },
+            "dn": {
+                "INDIAN BREAD": {
+                    "name": "Plain Dosa+Schezwan Chutney",
+                    "eggy": "VEG"
+                },
+                "VEG GRAVY": {
+                    "name": "Kadai Vegetable",
+                    "eggy": "VEG"
+                },
+                "VEG DRY/ STARTERS": {
+                    "name": "Aloo Masala",
+                    "eggy": "VEG"
+                },
+                "FLAVORED RICE": {
+                    "name": "Mt",
+                    "eggy": "VEG"
+                },
+                "PLAIN RICE": {
+                    "name": "Rice",
+                    "eggy": "VEG"
+                },
+                "DAL": {
+                    "name": "Rajma Masala",
+                    "eggy": "VEG"
+                },
+                "SAMBAR OR RASAM": {
+                    "name": "Tamarind Sambar",
+                    "eggy": "VEG"
+                },
+                "CURD BASE": {
+                    "name": "Mt",
+                    "eggy": "VEG"
+                },
+                "SALAD/SPROUTS": {
+                    "name": "Green Salad",
+                    "eggy": "VEG"
+                },
+                "SWEETS": {
+                    "name": "Badushah",
+                    "eggy": "VEG"
+                },
+                "PANEER": {
+                    "name": "Coconut Chutney",
+                    "eggy": "VEG"
+                },
+                "CHICKEN": {
+                    "name": "Mt",
+                    "eggy": "VEG"
+                }
+            },
+            "bfTimings": {
+                "start": "07:30AM",
+                "end": "09:45AM"
+            },
+            "lnTimings": {
+                "start": "12:30PM",
+                "end": "02:15PM"
+            },
+            "skTimings": {
+                "start": "04:30PM",
+                "end": "05:45PM"
+            },
+            "dnTimings": {
+                "start": "07:30PM",
+                "end": "09:30PM"
+            }
+        },
+        "2": {
+            "bf": {
+                "BREAKFAST 1": {
+                    "name": "Aloo Onion Paratha",
+                    "eggy": "VEG"
+                },
+                "BREAKFAST 2": {
+                    "name": "Pineapple+Watermelon Fruit",
+                    "eggy": "VEG"
+                },
+                "SAMBAR OR KETCHUP": {
+                    "name": "Mt",
+                    "eggy": "VEG"
+                },
+                "CURD": {
+                    "name": "Curd",
+                    "eggy": "VEG"
+                },
+                "CHUTNEY": {
+                    "name": "Tomato Garlic Chutney",
+                    "eggy": "VEG"
+                },
+                "EGG": {
+                    "name": "Mt",
+                    "eggy": "VEG"
+                },
+                "JUICE/MILK SHAKE": {
+                    "name": "Mt",
+                    "eggy": "VEG"
+                }
+            },
+            "ln": {
+                "INDIAN BREAD": {
+                    "name": "Chapati",
+                    "eggy": "VEG"
+                },
+                "VEG GRAVY": {
+                    "name": "Shahi Sabzi",
+                    "eggy": "VEG"
+                },
+                "VEG DRY/ STARTERS": {
+                    "name": "Beetroot Poriyal",
+                    "eggy": "VEG"
+                },
+                "FLAVORED RICE": {
+                    "name": "Veg Donne Biryani",
+                    "eggy": "VEG"
+                },
+                "PLAIN RICE": {
+                    "name": "Plain Rice",
+                    "eggy": "VEG"
+                },
+                "DAL": {
+                    "name": "Arhar Daal",
+                    "eggy": "VEG"
+                },
+                "SAMBAR OR RASAM": {
+                    "name": "Vegetable Sambar",
+                    "eggy": "VEG"
+                },
+                "CURD BASE": {
+                    "name": "Boondi Raita",
+                    "eggy": "VEG"
+                },
+                "SALAD/SPROUTS": {
+                    "name": "Sprouts Salad",
+                    "eggy": "VEG"
+                },
+                "SWEETS": {
+                    "name": "Besan Laddoo",
+                    "eggy": "VEG"
+                }
+            },
+            "sk": {
+                "SNACKS": {
+                    "name": "Vada Pav",
+                    "eggy": "VEG"
+                },
+                "ACCOMPANIMENTS": {
+                    "name": "Lemonade",
+                    "eggy": "VEG"
+                },
+                "TEA/COFFEE/MILK": {
+                    "name": "Tea/Coffee/Milk",
+                    "eggy": "VEG"
+                }
+            },
+            "dn": {
+                "INDIAN BREAD": {
+                    "name": "Ajwain Chapati",
+                    "eggy": "VEG"
+                },
+                "VEG GRAVY": {
+                    "name": "Methi Mutter Malai",
+                    "eggy": "VEG"
+                },
+                "VEG DRY/ STARTERS": {
+                    "name": "Pudina Aalo Tikki",
+                    "eggy": "VEG"
+                },
+                "FLAVORED RICE": {
+                    "name": "Mexican Rice",
+                    "eggy": "VEG"
+                },
+                "PLAIN RICE": {
+                    "name": "Rice",
+                    "eggy": "VEG"
+                },
+                "DAL": {
+                    "name": "Yellow Dal Tadka",
+                    "eggy": "VEG"
+                },
+                "SAMBAR OR RASAM": {
+                    "name": "Onion Rasam",
+                    "eggy": "VEG"
+                },
+                "CURD BASE": {
+                    "name": "Curd",
+                    "eggy": "VEG"
+                },
+                "SALAD/SPROUTS": {
+                    "name": "Punjabi Salad",
+                    "eggy": "VEG"
+                },
+                "SWEETS": {
+                    "name": "Jalebi+Rabri",
+                    "eggy": "VEG"
+                },
+                "PANEER": {
+                    "name": "Mt",
+                    "eggy": "VEG"
+                },
+                "CHICKEN": {
+                    "name": "Mt",
+                    "eggy": "VEG"
+                }
+            },
+            "bfTimings": {
+                "start": "07:30AM",
+                "end": "09:45AM"
+            },
+            "lnTimings": {
+                "start": "12:30PM",
+                "end": "02:15PM"
+            },
+            "skTimings": {
+                "start": "04:30PM",
+                "end": "05:45PM"
+            },
+            "dnTimings": {
+                "start": "07:30PM",
+                "end": "09:30PM"
+            }
+        },
+        "3": {
+            "bf": {
+                "BREAKFAST 1": {
+                    "name": "Onion Tomato Uttapam",
+                    "eggy": "VEG"
+                },
+                "BREAKFAST 2": {
+                    "name": "Banana",
+                    "eggy": "VEG"
+                },
+                "SAMBAR OR KETCHUP": {
+                    "name": "Sambar",
+                    "eggy": "VEG"
+                },
+                "CURD": {
+                    "name": "Mt",
+                    "eggy": "VEG"
+                },
+                "CHUTNEY": {
+                    "name": "Groundnut Chutney",
+                    "eggy": "VEG"
+                },
+                "EGG": {
+                    "name": "Egg Bhurji",
+                    "eggy": "EGG"
+                },
+                "JUICE/MILK SHAKE": {
+                    "name": "Mt",
+                    "eggy": "VEG"
+                }
+            },
+            "ln": {
+                "INDIAN BREAD": {
+                    "name": "Beetroot Poori",
+                    "eggy": "VEG"
+                },
+                "VEG GRAVY": {
+                    "name": "Aloo Bhajji",
+                    "eggy": "VEG"
+                },
+                "VEG DRY/ STARTERS": {
+                    "name": "Dondakai Poriyal",
+                    "eggy": "VEG"
+                },
+                "FLAVORED RICE": {
+                    "name": "Bisi Bele Bath",
+                    "eggy": "VEG"
+                },
+                "PLAIN RICE": {
+                    "name": "Plain Rice",
+                    "eggy": "VEG"
+                },
+                "DAL": {
+                    "name": "Yellow Urad Daal",
+                    "eggy": "VEG"
+                },
+                "SAMBAR OR RASAM": {
+                    "name": "Coriander Jeera Rasam",
+                    "eggy": "VEG"
+                },
+                "CURD BASE": {
+                    "name": "Curd",
+                    "eggy": "VEG"
+                },
+                "SALAD/SPROUTS": {
+                    "name": "Chickpea Salad",
+                    "eggy": "VEG"
+                },
+                "SWEETS": {
+                    "name": "Ice Cream",
+                    "eggy": "VEG"
+                }
+            },
+            "sk": {
+                "SNACKS": {
+                    "name": "Dahi Puri + Sev",
+                    "eggy": "VEG"
+                },
+                "ACCOMPANIMENTS": {
+                    "name": "Mt",
+                    "eggy": "VEG"
+                },
+                "TEA/COFFEE/MILK": {
+                    "name": "Tea/Coffee/Milk",
+                    "eggy": "VEG"
+                }
+            },
+            "dn": {
+                "INDIAN BREAD": {
+                    "name": "Tawa Paratha",
+                    "eggy": "VEG"
+                },
+                "VEG GRAVY": {
+                    "name": "Mt",
+                    "eggy": "VEG"
+                },
+                "VEG DRY/ STARTERS": {
+                    "name": "Gobi 65",
+                    "eggy": "VEG"
+                },
+                "FLAVORED RICE": {
+                    "name": "Jeera Mutter Pulao",
+                    "eggy": "VEG"
+                },
+                "PLAIN RICE": {
+                    "name": "Plain Rice",
+                    "eggy": "VEG"
+                },
+                "DAL": {
+                    "name": "Dal Makhani",
+                    "eggy": "VEG"
+                },
+                "SAMBAR OR RASAM": {
+                    "name": "Drumstick Sambar",
+                    "eggy": "VEG"
+                },
+                "CURD BASE": {
+                    "name": "Mix Veg Raita",
+                    "eggy": "VEG"
+                },
+                "SALAD/SPROUTS": {
+                    "name": "Sprouts Salad",
+                    "eggy": "VEG"
+                },
+                "SWEETS": {
+                    "name": "Rasmalai",
+                    "eggy": "VEG"
+                },
+                "PANEER": {
+                    "name": "Panner Butter Masala",
+                    "eggy": "VEG"
+                },
+                "CHICKEN": {
+                    "name": "Chicken Butter Masala",
+                    "eggy": "NON"
+                }
+            },
+            "bfTimings": {
+                "start": "07:30AM",
+                "end": "09:45AM"
+            },
+            "lnTimings": {
+                "start": "12:30PM",
+                "end": "02:15PM"
+            },
+            "skTimings": {
+                "start": "04:30PM",
+                "end": "05:45PM"
+            },
+            "dnTimings": {
+                "start": "07:30PM",
+                "end": "09:30PM"
+            }
+        },
+        "4": {
+            "bf": {
+                "BREAKFAST 1": {
+                    "name": "Uggani",
+                    "eggy": "VEG"
+                },
+                "BREAKFAST 2": {
+                    "name": "Dhokla",
+                    "eggy": "VEG"
+                },
+                "SAMBAR OR KETCHUP": {
+                    "name": "Green Chutney",
+                    "eggy": "VEG"
+                },
+                "CURD": {
+                    "name": "Mt",
+                    "eggy": "VEG"
+                },
+                "CHUTNEY": {
+                    "name": "Ketchup",
+                    "eggy": "VEG"
+                },
+                "EGG": {
+                    "name": "Mt",
+                    "eggy": "VEG"
+                },
+                "JUICE/MILK SHAKE": {
+                    "name": "Mt",
+                    "eggy": "VEG"
+                }
+            },
+            "ln": {
+                "INDIAN BREAD": {
+                    "name": "Pudina Chapati",
+                    "eggy": "VEG"
+                },
+                "VEG GRAVY": {
+                    "name": "Dum Aloo",
+                    "eggy": "VEG"
+                },
+                "VEG DRY/ STARTERS": {
+                    "name": "Veg Avial",
+                    "eggy": "VEG"
+                },
+                "FLAVORED RICE": {
+                    "name": "Lemon Rice",
+                    "eggy": "VEG"
+                },
+                "PLAIN RICE": {
+                    "name": "Plain Rice",
+                    "eggy": "VEG"
+                },
+                "DAL": {
+                    "name": "Hara Moong Daal",
+                    "eggy": "VEG"
+                },
+                "SAMBAR OR RASAM": {
+                    "name": "Pumpkin Sambar",
+                    "eggy": "VEG"
+                },
+                "CURD BASE": {
+                    "name": "Curd",
+                    "eggy": "VEG"
+                },
+                "SALAD/SPROUTS": {
+                    "name": "Green Salad",
+                    "eggy": "VEG"
+                },
+                "SWEETS": {
+                    "name": "Assorted Pastry",
+                    "eggy": "VEG"
+                }
+            },
+            "sk": {
+                "SNACKS": {
+                    "name": "Dal Pakwan",
+                    "eggy": "VEG"
+                },
+                "ACCOMPANIMENTS": {
+                    "name": "Lemonade",
+                    "eggy": "VEG"
+                },
+                "TEA/COFFEE/MILK": {
+                    "name": "Tea/Coffee/Milk",
+                    "eggy": "VEG"
+                }
+            },
+            "dn": {
+                "INDIAN BREAD": {
+                    "name": "Ajwain Chapati",
+                    "eggy": "VEG"
+                },
+                "VEG GRAVY": {
+                    "name": "Veg Kohlapuri",
+                    "eggy": "VEG"
+                },
+                "VEG DRY/ STARTERS": {
+                    "name": "Aloo Karela Chips",
+                    "eggy": "VEG"
+                },
+                "FLAVORED RICE": {
+                    "name": "Pasta(Live)",
+                    "eggy": "VEG"
+                },
+                "PLAIN RICE": {
+                    "name": "Rice",
+                    "eggy": "VEG"
+                },
+                "DAL": {
+                    "name": "Masoor Dal",
+                    "eggy": "VEG"
+                },
+                "SAMBAR OR RASAM": {
+                    "name": "Methi Leaves Sambar",
+                    "eggy": "VEG"
+                },
+                "CURD BASE": {
+                    "name": "Curd",
+                    "eggy": "VEG"
+                },
+                "SALAD/SPROUTS": {
+                    "name": "Green Salad",
+                    "eggy": "VEG"
+                },
+                "SWEETS": {
+                    "name": "Marble Cake",
+                    "eggy": "VEG"
+                },
+                "PANEER": {
+                    "name": "Mt",
+                    "eggy": "VEG"
+                },
+                "CHICKEN": {
+                    "name": "Mt",
+                    "eggy": "VEG"
+                }
+            },
+            "bfTimings": {
+                "start": "07:30AM",
+                "end": "09:45AM"
+            },
+            "lnTimings": {
+                "start": "12:30PM",
+                "end": "02:15PM"
+            },
+            "skTimings": {
+                "start": "04:30PM",
+                "end": "05:45PM"
+            },
+            "dnTimings": {
+                "start": "07:30PM",
+                "end": "09:30PM"
+            }
+        },
+        "5": {
+            "bf": {
+                "BREAKFAST 1": {
+                    "name": "Pesarattu",
+                    "eggy": "VEG"
+                },
+                "BREAKFAST 2": {
+                    "name": "Rawa Upma",
+                    "eggy": "VEG"
+                },
+                "SAMBAR OR KETCHUP": {
+                    "name": "Mt",
+                    "eggy": "VEG"
+                },
+                "CURD": {
+                    "name": "Mt",
+                    "eggy": "VEG"
+                },
+                "CHUTNEY": {
+                    "name": "Ginger Chutney",
+                    "eggy": "VEG"
+                },
+                "EGG": {
+                    "name": "Omlette",
+                    "eggy": "EGG"
+                },
+                "JUICE/MILK SHAKE": {
+                    "name": "Mt",
+                    "eggy": "VEG"
+                }
+            },
+            "ln": {
+                "INDIAN BREAD": {
+                    "name": "Ajwain Chapati",
+                    "eggy": "VEG"
+                },
+                "VEG GRAVY": {
+                    "name": "Subz Lababdar",
+                    "eggy": "VEG"
+                },
+                "VEG DRY/ STARTERS": {
+                    "name": "Drumstick Tomato Curry",
+                    "eggy": "VEG"
+                },
+                "FLAVORED RICE": {
+                    "name": "Green Peas Pulao",
+                    "eggy": "VEG"
+                },
+                "PLAIN RICE": {
+                    "name": "Plain Rice",
+                    "eggy": "VEG"
+                },
+                "DAL": {
+                    "name": "Dal Tadka",
+                    "eggy": "VEG"
+                },
+                "SAMBAR OR RASAM": {
+                    "name": "Rasam",
+                    "eggy": "VEG"
+                },
+                "CURD BASE": {
+                    "name": "Curd",
+                    "eggy": "VEG"
+                },
+                "SALAD/SPROUTS": {
+                    "name": "Green Salad",
+                    "eggy": "VEG"
+                },
+                "SWEETS": {
+                    "name": "Mysore Pak(Soft)",
+                    "eggy": "VEG"
+                }
+            },
+            "sk": {
+                "SNACKS": {
+                    "name": "Corn Cheese Balls",
+                    "eggy": "VEG"
+                },
+                "ACCOMPANIMENTS": {
+                    "name": "Ketchup",
+                    "eggy": "VEG"
+                },
+                "TEA/COFFEE/MILK": {
+                    "name": "Tea/Coffee/Milk",
+                    "eggy": "VEG"
+                }
+            },
+            "dn": {
+                "INDIAN BREAD": {
+                    "name": "Tawa Paratha",
+                    "eggy": "VEG"
+                },
+                "VEG GRAVY": {
+                    "name": "Achari Subzi",
+                    "eggy": "VEG"
+                },
+                "VEG DRY/ STARTERS": {
+                    "name": "Aloo Fry",
+                    "eggy": "VEG"
+                },
+                "FLAVORED RICE": {
+                    "name": "Mt",
+                    "eggy": "VEG"
+                },
+                "PLAIN RICE": {
+                    "name": "Plain Rice",
+                    "eggy": "VEG"
+                },
+                "DAL": {
+                    "name": "Live Dal Tadka",
+                    "eggy": "VEG"
+                },
+                "SAMBAR OR RASAM": {
+                    "name": "Sambar",
+                    "eggy": "VEG"
+                },
+                "CURD BASE": {
+                    "name": "Mix Veg Raita",
+                    "eggy": "VEG"
+                },
+                "SALAD/SPROUTS": {
+                    "name": "Green Salad",
+                    "eggy": "VEG"
+                },
+                "SWEETS": {
+                    "name": "Kalakand",
+                    "eggy": "VEG"
+                },
+                "PANEER": {
+                    "name": "Kadhai Paneer\\Veg Biryani",
+                    "eggy": "VEG"
+                },
+                "CHICKEN": {
+                    "name": "Chicken Biryani",
+                    "eggy": "NON"
+                }
+            },
+            "bfTimings": {
+                "start": "07:30AM",
+                "end": "09:45AM"
+            },
+            "lnTimings": {
+                "start": "12:30PM",
+                "end": "02:15PM"
+            },
+            "skTimings": {
+                "start": "04:30PM",
+                "end": "05:45PM"
+            },
+            "dnTimings": {
+                "start": "07:30PM",
+                "end": "09:30PM"
+            }
+        },
+        "6": {
+            "bf": {
+                "BREAKFAST 1": {
+                    "name": "Podi Masala Dosa",
+                    "eggy": "VEG"
+                },
+                "BREAKFAST 2": {
+                    "name": "Poha",
+                    "eggy": "VEG"
+                },
+                "SAMBAR OR KETCHUP": {
+                    "name": "Veg Sambar",
+                    "eggy": "VEG"
+                },
+                "CURD": {
+                    "name": "Mt",
+                    "eggy": "VEG"
+                },
+                "CHUTNEY": {
+                    "name": "Coconut Chutney",
+                    "eggy": "VEG"
+                },
+                "EGG": {
+                    "name": "Mt",
+                    "eggy": "VEG"
+                },
+                "JUICE/MILK SHAKE": {
+                    "name": "Mt",
+                    "eggy": "VEG"
+                }
+            },
+            "ln": {
+                "INDIAN BREAD": {
+                    "name": "Chapati",
+                    "eggy": "VEG"
+                },
+                "VEG GRAVY": {
+                    "name": "Navratna Korma",
+                    "eggy": "VEG"
+                },
+                "VEG DRY/ STARTERS": {
+                    "name": "Bhindi Pulusu",
+                    "eggy": "VEG"
+                },
+                "FLAVORED RICE": {
+                    "name": "Pongal",
+                    "eggy": "VEG"
+                },
+                "PLAIN RICE": {
+                    "name": "Plain Rice",
+                    "eggy": "VEG"
+                },
+                "DAL": {
+                    "name": "Toor Daal",
+                    "eggy": "VEG"
+                },
+                "SAMBAR OR RASAM": {
+                    "name": "Carrot Sambar",
+                    "eggy": "VEG"
+                },
+                "CURD BASE": {
+                    "name": "Curd",
+                    "eggy": "VEG"
+                },
+                "SALAD/SPROUTS": {
+                    "name": "Veg Corn Salad",
+                    "eggy": "VEG"
+                },
+                "SWEETS": {
+                    "name": "Icecream",
+                    "eggy": "VEG"
+                }
+            },
+            "sk": {
+                "SNACKS": {
+                    "name": "Kachori",
+                    "eggy": "VEG"
+                },
+                "ACCOMPANIMENTS": {
+                    "name": "Imly Chutney",
+                    "eggy": "VEG"
+                },
+                "TEA/COFFEE/MILK": {
+                    "name": "Tea/Coffee/Milk",
+                    "eggy": "VEG"
+                }
+            },
+            "dn": {
+                "INDIAN BREAD": {
+                    "name": "Ajwain Chapati",
+                    "eggy": "VEG"
+                },
+                "VEG GRAVY": {
+                    "name": "Veg Manchurian(Gravy)",
+                    "eggy": "VEG"
+                },
+                "VEG DRY/ STARTERS": {
+                    "name": "Dondaka Fry",
+                    "eggy": "VEG"
+                },
+                "FLAVORED RICE": {
+                    "name": "Fried Rice",
+                    "eggy": "VEG"
+                },
+                "PLAIN RICE": {
+                    "name": "Plain Rice",
+                    "eggy": "VEG"
+                },
+                "DAL": {
+                    "name": "Dal Tadka",
+                    "eggy": "VEG"
+                },
+                "SAMBAR OR RASAM": {
+                    "name": "Veg Rasam",
+                    "eggy": "VEG"
+                },
+                "CURD BASE": {
+                    "name": "Boondi Raita",
+                    "eggy": "VEG"
+                },
+                "SALAD/SPROUTS": {
+                    "name": "Green Salad",
+                    "eggy": "VEG"
+                },
+                "SWEETS": {
+                    "name": "Shrikhand",
+                    "eggy": "VEG"
+                },
+                "PANEER": {
+                    "name": "Mt",
+                    "eggy": "VEG"
+                },
+                "CHICKEN": {
+                    "name": "Mt",
+                    "eggy": "VEG"
+                }
+            },
+            "bfTimings": {
+                "start": "07:45AM",
+                "end": "10:00AM"
+            },
+            "lnTimings": {
+                "start": "12:45PM",
+                "end": "02:30PM"
+            },
+            "skTimings": {
+                "start": "04:30PM",
+                "end": "05:45PM"
+            },
+            "dnTimings": {
+                "start": "07:30PM",
+                "end": "09:30PM"
+            }
+        }
+    },
+    "dates": {
+        "17-09-2023": "0",
+        "24-09-2023": "0",
+        "11-09-2023": "1",
+        "18-09-2023": "1",
+        "12-09-2023": "2",
+        "19-09-2023": "2",
+        "13-09-2023": "3",
+        "20-09-2023": "3",
+        "14-09-2023": "4",
+        "21-09-2023": "4",
+        "15-09-2023": "5",
+        "22-09-2023": "5",
+        "16-09-2023": "6",
+        "23-09-2023": "6"
+    },
+    "items": {
+        "bf": [
+            "BREAKFAST 1",
+            "BREAKFAST 2",
+            "SAMBAR OR KETCHUP",
+            "CURD",
+            "CHUTNEY",
+            "EGG",
+            "JUICE/MILK SHAKE"
+        ],
+        "ln": [
+            "INDIAN BREAD",
+            "VEG GRAVY",
+            "VEG DRY/ STARTERS",
+            "FLAVORED RICE",
+            "PLAIN RICE",
+            "DAL",
+            "SAMBAR OR RASAM",
+            "CURD BASE",
+            "SALAD/SPROUTS",
+            "SWEETS"
+        ],
+        "sk": [
+            "SNACKS",
+            "ACCOMPANIMENTS",
+            "TEA/COFFEE/MILK"
+        ],
+        "dn": [
+            "INDIAN BREAD",
+            "VEG GRAVY",
+            "VEG DRY/ STARTERS",
+            "FLAVORED RICE",
+            "PLAIN RICE",
+            "DAL",
+            "SAMBAR OR RASAM",
+            "CURD BASE",
+            "SALAD/SPROUTS",
+            "SWEETS",
+            "PANEER",
+            "CHICKEN"
+        ]
+    }
+}

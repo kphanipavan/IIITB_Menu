@@ -16,20 +16,33 @@ class MenuListView extends StatelessWidget {
         // print(data.date);
         // print(data.mainData["dates"][data.date]);
         String menuIndex = data.mainData["dates"][data.date];
-        return ListView.builder(
-            itemCount: data.mainData["items"][this.menuType].length,
-            itemBuilder: (BuildContext context, int index) {
-              String itemType = data.mainData["items"][this.menuType][index];
-              String itemName = data.mainData["menu"][menuIndex][this.menuType]
-                  [itemType]["name"];
-              String itemVeggness = data.mainData["menu"][menuIndex]
-                  [this.menuType][itemType]["eggy"];
-              return ItemCard(
-                itemName: itemName,
-                itemType: itemType,
-                vegClass: itemVeggness,
-              );
-            });
+        return Column(
+          children: [
+            Container(
+              // height: 10,
+              child: Text(data.mainData["menu"][menuIndex]
+                      ["${this.menuType}Timings"]
+                  .toString()),
+            ),
+            Expanded(
+              child: ListView.builder(
+                  itemCount: data.mainData["items"][this.menuType].length,
+                  itemBuilder: (BuildContext context, int index) {
+                    String itemType =
+                        data.mainData["items"][this.menuType][index];
+                    String itemName = data.mainData["menu"][menuIndex]
+                        [this.menuType][itemType]["name"];
+                    String itemVeggness = data.mainData["menu"][menuIndex]
+                        [this.menuType][itemType]["eggy"];
+                    return ItemCard(
+                      itemName: itemName,
+                      itemType: itemType,
+                      vegClass: itemVeggness,
+                    );
+                  }),
+            ),
+          ],
+        );
       },
     );
   }

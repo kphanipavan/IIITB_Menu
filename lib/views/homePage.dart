@@ -52,13 +52,16 @@ class HomePage extends StatelessWidget {
                       onTap: () {
                         data.decrDate();
                       },
-                      child: const Icon(
-                        Icons.arrow_left_rounded,
-                        size: 30,
+                      child: const Padding(
+                        padding: EdgeInsets.symmetric(horizontal: 10),
+                        child: Icon(
+                          Icons.keyboard_arrow_left_rounded,
+                          size: 30,
+                        ),
                       )),
                   InkWell(
                     splashFactory: NoSplash.splashFactory,
-                    onLongPress: () {
+                    onTap: () {
                       showDatePicker(
                               context: context,
                               initialDate: data.currentDate,
@@ -70,13 +73,11 @@ class HomePage extends StatelessWidget {
                         data.setDateToADay(value ?? data.currentDate);
                       });
                     },
-                    onTap: () {
+                    onLongPress: () {
                       data.setDateToADay();
                     },
                     child: Center(
-                      child: Text(
-                        data.date,
-                      ),
+                      child: Text(data.date),
                     ),
                   ),
                   InkWell(
@@ -84,9 +85,12 @@ class HomePage extends StatelessWidget {
                       onTap: () {
                         data.incrDate();
                       },
-                      child: const Icon(
-                        Icons.arrow_right_rounded,
-                        size: 30,
+                      child: const Padding(
+                        padding: EdgeInsets.symmetric(horizontal: 10),
+                        child: Icon(
+                          Icons.keyboard_arrow_right_rounded,
+                          size: 30,
+                        ),
                       )),
                 ],
               ),
