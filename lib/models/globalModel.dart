@@ -10,7 +10,7 @@ import "package:http/http.dart";
 import "package:intl/intl.dart";
 import "package:shared_preferences/shared_preferences.dart";
 // import "package:dio/dio.dart";
-import "package:iiitb_menu/data.dart" as menuData;
+// import "package:iiitb_menu/data.dart" as menuData;
 
 class GlobalModel extends ChangeNotifier {
   late Map<dynamic, dynamic> mainData;
@@ -113,7 +113,7 @@ class GlobalModel extends ChangeNotifier {
       // fileLink.writeAsStringSync(rawData, mode: FileMode.write);
       prefs.setString(storageKey, rawData);
     }
-    returnData = jsonDecode(menuData.data);
+    // returnData = jsonDecode(menuData.data);
     return returnData;
   }
 
