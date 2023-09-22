@@ -44,6 +44,17 @@ if __name__ == "__main__":
         # print(finalData, rowNames, breaksLoc)
 
         currentMenu = {"bf": {}, "ln": {}, "sk": {}, "dn": {}}
+        if eachDay in ["SUNDAY", "SATURDAY"]:
+            currentMenu["bfTimings"] = {"start": "07:45AM", "end": "10:00AM"}
+            currentMenu["lnTimings"] = {"start": "12:45PM", "end": "02:30PM"}
+            currentMenu["skTimings"] = {"start": "04:30PM", "end": "05:45PM"}
+            currentMenu["dnTimings"] = {"start": "07:30PM", "end": "09:30PM"}
+        else:
+            currentMenu["bfTimings"] = {"start": "07:30AM", "end": "09:45AM"}
+            currentMenu["lnTimings"] = {"start": "12:30PM", "end": "02:15PM"}
+            currentMenu["skTimings"] = {"start": "04:30PM", "end": "05:45PM"}
+            currentMenu["dnTimings"] = {"start": "07:30PM", "end": "09:30PM"}
+
         for i, ses in enumerate(["BREAKFAST", "LUNCH", "SNACKS", "DINNER"]):
             # print(ses)
             for item in rowNames[breaksLoc[i] + 1 : breaksLoc[i + 1]]:
