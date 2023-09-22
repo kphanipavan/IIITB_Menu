@@ -16,7 +16,7 @@ const Center noMenuWidget = Center(
         style: TextStyle(fontSize: 20, fontStyle: FontStyle.italic)));
 
 const String hashLink =
-    "http://github.com/kphanipavan/IIITB_Menu/releases/download/latest/out.txt";
+    "https://raw.githubusercontent.com/kphanipavan/IIITB_Menu/menu_scraper/out.txt";
 
 const String dataLink =
-    "http://github.com/kphanipavan/IIITB_Menu/releases/download/latest/out.json";
+    "https://raw.githubusercontent.com/kphanipavan/IIITB_Menu/menu_scraper/out.json";
