@@ -65,6 +65,8 @@ if __name__ == "__main__":
                 )
                 if isinstance(part, float) and (part is numpy.nan):
                     part = "MT"
+                if part.strip()=="":
+                    part = "MT"
 
                 # print(f"{item}: {part}")
                 if "egg" in part.strip().lower() or "omlet" in part.strip().lower():
