@@ -3,6 +3,7 @@
 import "package:flutter/material.dart";
 import "package:iiitb_menu/constants.dart";
 import "package:iiitb_menu/models/globalModel.dart";
+import "package:iiitb_menu/models/initialPageIndexFunction.dart";
 import "package:iiitb_menu/views/menuListView.dart";
 import "package:provider/provider.dart";
 
@@ -13,6 +14,7 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return SafeArea(
       child: DefaultTabController(
+        initialIndex: getInitialPageIndex(),
         length: 4,
         child: Builder(builder: (context) {
           TabController cont = DefaultTabController.of(context);
@@ -20,7 +22,6 @@ class HomePage extends StatelessWidget {
             Provider.of<GlobalModel>(context, listen: false)
                 .setMenuTime(cont.index);
           });
-          // }
           return Consumer<GlobalModel>(
               builder: (BuildContext context, GlobalModel data, Widget? child) {
             return Scaffold(
