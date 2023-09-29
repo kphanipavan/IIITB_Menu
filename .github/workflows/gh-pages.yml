@@ -71,7 +71,7 @@ jobs:
       run: flutter build web --base-href "/IIITB_Menu/" --web-renderer canvaskit
 
     - name: Build Android Release
-      run: flutter build apk --split-per-abi --release --no-track-widget-creation --analyze-size --target-platform "android-arm64
+      run: flutter build apk --split-per-abi --release --no-track-widget-creation --analyze-size --target-platform "android-arm64"
     
     - name: Create Release
       uses: marvinpinto/action-automatic-releases@v1.2.1
