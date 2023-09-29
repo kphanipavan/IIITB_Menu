@@ -47,8 +47,8 @@ class ItemCard extends StatelessWidget {
       ),
       child: Row(mainAxisAlignment: MainAxisAlignment.spaceBetween, children: [
         Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
-          Text(this.itemName, style: const TextStyle(fontSize: 25)),
-          Text(this.itemType, style: const TextStyle(fontSize: 15)),
+          SelectableText(this.itemName, style: const TextStyle(fontSize: 25)),
+          SelectableText(this.itemType, style: const TextStyle(fontSize: 15)),
         ]),
         vegClassIcon,
       ]),
