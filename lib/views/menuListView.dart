@@ -14,8 +14,6 @@ class MenuListView extends StatelessWidget {
   Widget build(BuildContext context) {
     return Consumer<GlobalModel>(
       builder: (BuildContext context, GlobalModel data, Widget? child) {
-        // print(data.date);
-        // print(data.mainData["dates"][data.date]);
         DataStatus dataStatus = data.menuAvailable;
         if (dataStatus == DataStatus.Loading) {
           return const Center(
