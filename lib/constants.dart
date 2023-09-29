@@ -20,3 +20,5 @@ const String hashLink =
 
 const String dataLink =
     "https://raw.githubusercontent.com/kphanipavan/IIITB_Menu/menu_scraper/out.json";
+
+enum DataStatus { Loaded, Loading, NotFound }

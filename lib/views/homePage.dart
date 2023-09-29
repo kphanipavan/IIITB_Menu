@@ -96,7 +96,7 @@ class HomePage extends StatelessWidget {
               ),
               body: TabBarView(
                   controller: cont,
-                  children: data.menuAvailable
+                  children: data.menuAvailable != DataStatus.NotFound
                       ? const [
                           MenuListView(menuType: "bf"),
                           MenuListView(menuType: "ln"),

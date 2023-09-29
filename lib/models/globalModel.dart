@@ -16,14 +16,14 @@ class GlobalModel extends ChangeNotifier {
   late Map<dynamic, dynamic> mainData;
   DateTime currentDate = DateTime.now();
   String menuTime = breakfast;
-  bool menuAvailable = false;
+  DataStatus menuAvailable = DataStatus.Loading;
 
   GlobalModel() {
     print("In constructor");
     GlobalModel.loadData().then((value) {
       mainData = value;
       if (this.mainData["dates"].keys.contains(this.date)) {
-        this.menuAvailable = true;
+        this.menuAvailable = DataStatus.Loaded;
       }
       // print(mainData);
       notifyListeners();
@@ -157,9 +157,9 @@ class GlobalModel extends ChangeNotifier {
 
   void isMenuAvailable() {
     if (this.mainData["dates"].keys.contains(this.date)) {
-      this.menuAvailable = true;
+      this.menuAvailable = DataStatus.Loaded;
     } else {
-      this.menuAvailable = false;
+      this.menuAvailable = DataStatus.NotFound;
     }
   }
 
