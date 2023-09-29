@@ -1,4 +1,4 @@
-name: Build & Deploy to GitHub Pages
+name: Build Apps & Deploy to GitHub Pages
 
 on:
   push:
@@ -6,6 +6,7 @@ on:
       - master
     paths:
       - "lib/**"
+      - "android/**"
       - "web/**"
       - "pubspec.yaml"
       - ".github/workflows/**"
@@ -15,6 +16,7 @@ on:
       - master
     paths:
       - "lib/**"
+      - "android/**"
       - "web/**"
       - "pubspec.yaml"
       - ".github/workflows/**"
@@ -65,20 +67,21 @@ jobs:
     # - name: Test project
     #   run: flutter test
     
-    - name: Build release project
+    - name: Build Web Release
       run: flutter build web --base-href "/IIITB_Menu/" --web-renderer canvaskit
 
-    # - name: Create Release
-    #   uses: marvinpinto/action-automatic-releases@v1.2.1
-    #   with:
-    #     repo_token: "${{ secrets.GITHUB_TOKEN }}"
-    #     automatic_release_tag: "latest"
-    #     prerelease: false
-    #     draft: false
-    #     title: "Bi-Weekly Release"
-    #     files: |
-    #       ./scripts/out.txt
-    #       ./scripts/out.json
+    - name: Build Android Release
+      run: flutter build apk --split-per-abi --release --no-track-widget-creation --analyze-size --target-platform "android-arm64
+    
+    - name: Create Release
+      uses: marvinpinto/action-automatic-releases@v1.2.1
+      with:
+        repo_token: "${{ secrets.GITHUB_TOKEN }}"
+        automatic_release_tag: "latest"
+        prerelease: true
+        draft: false
+        title: "Git Build"
+        files: build/app/outputs/flutter-apk/app-arm64-v8a-release.apk
 
     - name: Upload production-ready build files
       uses: actions/upload-artifact@v3.1.2
