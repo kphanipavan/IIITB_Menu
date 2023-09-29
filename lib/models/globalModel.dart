@@ -2,15 +2,12 @@
 
 import "dart:convert";
 import "package:iiitb_menu/constants.dart";
-// import "package:path_provider/path_provider.dart";
 import 'dart:io';
 import "package:flutter/material.dart";
 import "package:crypto/crypto.dart";
 import "package:http/http.dart";
 import "package:intl/intl.dart";
 import "package:shared_preferences/shared_preferences.dart";
-// import "package:dio/dio.dart";
-// import "package:iiitb_menu/data.dart" as menuData;
 
 class GlobalModel extends ChangeNotifier {
   late Map<dynamic, dynamic> mainData;
@@ -25,7 +22,6 @@ class GlobalModel extends ChangeNotifier {
       if (this.mainData["dates"].keys.contains(this.date)) {
         this.menuAvailable = DataStatus.Loaded;
       }
-      // print(mainData);
       notifyListeners();
     });
   }
@@ -33,14 +29,6 @@ class GlobalModel extends ChangeNotifier {
   static Future<String> getLatestHash() async {
     try {
       Response hashRequest = await get(Uri.parse(hashLink));
-      // Response ret = await Dio().request(hashLink,
-      //     options: Options(method: 'GET', headers: {
-      //       HttpHeaders.acceptHeader: "text/plain",
-      //       "Access-Control-Allow-Origin": "*",
-      //       "Access-Control-Allow-Methods": "GET",
-      //       "Access-Control-Allow-Headers": "*",
-      //       "Access-Control-Max-Age": "1000"
-      //     }));
       if (hashRequest.statusCode == 200) {
         return hashRequest.body.replaceAll("\n", "");
       } else {
@@ -55,11 +43,6 @@ class GlobalModel extends ChangeNotifier {
 
   static Future<String> getLatestData() async {
     try {
-      // Response ret = await Dio().request(dataLink,
-      //     options: Options(method: "GET", headers: {
-      //       HttpHeaders.acceptHeader: "text/plain",
-      //       "Access-Control-Allow-Origin": "*"
-      //     }));
       Response dataRequest = await get(Uri.parse(dataLink));
       return dataRequest.body;
     } on SocketException catch (exce) {
@@ -71,32 +54,23 @@ class GlobalModel extends ChangeNotifier {
 
   static Future<Map> loadData() async {
     late Map returnData;
-    // Directory appDir = await getApplicationDocumentsDirectory();
     final SharedPreferences prefs = await SharedPreferences.getInstance();
     String? rawData;
     String rawHash;
-    // String fileName = "${appDir.path}/menu.json";
-    // print(fileName);
-    // File fileLink = File(fileName);
     rawData = prefs.getString(storageKey);
     print(rawData);
     if (rawData != null) {
       print("data found");
-      // rawData = localStor.getItem("fullMenu");
       rawHash = md5.convert(utf8.encode(rawData)).toString();
       print("Hash of Raw Data:");
       print(rawHash);
-      // print("RawData: ");
-      // print(rawData);
       returnData = jsonDecode(rawData);
-      // menuAvailable = true;
     } else {
       print("Data Not Found");
       returnData = {};
       rawHash = "";
     }
     String remoteHash = await GlobalModel.getLatestHash();
-    // String remoteHash = "asd";
     print("Remote Hash: $remoteHash");
     if (remoteHash == "") {
     } else if (remoteHash == rawHash) {
@@ -108,12 +82,9 @@ class GlobalModel extends ChangeNotifier {
       if (rawData == "") {
         return {};
       }
-      // print(rawData);
       returnData = jsonDecode(rawData);
-      // fileLink.writeAsStringSync(rawData, mode: FileMode.write);
       prefs.setString(storageKey, rawData);
     }
-    // returnData = jsonDecode(menuData.data);
     return returnData;
   }
 

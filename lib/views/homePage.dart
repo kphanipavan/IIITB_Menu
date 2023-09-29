@@ -4,8 +4,6 @@ import "package:flutter/material.dart";
 import "package:iiitb_menu/constants.dart";
 import "package:iiitb_menu/models/globalModel.dart";
 import "package:iiitb_menu/views/menuListView.dart";
-// import "package:iiitb_menu/widgets/itemCard.dart";
-// import "package:intl/intl.dart";
 import "package:provider/provider.dart";
 
 class HomePage extends StatelessWidget {
@@ -18,11 +16,7 @@ class HomePage extends StatelessWidget {
         length: 4,
         child: Builder(builder: (context) {
           TabController cont = DefaultTabController.of(context);
-          // print("Rebuilt");
-          // if (!cont.hasListeners) {
-          // print("Adding callback");
           cont.addListener(() {
-            // print("Called Callback");
             Provider.of<GlobalModel>(context, listen: false)
                 .setMenuTime(cont.index);
           });
