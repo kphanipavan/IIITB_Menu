@@ -1,42 +1,42 @@
- , .1,MONDAY,TUESDAY,WEDNESDAY,THURSDAY,FRIDAY,SATURDAY,SUNDAY,Unnamed: 9,Unnamed: 10
- , ,2023-11-20 00:00:00,2023-11-21 00:00:00,2023-11-22 00:00:00,2023-11-23 00:00:00,2023-11-24 00:00:00,2023-11-25 00:00:00,2023-11-26 00:00:00,,
- , ,2023-11-27 00:00:00,2023-11-28 00:00:00,2023-11-29 00:00:00,2023-11-30 00:00:00,2023-12-01 00:00:00,2023-12-02 00:00:00,2023-12-03 00:00:00,,
-BREAKFAST,,,,,,,,,,
- ,BREAKFAST 1,MIX VEG PARATHA,Uttapam,Bedmi puri,Podi Masala dosa,Aloo Onion Paratha,idli,Aloo sandwich,,
- ,BREAKFAST 2,Sabudana upma,Poha,Kara bhat,Banana,Cut fruit,Uddin vada,Upma,,
- ,SAMBAR OR KETCHUP, ,sambar, ,veg sambar,,veg sambar, ,,
- ,CURD,curd, ,Aloo ki Subzi, ,PEANUT GARLIC CHUTNEY, , ,,
- ,CHUTNEY,Tomato garlic chutney,Coconut Garlic chutney,Green Mint Chutney,coconut chutney,Curd,Coconut chutney ,Green chutney,,
- ,EGG,Boiled egg,,Egg bhurji,,Omlette, ,Ketchup,,
- ,JUICE/MILK SHAKE, ,, , ,, , ,,
-LUNCH,,,,,,,,,,
-LUNCH,INDIAN BREAD,Dal CHAPATI,METHI CHAPATI,Pudina chapati,Plain Poori,Tawa Paratha,Chapati,BHATURE,,
- ,VEG GRAVY,Kadai Vegetable,Gatta Masala,Bhindi Tomato Gravy,Aloo Bhaji(Bedmi puri style),Gutti Venkaya,Black Chana Masala,PINDI CHOLE,,
- ,VEG DRY/ STARTERS,Banana Poriyal,Kadai Vegetables Dry,Stuffed Capsicum,Kaddu ki sabji,Mix Veg Home Style,Egg Curry/Soyabean Curry,HARA BHARA KEBAB,,
- ,FLAVORED RICE,Curd rice,Puliogre,veg pulao,Bisibilla Bhat,Lemon Rice,Pongal,VEG PULAO,,
- ,PLAIN RICE,Plain Rice,Plain Rice,Plain Rice,Plain Rice,Plain Rice,Plain Rice,Plain Rice,,
- ,DAL,Dal Tadka,hara moong daal,hara moong daal,yellow urad daal,Dal Tadka,Toor daal,DAL PANCHMEL,,
- ,SAMBAR OR RASAM,Vegetable Sambhar,Pepper Rasam,Pumpkin Smabhar,Coriander jeera Rasam,Rasam,Carrot sambhar,Garlic rasam,,
- ,CURD BASE,Lemonade,Curd,Burani raita,Curd,curd,Buttermilk,Sweet Lassi,,
- ,SALAD/SPROUTS,Green Salad,Sprouts Salad,Chickpea Salad,Black Chana salad w vegatable,Colesaw Salad,VEG CORN SALAD,ONION\CHILLI\LEMON,,
- ,SWEETS,Kalakand,Strawberry Milkshake,Chocolate Pastry,Ice Cream,Block  Halwa, Icecream,GulabJamun,,
-SNACKS,,,,,,,,,,
-SNACKS,SNACKS,Bread Pakoda,Dahi Vada,Ponnugullu,Pav Bhaji,Tomato+Cucumber+Onion chutney sandwich,Samosa,Vada pav,,
- ,ACCOMPANIMENTS,Tomato Sauce,,Coconut Chutney,Lemon+Onion,Ketchup,Imly Chutney,Lemonade,,
- ,TEA/COFFEE/MILK,TEA/COFFEE/MILK,TEA/COFFEE/MILK,TEA/COFFEE/MILK,TEA/COFFEE/MILK,TEA/COFFEE/MILK,TEA/COFFEE/MILK,TEA/COFFEE/MILK,,
-DINNER,,,,,,,,,,
-DINNER,INDIAN BREAD,Mysore  Dosa,Ajwain chapati,Tawa paratha,Ajwain Chapati,TAWA PARATHA,AJWAIN CHAPATI,METHI CHAPATI,,
- ,VEG GRAVY,Shahi Subzi,Home made aloo ki sabji, ,Aloo Gobi Mutter (home style),Aloo bhindi,Sev Tomato Curry, ,,
- ,VEG DRY/ STARTERS,Veg Ball Manchurian Gravy,Mix veg curry home style,Honey Chili Potato,minnestroni soup,Noodles+Schezwan sauce,French Fries,Hot and Sour Soup,,
- ,FLAVORED RICE,Burnt Garlic Fried Rice,Achari dum biryani,Jeera Mutter Pulao,Veg pulao, ,Live Red Pasta,MEXICAN RICE,,
- ,PLAIN RICE,Plain Rice,Plain Rice,Plain Rice,Rice,PLAIN RICE,PLAIN RICE,PLAIN RICE,,
- ,DAL,Tomato + Coconut Chutney,Rajma Masala,Dal Makhani,Dal Tadka,Masoor daal,LOBIA MASALA,GREEN MOONG DAL,,
- ,SAMBAR OR RASAM,Sambhar,onion sambar,Drumstick SAMBAR,Methi leaves sambar,vendakkai Sambar,Veg Rasam,Tamarind sambhar,,
- ,CURD BASE, ,Boondi raita,Curd,CURD,Raita,Curd,Curd,,
- ,SALAD/SPROUTS,Sprout Salad,Israeli salad,Green Salad,Pasta Salad,Green salad,Punjabi Salad,Green Salad,,
- ,SWEETS,Badushah\ hot chocolate,Cup Cake,Badam Milk,Suji Halwa,Milk Peda White,Shrikhand,Fruit Custard,,
- ,PANEER, , ,Paneer Hyderabadi, ,Kadhai Paneer/Veg biryani, ,Punjabi Paneer,, 
- ,CHICKEN, , ,Chicken Hyderabadi,,Chicken Biryani, ,Punjabi Chicken,,
-,,,,,,,,,,
-,"Daily breakfast will have bread (white, brown), butter, jam, black coffee, milk, tea",,,,,,,,,
-,"Lunch and dinner will have papad/fryums, pickle, saunf, sugar and salt",,,,,,,,,
+Unnamed: 0,Unnamed: 1,MONDAY,TUESDAY,WEDNESDAY,THURSDAY,FRIDAY,SATURDAY,SUNDAY
+ , ,2023-11-20 00:00:00,2023-11-21 00:00:00,2023-11-22 00:00:00,2023-11-23 00:00:00,2023-11-24 00:00:00,2023-11-25 00:00:00,2023-11-26 00:00:00
+ , ,2023-11-27 00:00:00,2023-11-28 00:00:00,2023-11-29 00:00:00,2023-11-30 00:00:00,2023-12-01 00:00:00,2023-12-02 00:00:00,2023-12-03 00:00:00
+BREAKFAST,,,,,,,,
+ ,BREAKFAST 1,MIX VEG PARATHA,Uttapam,Bedmi puri,Podi Masala dosa,Aloo Onion Paratha,idli,Aloo sandwich
+ ,BREAKFAST 2,Sabudana upma,Poha,Kara bhat,Banana,Cut fruit,Uddin vada,Upma
+ ,SAMBAR OR KETCHUP, ,sambar, ,veg sambar,,veg sambar, 
+ ,CURD,curd, ,Aloo ki Subzi, ,PEANUT GARLIC CHUTNEY, , 
+ ,CHUTNEY,Tomato garlic chutney,Coconut Garlic chutney,Green Mint Chutney,coconut chutney,Curd,Coconut chutney ,Green chutney
+ ,EGG,Boiled egg,,Egg bhurji,,Omlette, ,Ketchup
+ ,JUICE/MILK SHAKE, ,, , ,, , 
+LUNCH,,,,,,,,
+LUNCH,INDIAN BREAD,Dal CHAPATI,METHI CHAPATI,Pudina chapati,Plain Poori,Tawa Paratha,Chapati,BHATURE
+ ,VEG GRAVY,Kadai Vegetable,Gatta Masala,Bhindi Tomato Gravy,Aloo Bhaji(Bedmi puri style),Gutti Venkaya,Black Chana Masala,PINDI CHOLE
+ ,VEG DRY/ STARTERS,Banana Poriyal,Kadai Vegetables Dry,Stuffed Capsicum,Kaddu ki sabji,Mix Veg Home Style,Egg Curry/Soyabean Curry,HARA BHARA KEBAB
+ ,FLAVORED RICE,Curd rice,Puliogre,veg pulao,Bisibilla Bhat,Lemon Rice,Pongal,VEG PULAO
+ ,PLAIN RICE,Plain Rice,Plain Rice,Plain Rice,Plain Rice,Plain Rice,Plain Rice,Plain Rice
+ ,DAL,Dal Tadka,hara moong daal,hara moong daal,yellow urad daal,Dal Tadka,Toor daal,DAL PANCHMEL
+ ,SAMBAR OR RASAM,Vegetable Sambhar,Pepper Rasam,Pumpkin Smabhar,Coriander jeera Rasam,Rasam,Carrot sambhar,Garlic rasam
+ ,CURD BASE,Lemonade,Curd,Burani raita,Curd,curd,Buttermilk,Sweet Lassi
+ ,SALAD/SPROUTS,Green Salad,Sprouts Salad,Chickpea Salad,Black Chana salad w vegatable,Colesaw Salad,VEG CORN SALAD,ONION\CHILLI\LEMON
+ ,SWEETS,Kalakand,Strawberry Milkshake,Chocolate Pastry,Ice Cream,Block  Halwa, Icecream,GulabJamun
+SNACKS,,,,,,,,
+SNACKS,SNACKS,Bread Pakoda,Dahi Vada,Ponnugullu,Pav Bhaji,Tomato+Cucumber+Onion chutney sandwich,Samosa,Vada pav
+ ,ACCOMPANIMENTS,Tomato Sauce,,Coconut Chutney,Lemon+Onion,Ketchup,Imly Chutney,Lemonade
+ ,TEA/COFFEE/MILK,TEA/COFFEE/MILK,TEA/COFFEE/MILK,TEA/COFFEE/MILK,TEA/COFFEE/MILK,TEA/COFFEE/MILK,TEA/COFFEE/MILK,TEA/COFFEE/MILK
+DINNER,,,,,,,,
+DINNER,INDIAN BREAD,Mysore  Dosa,Ajwain chapati,Tawa paratha,Ajwain Chapati,TAWA PARATHA,AJWAIN CHAPATI,METHI CHAPATI
+ ,VEG GRAVY,Shahi Subzi,Home made aloo ki sabji, ,Aloo Gobi Mutter (home style),Aloo bhindi,Sev Tomato Curry, 
+ ,VEG DRY/ STARTERS,Veg Ball Manchurian Gravy,Mix veg curry home style,Honey Chili Potato,minnestroni soup,Noodles+Schezwan sauce,French Fries,Hot and Sour Soup
+ ,FLAVORED RICE,Burnt Garlic Fried Rice,Achari dum biryani,Jeera Mutter Pulao,Veg pulao, ,Live Red Pasta,MEXICAN RICE
+ ,PLAIN RICE,Plain Rice,Plain Rice,Plain Rice,Rice,PLAIN RICE,PLAIN RICE,PLAIN RICE
+ ,DAL,Tomato + Coconut Chutney,Rajma Masala,Dal Makhani,Dal Tadka,Masoor daal,LOBIA MASALA,GREEN MOONG DAL
+ ,SAMBAR OR RASAM,Sambhar,onion sambar,Drumstick SAMBAR,Methi leaves sambar,vendakkai Sambar,Veg Rasam,Tamarind sambhar
+ ,CURD BASE, ,Boondi raita,Curd,CURD,Raita,Curd,Curd
+ ,SALAD/SPROUTS,Sprout Salad,Israeli salad,Green Salad,Pasta Salad,Green salad,Punjabi Salad,Green Salad
+ ,SWEETS,Badushah\ hot chocolate,Cup Cake,Badam Milk,Suji Halwa,Milk Peda White,Shrikhand,Fruit Custard
+ ,PANEER, , ,Paneer Hyderabadi, ,Kadhai Paneer/Veg biryani, ,Punjabi Paneer
+ ,CHICKEN, , ,Chicken Hyderabadi,,Chicken Biryani, ,Punjabi Chicken
+,,,,,,,,
+,"Daily breakfast will have bread (white, brown), butter, jam, black coffee, milk, tea",,,,,,,
+,"Lunch and dinner will have papad/fryums, pickle, saunf, sugar and salt",,,,,,,
