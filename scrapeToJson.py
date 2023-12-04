@@ -1,5 +1,6 @@
 import pandas
 import numpy
+import numpy
 import datetime
 import json
 import hashlib
@@ -15,12 +16,15 @@ ALLDAYS = [
 ]
 
 if __name__ == "__main__":
+    #! TODO: Find a better XLSX import process. XLS IS ASS
     #    mainData = pandas.read_excel("menu.ods")
     mainData = pandas.read_csv("menu.csv")
+    mainData = mainData.drop("Unnamed: 9", axis="columns").drop("Unnamed: 10", axis="columns").drop(" ", axis="columns")
+    mainData[" .1"] = mainData[" .1"].replace("\xa0", numpy.nan)
     breaksLoc = numpy.where(
-        pandas.isna(mainData.drop(" ", axis="columns")).all(1).to_numpy()
+        pandas.isna(mainData[" .1"]).to_numpy()
         == True
-    )[0]
+    )[0][2:]
     print(breaksLoc)
     rowNames = mainData[" .1"].to_numpy()
     # Item names: x[x["Unnamed: 1"]=="BREAKFAST 1"]["MONDAY"].item()
