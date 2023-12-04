@@ -18,16 +18,16 @@ if __name__ == "__main__":
     #    mainData = pandas.read_excel("menu.ods")
     mainData = pandas.read_csv("menu.csv")
     breaksLoc = numpy.where(
-        pandas.isna(mainData.drop("Unnamed: 0", axis="columns")).all(1).to_numpy()
+        pandas.isna(mainData.drop(" ", axis="columns")).all(1).to_numpy()
         == True
     )[0]
     print(breaksLoc)
-    rowNames = mainData["Unnamed: 1"].to_numpy()
+    rowNames = mainData[" .1"].to_numpy()
     # Item names: x[x["Unnamed: 1"]=="BREAKFAST 1"]["MONDAY"].item()
     # print(breaksLoc)
     finalData = {"menu": {}, "dates": {}, "items": {}}
     for sesNum, ses in enumerate(["bf", "ln", "sk", "dn"]):
-        finalData["items"][ses] = mainData["Unnamed: 1"].to_list()[
+        finalData["items"][ses] = mainData[" .1"].to_list()[
             breaksLoc[sesNum] + 1 : breaksLoc[sesNum + 1]
         ]
     for dayNumber, eachDay in enumerate(ALLDAYS):
@@ -60,7 +60,7 @@ if __name__ == "__main__":
             for item in rowNames[breaksLoc[i] + 1 : breaksLoc[i + 1]]:
                 part = (
                     mainData.loc[breaksLoc[i] + 1 : breaksLoc[i + 1]]
-                    .loc[mainData["Unnamed: 1"] == item][eachDay]
+                    .loc[mainData[" .1"] == item][eachDay]
                     .item()
                 )
                 if isinstance(part, float) and (part is numpy.nan):
