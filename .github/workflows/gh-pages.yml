@@ -22,6 +22,9 @@ on:
       - ".github/workflows/**"
       - "scripts/**"
 
+env:
+  HREFREPLACE: "IIITB_Menu"
+
 jobs:
   build:
     name: Build
@@ -68,11 +71,18 @@ jobs:
     #   run: flutter test
     
     - name: Build Web Release
-      run: flutter build web --base-href "/IIITB_Menu/" --web-renderer canvaskit
+      run: flutter build web --base-href "/$HREFREPLACE/" --web-renderer canvaskit --no-web-resources-cdn
 
     - name: Build Android Release
       run: flutter build apk --split-per-abi --release --no-track-widget-creation --analyze-size --target-platform "android-arm64"
     
+    - name: Fix PWA Offline Support 
+      run: |
+        cp scripts/fixOfflinePWA.sh .
+        chmod +x fixOfflinePWA.sh
+        ./fixOfflinePWA.sh
+        cat ./build/web/flutter_service_worker.js
+
     - name: Create Release
       uses: marvinpinto/action-automatic-releases@v1.2.1
       with:
@@ -89,21 +99,21 @@ jobs:
         name: production-files
         path: ./build/web
   
-  deploy:
-    name: Deploy
-    needs: build
-    runs-on: ubuntu-latest
-    if: github.ref == 'refs/heads/master'
+  # deploy:
+  #   name: Deploy
+  #   needs: build
+  #   runs-on: ubuntu-latest
+  #   if: github.ref == 'refs/heads/master'
     
-    steps:
-    - name: Download artifact
-      uses: actions/download-artifact@v2.1.1
-      with:
-        name: production-files
-        path: ./build
+  #   steps:
+  #   - name: Download artifact
+  #     uses: actions/download-artifact@v2.1.1
+  #     with:
+  #       name: production-files
+  #       path: ./build
 
-    - name: Deploy to gh-pages
-      uses: peaceiris/actions-gh-pages@v3.9.3
-      with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: ./build
+  #   - name: Deploy to gh-pages
+  #     uses: peaceiris/actions-gh-pages@v3.9.3
+  #     with:
+  #       github_token: ${{ secrets.GITHUB_TOKEN }}
+  #       publish_dir: ./build

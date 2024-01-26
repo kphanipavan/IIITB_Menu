@@ -1,0 +1,53 @@
+--- menu/build/web/flutter_service_worker.js	2024-01-26 14:59:42.195084752 +0530
++++ in/flutter_service_worker.pat.js	2024-01-26 15:07:37.253097455 +0530
+@@ -2,6 +2,7 @@
+ const MANIFEST = 'flutter-app-manifest';
+ const TEMP = 'flutter-temp-cache';
+ const CACHE_NAME = 'flutter-app-cache';
++const BaseHREF = 'HREFREPLACE';
+ 
+ const RESOURCES = {
+   "version.json": "d7fbd41faace5a7a02bb5da13e6049ec",
+@@ -37,10 +38,7 @@
+ };
+ // The application shell files that are downloaded before a service worker can
+ // start.
+-const CORE = ["main.dart.js",
+-"index.html",
+-"assets/AssetManifest.json",
+-"assets/FontManifest.json"];
++const CORE = Object.keys(RESOURCES);
+ 
+ // During install, the TEMP cache is populated with the application shell files.
+ self.addEventListener("install", (event) =>
+@@ -139,13 +137,30 @@
+   {
+     key = key.split('?v=')[0];
+   }
+-  if (event.request.url == origin || event.request.url.startsWith(origin + '/#') || key == '') {
++  if (key.endsWith("chromium/canvaskit.js"))
++  {
++    key = "canvaskit/chromium/canvaskit.js"
++  }
++  if (key.endsWith("chromium/canvaskit.wasm"))
++  {
++    key = "canvaskit/chromium/canvaskit.wasm"
++  }
++  if (key.endsWith("canvaskit.js"))
++  {
++    key = "canvaskit/canvaskit.js"
++  }
++  if (key.endsWith("canvaskit.wasm"))
++  {
++    key = "canvaskit/canvaskit.wasm"
++  }
++  if (event.request.url == origin || event.request.url.startsWith(origin + '/#') || key == '' || key == BaseHREF) {
+     key = '/';
+   }
+   // If the URL is not the RESOURCE list then return to signal that the
+   // browser should take over.
+-  if (!RESOURCES[key]) {
++  var resKey = key.replace(BaseHREF, "");
++  if (!RESOURCES[resKey]) {
+     return;
+   }
