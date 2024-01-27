@@ -99,21 +99,21 @@ jobs:
         name: production-files
         path: ./build/web
   
-  # deploy:
-  #   name: Deploy
-  #   needs: build
-  #   runs-on: ubuntu-latest
-  #   if: github.ref == 'refs/heads/master'
+  deploy:
+    name: Deploy
+    needs: build
+    runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/master'
     
-  #   steps:
-  #   - name: Download artifact
-  #     uses: actions/download-artifact@v2.1.1
-  #     with:
-  #       name: production-files
-  #       path: ./build
+    steps:
+    - name: Download artifact
+      uses: actions/download-artifact@v2.1.1
+      with:
+        name: production-files
+        path: ./build
 
-  #   - name: Deploy to gh-pages
-  #     uses: peaceiris/actions-gh-pages@v3.9.3
-  #     with:
-  #       github_token: ${{ secrets.GITHUB_TOKEN }}
-  #       publish_dir: ./build
+    - name: Deploy to gh-pages
+      uses: peaceiris/actions-gh-pages@v3.9.3
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./build
