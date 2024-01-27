@@ -34,7 +34,7 @@ class GlobalModel extends ChangeNotifier {
       } else {
         return "";
       }
-    } on SocketException catch (exce) {
+    } on (ClientException, SocketException, HttpException) catch (exce) {
       print("Unable to download hash");
       print(exce);
       return "";
