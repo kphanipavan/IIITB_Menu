@@ -1,43 +1,43 @@
 'use strict';
+const BaseHREF = 'IIITB_Menu/';
 const MANIFEST = 'flutter-app-manifest';
 const TEMP = 'flutter-temp-cache';
 const CACHE_NAME = 'flutter-app-cache';
 
-const RESOURCES = {"canvaskit/chromium/canvaskit.js": "96ae916cd2d1b7320fff853ee22aebb0",
-"canvaskit/chromium/canvaskit.wasm": "be0e3b33510f5b7b0cc76cc4d3e50048",
-"canvaskit/canvaskit.js": "bbf39143dfd758d8d847453b120c8ebb",
-"canvaskit/canvaskit.wasm": "42df12e09ecc0d5a4a34a69d7ee44314",
-"canvaskit/skwasm.wasm": "1a074e8452fe5e0d02b112e22cdcf455",
-"canvaskit/skwasm.worker.js": "51253d3321b11ddb8d73fa8aa87d3b15",
-"canvaskit/skwasm.js": "95f16c6690f955a45b2317496983dbe9",
-"version.json": "d7fbd41faace5a7a02bb5da13e6049ec",
-"assets/packages/cupertino_icons/assets/CupertinoIcons.ttf": "89ed8f4e49bcdfc0b5bfc9b24591e347",
-"assets/AssetManifest.json": "9ff44bde92ce5b382a52a9273b1e50a7",
-"assets/assets/plate.png": "89fc6540c9fa9a6b95e921d105f9314d",
-"assets/AssetManifest.bin": "51a3997f7d127f11e8d4740f23792d5a",
-"assets/fonts/MaterialIcons-Regular.otf": "235483f2951e9e70724d976a36dc41c9",
-"assets/NOTICES": "1e92b5aa7c74f4920487878552873ac6",
-"assets/FontManifest.json": "dc3d03800ccca4601324923c0b1d6d57",
-"assets/shaders/ink_sparkle.frag": "f8b80e740d33eb157090be4e995febdf",
+const RESOURCES = {"main.dart.js": "a18ca6cb8dd49ddbbf12c925f0dc73d1",
+"flutter.js": "7d69e653079438abfbb24b82a655b0a4",
 "favicon.ico": "f636204ccad9374ce9047423413c6d2e",
-"icons/safari-pinned-tab.svg": "6ecc28ad3037a300978a2927b7fb3d1c",
-"icons/android-chrome-192x192.png": "80d142675305ba3cdf3bafacf172ec21",
-"icons/favicon-32x32.png": "9c90e886fef86874dad704dc4b37f8a5",
+"assets/fonts/MaterialIcons-Regular.otf": "235483f2951e9e70724d976a36dc41c9",
+"assets/AssetManifest.bin": "1d7d18549dfcb5104467a9eb461475e3",
+"assets/shaders/ink_sparkle.frag": "4096b5150bac93c41cbc9b45276bd90f",
+"assets/assets/robotoReg.ttf": "8a36205bd9b83e03af0591a004bc97f4",
+"assets/assets/plate.png": "89fc6540c9fa9a6b95e921d105f9314d",
+"assets/AssetManifest.bin.json": "413f261e6673879ca49ac022a0cf1186",
+"assets/FontManifest.json": "b77836550e77478ad0c8ce7ff8c1285d",
+"assets/AssetManifest.json": "274f598008a40230415aeeab3517be4a",
+"assets/packages/cupertino_icons/assets/CupertinoIcons.ttf": "89ed8f4e49bcdfc0b5bfc9b24591e347",
+"assets/NOTICES": "d269e53016f54c39e7a24be5e15dcbaf",
+"canvaskit/skwasm.wasm": "2fc47c0a0c3c7af8542b601634fe9674",
+"canvaskit/canvaskit.js": "eb8797020acdbdf96a12fb0405582c1b",
+"canvaskit/skwasm.worker.js": "bfb704a6c714a75da9ef320991e88b03",
+"canvaskit/chromium/canvaskit.js": "0ae8bbcc58155679458a0f7a00f66873",
+"canvaskit/chromium/canvaskit.wasm": "143af6ff368f9cd21c863bfa4274c406",
+"canvaskit/canvaskit.wasm": "73584c1a3367e3eaf757647a8f5c5989",
+"canvaskit/skwasm.js": "87063acf45c5e1ab9565dcf06b0c18b8",
 "icons/favicon-96x96.png": "ff924a53b1eb62b512264433643a72f0",
+"icons/favicon-32x32.png": "9c90e886fef86874dad704dc4b37f8a5",
+"icons/android-chrome-512x512.png": "3c5fb92485b3737401099b1193e94001",
+"icons/safari-pinned-tab.svg": "6ecc28ad3037a300978a2927b7fb3d1c",
 "icons/apple-touch-icon.png": "03d54bae9bfc7c6bea8bc596d1c441e7",
 "icons/favicon-16x16.png": "ad35e12ce84a4abac20afb61795a90d6",
-"icons/android-chrome-512x512.png": "3c5fb92485b3737401099b1193e94001",
-"index.html": "84c99ccc54a737d869075510e3689bb9",
-"/": "84c99ccc54a737d869075510e3689bb9",
-"main.dart.js": "8a4b71acaaa78a113b0a299bea970005",
-"flutter.js": "6fef97aeca90b426343ba6c5c9dc5d4a",
+"icons/android-chrome-192x192.png": "80d142675305ba3cdf3bafacf172ec21",
+"index.html": "376efeb1a6c8912615129d8afbbaa0a6",
+"/": "376efeb1a6c8912615129d8afbbaa0a6",
+"version.json": "d7fbd41faace5a7a02bb5da13e6049ec",
 "manifest.json": "afd226ab6e25f82439d85dcf9262338e"};
 // The application shell files that are downloaded before a service worker can
 // start.
-const CORE = ["main.dart.js",
-"index.html",
-"assets/AssetManifest.json",
-"assets/FontManifest.json"];
+const CORE = Object.keys(RESOURCES);
 
 // During install, the TEMP cache is populated with the application shell files.
 self.addEventListener("install", (event) => {
@@ -121,12 +121,13 @@ self.addEventListener("fetch", (event) => {
   if (key.indexOf('?v=') != -1) {
     key = key.split('?v=')[0];
   }
-  if (event.request.url == origin || event.request.url.startsWith(origin + '/#') || key == '') {
+  if (event.request.url == origin || event.request.url.startsWith(origin + '/#') || key == '' || key == BaseHREF) {
     key = '/';
   }
   // If the URL is not the RESOURCE list then return to signal that the
   // browser should take over.
-  if (!RESOURCES[key]) {
+  var resKey = key.replace(BaseHREF, "");
+  if (!RESOURCES[resKey]) {
     return;
   }
   // If the URL is the index.html, perform an online-first request.
