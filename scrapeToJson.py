@@ -19,7 +19,7 @@ if __name__ == "__main__":
     #! TODO: Find a better XLSX import process. XLS IS ASS
     #    mainData = pandas.read_excel("menu.ods")
     mainData = pandas.read_csv("menu.csv")
-    mainData = mainData.drop("Unnamed: 9", axis="columns").drop("Unnamed: 10", axis="columns").drop(" ", axis="columns")
+    mainData = mainData.drop(" ", axis="columns")
     mainData[" .1"] = mainData[" .1"].replace("\xa0", numpy.nan)
     breaksLoc = numpy.where(
         pandas.isna(mainData[" .1"]).to_numpy()
