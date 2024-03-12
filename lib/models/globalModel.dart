@@ -16,7 +16,7 @@ class GlobalModel extends ChangeNotifier {
   DataStatus menuAvailable = DataStatus.Loading;
 
   GlobalModel() {
-    print("In constructor");
+    // print("In constructor");
     GlobalModel.loadData().then((value) {
       mainData = value;
       if (this.mainData["dates"].keys.contains(this.date)) {
@@ -58,12 +58,12 @@ class GlobalModel extends ChangeNotifier {
     String? rawData;
     String rawHash;
     rawData = prefs.getString(storageKey);
-    print(rawData);
+    // print(rawData);
     if (rawData != null) {
-      print("data found");
+      // print("data found");
       rawHash = md5.convert(utf8.encode(rawData)).toString();
-      print("Hash of Raw Data:");
-      print(rawHash);
+      // print("Hash of Raw Data:");
+      // print(rawHash);
       returnData = jsonDecode(rawData);
     } else {
       print("Data Not Found");

@@ -1,35 +1,23 @@
---- flutter_service_worker.js.orig	2024-01-27 06:21:03.225353652 +0530
-+++ flutter_service_worker.js	2024-01-27 06:56:23.531689565 +0530
+--- flutter_service_worker.js.bak	2024-01-28 17:40:14.621116939 +0530
++++ flutter_service_worker.js	2024-01-28 17:41:33.479719944 +0530
 @@ -1,4 +1,5 @@
  'use strict';
-+const BaseHREF = 'HREFREPLACE';
++const BASE_HREF = "IIITB_Menu/";
  const MANIFEST = 'flutter-app-manifest';
  const TEMP = 'flutter-temp-cache';
  const CACHE_NAME = 'flutter-app-cache';
-@@ -36,10 +37,7 @@
- "version.json": "d7fbd41faace5a7a02bb5da13e6049ec"};
- // The application shell files that are downloaded before a service worker can
- // start.
--const CORE = ["main.dart.js",
--"index.html",
--"assets/AssetManifest.json",
--"assets/FontManifest.json"];
-+const CORE = Object.keys(RESOURCES);
- 
- // During install, the TEMP cache is populated with the application shell files.
- self.addEventListener("install", (event) => {
-@@ -123,12 +121,13 @@
+@@ -123,12 +124,13 @@
    if (key.indexOf('?v=') != -1) {
      key = key.split('?v=')[0];
    }
 -  if (event.request.url == origin || event.request.url.startsWith(origin + '/#') || key == '') {
-+  if (event.request.url == origin || event.request.url.startsWith(origin + '/#') || key == '' || key == BaseHREF) {
++  if (event.request.url == origin || event.request.url.startsWith(origin + '/#') || key == '' || key == BASE_HREF) {
      key = '/';
    }
    // If the URL is not the RESOURCE list then return to signal that the
    // browser should take over.
 -  if (!RESOURCES[key]) {
-+  var resKey = key.replace(BaseHREF, "");
++  var resKey = key.replace(BASE_HREF, "");
 +  if (!RESOURCES[resKey]) {
      return;
    }

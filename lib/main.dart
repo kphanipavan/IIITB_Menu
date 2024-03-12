@@ -18,9 +18,10 @@ class MainApp extends StatelessWidget {
       lazy: false,
       create: (context) => GlobalModel(),
       builder: (BuildContext context, child) {
-        return const MaterialApp(
+        return MaterialApp(
           title: "IIITB Menu",
-          home: HomePage(),
+          home: const HomePage(),
+          theme: ThemeData(useMaterial3: false),
         );
       },
     );
