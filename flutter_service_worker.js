@@ -1,43 +1,49 @@
 'use strict';
-const BaseHREF = 'IIITB_Menu/';
+const BASE_HREF = "IIITB_Menu/";
 const MANIFEST = 'flutter-app-manifest';
 const TEMP = 'flutter-temp-cache';
 const CACHE_NAME = 'flutter-app-cache';
 
-const RESOURCES = {"main.dart.js": "a18ca6cb8dd49ddbbf12c925f0dc73d1",
-"flutter.js": "7d69e653079438abfbb24b82a655b0a4",
-"favicon.ico": "f636204ccad9374ce9047423413c6d2e",
-"assets/fonts/MaterialIcons-Regular.otf": "235483f2951e9e70724d976a36dc41c9",
-"assets/AssetManifest.bin": "1d7d18549dfcb5104467a9eb461475e3",
-"assets/shaders/ink_sparkle.frag": "4096b5150bac93c41cbc9b45276bd90f",
-"assets/assets/robotoReg.ttf": "8a36205bd9b83e03af0591a004bc97f4",
+const RESOURCES = {"assets/assets/robotoReg.ttf": "8a36205bd9b83e03af0591a004bc97f4",
 "assets/assets/plate.png": "89fc6540c9fa9a6b95e921d105f9314d",
+"assets/AssetManifest.bin": "1d7d18549dfcb5104467a9eb461475e3",
 "assets/AssetManifest.bin.json": "413f261e6673879ca49ac022a0cf1186",
-"assets/FontManifest.json": "b77836550e77478ad0c8ce7ff8c1285d",
+"assets/shaders/ink_sparkle.frag": "ecc85a2e95f5e9f53123dcaf8cb9b6ce",
+"assets/NOTICES": "bd38e344f93699d5f8165d1993377f09",
 "assets/AssetManifest.json": "274f598008a40230415aeeab3517be4a",
+"assets/fonts/MaterialIcons-Regular.otf": "9475aaef2a930073f21969ae48e78735",
 "assets/packages/cupertino_icons/assets/CupertinoIcons.ttf": "89ed8f4e49bcdfc0b5bfc9b24591e347",
-"assets/NOTICES": "d269e53016f54c39e7a24be5e15dcbaf",
-"canvaskit/skwasm.wasm": "2fc47c0a0c3c7af8542b601634fe9674",
-"canvaskit/canvaskit.js": "eb8797020acdbdf96a12fb0405582c1b",
+"assets/FontManifest.json": "b77836550e77478ad0c8ce7ff8c1285d",
+"canvaskit/skwasm.js.symbols": "741d50ffba71f89345996b0aa8426af8",
+"canvaskit/canvaskit.wasm": "3d2a2d663e8c5111ac61a46367f751ac",
+"canvaskit/canvaskit.js": "c86fbd9e7b17accae76e5ad116583dc4",
+"canvaskit/chromium/canvaskit.wasm": "f5934e694f12929ed56a671617acd254",
+"canvaskit/chromium/canvaskit.js": "43787ac5098c648979c27c13c6f804c3",
+"canvaskit/chromium/canvaskit.js.symbols": "4525682ef039faeb11f24f37436dca06",
 "canvaskit/skwasm.worker.js": "bfb704a6c714a75da9ef320991e88b03",
-"canvaskit/chromium/canvaskit.js": "0ae8bbcc58155679458a0f7a00f66873",
-"canvaskit/chromium/canvaskit.wasm": "143af6ff368f9cd21c863bfa4274c406",
-"canvaskit/canvaskit.wasm": "73584c1a3367e3eaf757647a8f5c5989",
-"canvaskit/skwasm.js": "87063acf45c5e1ab9565dcf06b0c18b8",
-"icons/favicon-96x96.png": "ff924a53b1eb62b512264433643a72f0",
+"canvaskit/skwasm.js": "445e9e400085faead4493be2224d95aa",
+"canvaskit/canvaskit.js.symbols": "38cba9233b92472a36ff011dc21c2c9f",
+"canvaskit/skwasm.wasm": "e42815763c5d05bba43f9d0337fa7d84",
 "icons/favicon-32x32.png": "9c90e886fef86874dad704dc4b37f8a5",
-"icons/android-chrome-512x512.png": "3c5fb92485b3737401099b1193e94001",
 "icons/safari-pinned-tab.svg": "6ecc28ad3037a300978a2927b7fb3d1c",
-"icons/apple-touch-icon.png": "03d54bae9bfc7c6bea8bc596d1c441e7",
+"icons/favicon-96x96.png": "ff924a53b1eb62b512264433643a72f0",
 "icons/favicon-16x16.png": "ad35e12ce84a4abac20afb61795a90d6",
+"icons/apple-touch-icon.png": "03d54bae9bfc7c6bea8bc596d1c441e7",
+"icons/android-chrome-512x512.png": "3c5fb92485b3737401099b1193e94001",
 "icons/android-chrome-192x192.png": "80d142675305ba3cdf3bafacf172ec21",
-"index.html": "376efeb1a6c8912615129d8afbbaa0a6",
-"/": "376efeb1a6c8912615129d8afbbaa0a6",
 "version.json": "d7fbd41faace5a7a02bb5da13e6049ec",
-"manifest.json": "afd226ab6e25f82439d85dcf9262338e"};
+"flutter.js": "c71a09214cb6f5f8996a531350400a9a",
+"favicon.ico": "f636204ccad9374ce9047423413c6d2e",
+"manifest.json": "afd226ab6e25f82439d85dcf9262338e",
+"index.html": "de663e64d31a8ba33f3b6e914ba68049",
+"/": "de663e64d31a8ba33f3b6e914ba68049",
+"main.dart.js": "a305c56a187923fb9f0dd0d2cbc29e5d"};
 // The application shell files that are downloaded before a service worker can
 // start.
-const CORE = Object.keys(RESOURCES);
+const CORE = ["main.dart.js",
+"index.html",
+"assets/AssetManifest.bin.json",
+"assets/FontManifest.json"];
 
 // During install, the TEMP cache is populated with the application shell files.
 self.addEventListener("install", (event) => {
@@ -121,12 +127,12 @@ self.addEventListener("fetch", (event) => {
   if (key.indexOf('?v=') != -1) {
     key = key.split('?v=')[0];
   }
-  if (event.request.url == origin || event.request.url.startsWith(origin + '/#') || key == '' || key == BaseHREF) {
+  if (event.request.url == origin || event.request.url.startsWith(origin + '/#') || key == '' || key == BASE_HREF) {
     key = '/';
   }
   // If the URL is not the RESOURCE list then return to signal that the
   // browser should take over.
-  var resKey = key.replace(BaseHREF, "");
+  var resKey = key.replace(BASE_HREF, "");
   if (!RESOURCES[resKey]) {
     return;
   }
