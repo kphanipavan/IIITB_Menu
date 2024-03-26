@@ -1,6 +1,5 @@
 import pandas
 import numpy
-import numpy
 import datetime
 import json
 import hashlib
@@ -18,20 +17,15 @@ ALLDAYS = [
 if __name__ == "__main__":
     #! TODO: Find a better XLSX import process. XLS IS ASS
     #    mainData = pandas.read_excel("menu.ods")
-    mainData = pandas.read_csv("menu.csv")
-    mainData = mainData.drop(" ", axis="columns")
-    mainData[" .1"] = mainData[" .1"].replace("\xa0", numpy.nan)
-    breaksLoc = numpy.where(
-        pandas.isna(mainData[" .1"]).to_numpy()
-        == True
-    )[0][2:]
+    mainData = pandas.read_csv("menu.csv", skiprows=1)
+    mainData = mainData.replace("\xa0", numpy.nan)
+    breaksLoc = numpy.where(pandas.isna(mainData["\xa0"]).to_numpy() == False)[0]
+    breaksLoc = numpy.append(breaksLoc, [len(mainData)])
     print(breaksLoc)
-    rowNames = mainData[" .1"].to_numpy()
-    # Item names: x[x["Unnamed: 1"]=="BREAKFAST 1"]["MONDAY"].item()
-    # print(breaksLoc)
+    rowNames = mainData["\xa0.1"].to_numpy()
     finalData = {"menu": {}, "dates": {}, "items": {}}
     for sesNum, ses in enumerate(["bf", "ln", "sk", "dn"]):
-        finalData["items"][ses] = mainData[" .1"].to_list()[
+        finalData["items"][ses] = mainData["\xa0.1"].to_list()[
             breaksLoc[sesNum] + 1 : breaksLoc[sesNum + 1]
         ]
     for dayNumber, eachDay in enumerate(ALLDAYS):
@@ -69,11 +63,15 @@ if __name__ == "__main__":
                 )
                 if isinstance(part, float) and (part is numpy.nan):
                     part = "MT"
-                if part.strip()=="":
+                if part.strip() == "":
                     part = "MT"
 
                 # print(f"{item}: {part}")
-                if "egg" in part.strip().lower() or "omlet" in part.strip().lower():
+                if (
+                    "egg" in part.strip().lower()
+                    or "omlet" in part.strip().lower()
+                    or "omelet" in part.strip().lower()
+                ):
                     print(f"EGG Found, {part} at {ses}")
                     eggy = "EGG"
                 elif "chicken" in part.strip().lower():
