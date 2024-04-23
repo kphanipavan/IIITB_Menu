@@ -11,7 +11,7 @@ BREAKFAST, , , , , , , , 
  ,EGG,Omelette, ,Egg bhurji, ,Boiled egg, , 
  ,JUICE/MILK SHAKE, , , ,Pineapple juice, , , 
 LUNCH, , , , , , , , 
-LUNCH,INDIAN BREAD,Dal CHAPATI,METHI CHAPATI,Pudina chapati,POORI,AJWAIN CHAPATI,Chapati,BHATURE
+,INDIAN BREAD,Dal CHAPATI,METHI CHAPATI,Pudina chapati,POORI,AJWAIN CHAPATI,Chapati,BHATURE
  ,VEG GRAVY,Capsicum corn masala,Tomato sev curry,home style aloo sabji,ALOO BHAJJI(Bedmi puri style),Bhindi Pulusu(Spicy and normal),Corn Palak masala,PINDI CHOLE
  ,VEG DRY/ STARTERS,Kurkuri bhindi,Banana poriyal,Gatte ki subzi,Stir vegetable dry,Mix tawa fry,Egg curry/Malai kofta,HARA BHARA KEBAB
  ,FLAVORED RICE,Lemon rice,Puliogre,Donne biryani,Bisibilla Bhat,Curd Rice,Veg fried rice,VEG PULAO
@@ -22,11 +22,11 @@ LUNCH,INDIAN BREAD,Dal CHAPATI,METHI CHAPATI,Pudina chapati,POORI,AJWAIN CHAPATI
  ,SALAD/SPROUTS,Green Salad,green salad,Sprouts Salad,Black Chana salad w vegatable,Corn cucumber  Salad,Green Salad,ONION\CHILLI\LEMON
  ,SWEETS,Strawberry MilkShake,Suji Halwa,Assorted pastry,Ice Cream,Kalakand,Boondi laddoo,Gulab Jamun
 SNACKS, , , , , , , , 
-SNACKS,SNACKS,Misal Pav,Dahi sev puri,Kachori,Papadi Chat,corn cheese balls,Vada pav,Batata Puri
+,SNACKS,Misal Pav,Dahi sev puri,Kachori,Papadi Chat,corn cheese balls,Vada pav,Batata Puri
  ,ACCOMPANIMENTS, , ,Chutney, ,Ketchup ,Lemonade, 
  ,TEA/COFFEE/MILK,TEA/COFFEE/MILK,TEA/COFFEE/MILK,TEA/COFFEE/MILK,TEA/COFFEE/MILK,TEA/COFFEE/MILK,TEA/COFFEE/MILK,TEA/COFFEE/MILK
 DINNER, , , , , , , , 
-DINNER,INDIAN BREAD,Mysore dosa/Methi Chapati,Ajwain Chapati,Tawa paratha,AJWAIN CHAPATI,Lachha Paratha,Ajwain chapati,METHI CHAPATI
+,INDIAN BREAD,Mysore dosa/Methi Chapati,Ajwain Chapati,Tawa paratha,AJWAIN CHAPATI,Lachha Paratha,Ajwain chapati,METHI CHAPATI
  ,VEG GRAVY,Veg Manchurian(Semi-Dry),Gutti Venkaya Curry, ,Capsicum Tomato Masala, ,Punjabi Kadhi, 
  ,VEG DRY/ STARTERS,Aloo masala/Dum Aloo,Aloo karela chips,honey chilli potato,Aloo fry,French fries,Dondakaya sabji,Assorted vegetable fry
  ,FLAVORED RICE,Fried Rice,Veg pulao,Jeera Mutter Pulao,Live Red Pasta, ,Cabbage Pulao,MEXICAN RICE
