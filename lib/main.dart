@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:iiitb_menu/models/globalModel.dart';
 import 'package:iiitb_menu/views/homePage.dart';
 import 'package:provider/provider.dart';
+import "package:iiitb_menu/views/about.dart";
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
@@ -20,8 +21,13 @@ class MainApp extends StatelessWidget {
       builder: (BuildContext context, child) {
         return MaterialApp(
           title: "IIITB Menu",
-          home: const HomePage(),
-          theme: ThemeData(useMaterial3: false),
+          routes: {
+            "/": (context) => HomePage(),
+            "/info": (context) => AboutPage(),
+          },
+          initialRoute: "/",
+          // home: const HomePage(),
+          theme: ThemeData(useMaterial3: true),
         );
       },
     );

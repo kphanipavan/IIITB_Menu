@@ -25,13 +25,40 @@ class HomePage extends StatelessWidget {
           return Consumer<GlobalModel>(
               builder: (BuildContext context, GlobalModel data, Widget? child) {
             return Scaffold(
+              drawer: Drawer(
+                child: ListView(
+                  children: [
+                    ListTile(
+                        leading: Icon(Icons.menu),
+                        title: Text("Menu"),
+                        onTap: () {
+                          Navigator.pop(context);
+                        }),
+                    ListTile(
+                      leading: Icon(Icons.star),
+                      title: Text("Specials"),
+                    ),
+                    Divider(),
+                    ListTile(
+                      leading: Icon(Icons.settings),
+                      title: Text("Settings"),
+                    ),
+                    ListTile(
+                        leading: Icon(Icons.info),
+                        title: Text("About App"),
+                        onTap: () {
+                          Navigator.pushNamed(context, "/info");
+                        }),
+                  ],
+                ),
+              ),
               appBar: AppBar(
                 title: Text("Daily ${data.menuTime} Menu"),
                 bottom: TabBar(
                     controller: cont,
-                    splashFactory: NoSplash.splashFactory,
-                    indicator: const UnderlineTabIndicator(
-                        insets: EdgeInsets.fromLTRB(10, 3, 10, 3)),
+                    // splashFactory: InkSplash.splashFactory,
+                    // indicator: const UnderlineTabIndicator(
+                    //     insets: EdgeInsets.fromLTRB(10, 3, 10, 3)),
                     onTap: (int index) {
                       data.setMenuTime(index);
                     },
