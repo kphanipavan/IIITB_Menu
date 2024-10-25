@@ -73,6 +73,8 @@ class GlobalModel extends ChangeNotifier {
     String rawHash = md5.convert(utf8.encode(rawData)).toString();
     if (remoteHash != rawHash) {
       print("Local data is out of date, updating local");
+      print("Old Hash: $rawHash");
+      print("New Hash: $remoteHash");
       // Donwload new data and save it.
       rawData = await getLatestData();
       Map returnData = jsonDecode(rawData);
