@@ -70,6 +70,13 @@ class HomePage extends StatelessWidget {
                     ]),
                 actions: [
                   InkWell(
+                    splashFactory: NoSplash.splashFactory,
+                    onTap: () {
+                      data.updateCall();
+                    },
+                    child: const Icon(Icons.refresh),
+                  ),
+                  InkWell(
                       splashFactory: NoSplash.splashFactory,
                       onTap: () {
                         data.decrDate();
