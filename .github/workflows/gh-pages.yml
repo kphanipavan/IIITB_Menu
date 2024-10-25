@@ -73,8 +73,8 @@ jobs:
     - name: Build Web Release
       run: flutter build web --base-href "/$HREFREPLACE/" --web-renderer canvaskit --no-web-resources-cdn
 
-    - name: Build Android Release
-      run: flutter build apk --split-per-abi --release --no-track-widget-creation --analyze-size --target-platform "android-arm64"
+    # - name: Build Android Release
+    #   run: flutter build apk --split-per-abi --release --no-track-widget-creation --analyze-size --target-platform "android-arm64"
     
     - name: Fix PWA Offline Support 
       run: |
@@ -83,15 +83,15 @@ jobs:
         ./fixOfflinePWA.sh
         cat ./build/web/flutter_service_worker.js
 
-    - name: Create Release
-      uses: marvinpinto/action-automatic-releases@v1.2.1
-      with:
-        repo_token: "${{ secrets.GITHUB_TOKEN }}"
-        automatic_release_tag: "latest"
-        prerelease: true
-        draft: false
-        title: "Git Build"
-        files: build/app/outputs/flutter-apk/app-arm64-v8a-release.apk
+    # - name: Create Release
+    #   uses: marvinpinto/action-automatic-releases@v1.2.1
+    #   with:
+    #     repo_token: "${{ secrets.GITHUB_TOKEN }}"
+    #     automatic_release_tag: "latest"
+    #     prerelease: true
+    #     draft: false
+    #     title: "Git Build"
+    #     files: build/app/outputs/flutter-apk/app-arm64-v8a-release.apk
 
     - name: Upload production-ready build files
       uses: actions/upload-artifact@v3.1.2
