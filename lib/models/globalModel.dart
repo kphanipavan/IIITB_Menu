@@ -17,13 +17,25 @@ class GlobalModel extends ChangeNotifier {
 
   GlobalModel() {
     // print("In constructor");
-    GlobalModel.loadData().then((value) {
+    GlobalModel.loadData2().then((value) {
       mainData = value;
       if (this.mainData["dates"].keys.contains(this.date)) {
         this.menuAvailable = DataStatus.Loaded;
+      } else {
+        this.menuAvailable = DataStatus.NotFound;
       }
       notifyListeners();
     });
+  }
+
+  updateCall() async {
+    this.mainData = await GlobalModel.updateLocal();
+    if (this.mainData["dates"].keys.contains(this.date)) {
+      this.menuAvailable = DataStatus.Loaded;
+    } else {
+      this.menuAvailable = DataStatus.NotFound;
+    }
+    notifyListeners();
   }
 
   static Future<String> getLatestHash() async {
@@ -49,6 +61,57 @@ class GlobalModel extends ChangeNotifier {
       print("Unable to download any data");
       print(exce);
       return "";
+    }
+  }
+
+  static Future<Map> updateLocal() async {
+    // Set main data and return the data to be used in constructor
+    String remoteHash = await GlobalModel.getLatestHash();
+    final SharedPreferences prefs = await SharedPreferences.getInstance();
+    String? rawData = prefs.getString(storageKey);
+    rawData ??= "";
+    String rawHash = md5.convert(utf8.encode(rawData)).toString();
+    if (remoteHash != rawHash) {
+      print("Local data is out of date, updating local");
+      print("Old Hash: $rawHash");
+      print("New Hash: $remoteHash");
+      // Donwload new data and save it.
+      rawData = await getLatestData();
+      Map returnData = jsonDecode(rawData);
+      prefs.setString(storageKey, rawData);
+      return returnData;
+    } else {
+      // return the same data
+      print("Local data is up to date");
+      return jsonDecode(rawData);
+    }
+  }
+
+  static Future<Map> loadData2() async {
+    /* New flow for fetching data:
+          Get cached data into a var
+          if theres nothing:
+              get data
+              generate hash and store both the data and hash
+          else:
+              return the current data
+
+      Move the download and get hash part to new method - done
+
+      create a new method for updating the current data.
+      This checks for update and saves new data to sharedprefs if necessary,
+        */
+    late Map returnData;
+    final SharedPreferences prefs = await SharedPreferences.getInstance();
+    String? rawData;
+    rawData = prefs.getString(storageKey);
+    if (rawData != null) {
+      print("Some data found");
+      returnData = jsonDecode(rawData);
+      return returnData;
+    } else {
+      print("Data Not Found");
+      return GlobalModel.updateLocal();
     }
   }
 

@@ -6,6 +6,7 @@ import "package:iiitb_menu/models/globalModel.dart";
 import "package:iiitb_menu/models/initialPageIndexFunction.dart";
 import "package:iiitb_menu/views/menuListView.dart";
 import "package:provider/provider.dart";
+import "package:share_plus/share_plus.dart";
 
 class HomePage extends StatelessWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -25,13 +26,52 @@ class HomePage extends StatelessWidget {
           return Consumer<GlobalModel>(
               builder: (BuildContext context, GlobalModel data, Widget? child) {
             return Scaffold(
+              drawer: Drawer(
+                child: ListView(
+                  children: [
+                    ListTile(
+                        leading: Icon(Icons.arrow_back),
+                        title: Text("Menu"),
+                        onTap: () {
+                          Navigator.pop(context);
+                        }),
+                    // ListTile(
+                    //   leading: Icon(Icons.star),
+                    //   title: Text("Specials"),
+                    // ),
+                    const Divider(),
+                    // ListTile(
+                    //   leading: Icon(Icons.settings),
+                    //   title: Text("Settings"),
+                    // ),
+                    ListTile(
+                        leading: const Icon(Icons.share_rounded),
+                        title: const Text("Share"),
+                        onTap: () {
+                          var ret = Share.share(
+                            "Hey, use this to track IIITB's Mess Menu. https://kphanipavan.github.io/IIITB_Menu/",
+                            // subject: "IIITB Menu App",
+                          );
+                          ret.then((value) {
+                            print(value.status);
+                          });
+                        }),
+                    ListTile(
+                        leading: Icon(Icons.info),
+                        title: Text("About"),
+                        onTap: () {
+                          Navigator.pushNamed(context, "/info");
+                        }),
+                  ],
+                ),
+              ),
               appBar: AppBar(
-                title: Text("Daily ${data.menuTime} Menu"),
+                title: Text(data.menuTime),
                 bottom: TabBar(
                     controller: cont,
-                    splashFactory: NoSplash.splashFactory,
-                    indicator: const UnderlineTabIndicator(
-                        insets: EdgeInsets.fromLTRB(10, 3, 10, 3)),
+                    // splashFactory: InkSplash.splashFactory,
+                    // indicator: const UnderlineTabIndicator(
+                    //     insets: EdgeInsets.fromLTRB(10, 3, 10, 3)),
                     onTap: (int index) {
                       data.setMenuTime(index);
                     },
@@ -42,6 +82,15 @@ class HomePage extends StatelessWidget {
                       Tab(icon: Icon(Icons.dinner_dining_outlined))
                     ]),
                 actions: [
+                  InkWell(
+                    splashFactory: NoSplash.splashFactory,
+                    onTap: () {
+                      data.updateCall();
+                    },
+                    child: Icon(data.menuAvailable == DataStatus.Loading
+                        ? Icons.downloading_rounded
+                        : Icons.update_rounded),
+                  ),
                   InkWell(
                       splashFactory: NoSplash.splashFactory,
                       onTap: () {
