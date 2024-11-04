@@ -22,3 +22,20 @@ const String dataLink =
     "https://raw.githubusercontent.com/kphanipavan/IIITB_Menu/menu_scraper/out.json";
 
 enum DataStatus { Loaded, Loading, NotFound }
+
+Widget newNoMenuWidget = Center(
+  child: Column(children: [
+    const Text("Menu not available for this session",
+        style: TextStyle(fontSize: 20, fontStyle: FontStyle.italic)),
+    RichText(
+      text: const TextSpan(
+        children: [
+          TextSpan(text: "Click "),
+          WidgetSpan(child: Icon(Icons.update_rounded)),
+          TextSpan(text: " to check for updates.")
+        ],
+        style: TextStyle(fontSize: 20, fontStyle: FontStyle.italic),
+      ),
+    )
+  ], mainAxisAlignment: MainAxisAlignment.center),
+);
