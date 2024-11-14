@@ -148,10 +148,10 @@ class HomePage extends StatelessWidget {
                           MenuListView(menuType: "dn"),
                         ]
                       : [
-                          noMenuWidget,
-                          noMenuWidget,
-                          noMenuWidget,
-                          noMenuWidget,
+                          newNoMenuWidget,
+                          newNoMenuWidget,
+                          newNoMenuWidget,
+                          newNoMenuWidget,
                         ]),
             );
           });

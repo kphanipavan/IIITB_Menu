@@ -29,6 +29,8 @@ class GlobalModel extends ChangeNotifier {
   }
 
   updateCall() async {
+    this.menuAvailable = DataStatus.Loading;
+    notifyListeners();
     this.mainData = await GlobalModel.updateLocal();
     if (this.mainData["dates"].keys.contains(this.date)) {
       this.menuAvailable = DataStatus.Loaded;
