@@ -157,6 +157,10 @@ class GlobalModel extends ChangeNotifier {
     return DateFormat("dd-MM-yyyy").format(this.currentDate);
   }
 
+  String get prettyDate {
+    return DateFormat("EEE, MMM d").format(this.currentDate);
+  }
+
   void incrDate() {
     this.currentDate = this.currentDate.add(const Duration(days: 1));
     this.isMenuAvailable();

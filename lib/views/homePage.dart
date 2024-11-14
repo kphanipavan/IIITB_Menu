@@ -30,8 +30,8 @@ class HomePage extends StatelessWidget {
                 child: ListView(
                   children: [
                     ListTile(
-                        leading: Icon(Icons.arrow_back),
-                        title: Text("Menu"),
+                        leading: const Icon(Icons.arrow_back),
+                        title: const Text("Menu"),
                         onTap: () {
                           Navigator.pop(context);
                         }),
@@ -69,7 +69,7 @@ class HomePage extends StatelessWidget {
                 title: Text(data.menuTime),
                 bottom: TabBar(
                     controller: cont,
-                    // splashFactory: InkSplash.splashFactory,
+                    splashFactory: NoSplash.splashFactory,
                     // indicator: const UnderlineTabIndicator(
                     //     insets: EdgeInsets.fromLTRB(10, 3, 10, 3)),
                     onTap: (int index) {
@@ -87,9 +87,14 @@ class HomePage extends StatelessWidget {
                     onTap: () {
                       data.updateCall();
                     },
-                    child: Icon(data.menuAvailable == DataStatus.Loading
-                        ? Icons.downloading_rounded
-                        : Icons.update_rounded),
+                    child: Padding(
+                      padding: const EdgeInsets.symmetric(horizontal: 10.0),
+                      child: Center(
+                        child: Icon(data.menuAvailable == DataStatus.Loading
+                            ? Icons.downloading_rounded
+                            : Icons.update_rounded),
+                      ),
+                    ),
                   ),
                   InkWell(
                       splashFactory: NoSplash.splashFactory,
@@ -98,9 +103,11 @@ class HomePage extends StatelessWidget {
                       },
                       child: const Padding(
                         padding: EdgeInsets.symmetric(horizontal: 10),
-                        child: Icon(
-                          Icons.keyboard_arrow_left_rounded,
-                          size: 30,
+                        child: Center(
+                          child: Icon(
+                            Icons.keyboard_arrow_left_rounded,
+                            size: 30,
+                          ),
                         ),
                       )),
                   InkWell(
@@ -121,7 +128,7 @@ class HomePage extends StatelessWidget {
                       data.setDateToADay();
                     },
                     child: Center(
-                      child: Text(data.date),
+                      child: Text(data.prettyDate),
                     ),
                   ),
                   InkWell(
@@ -131,9 +138,11 @@ class HomePage extends StatelessWidget {
                       },
                       child: const Padding(
                         padding: EdgeInsets.symmetric(horizontal: 10),
-                        child: Icon(
-                          Icons.keyboard_arrow_right_rounded,
-                          size: 30,
+                        child: Center(
+                          child: Icon(
+                            Icons.keyboard_arrow_right_rounded,
+                            size: 30,
+                          ),
                         ),
                       )),
                 ],
