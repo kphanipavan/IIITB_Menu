@@ -24,7 +24,7 @@ const String dataLink =
 enum DataStatus { Loaded, Loading, NotFound }
 
 Widget newNoMenuWidget = Center(
-  child: Column(children: [
+  child: Column(mainAxisAlignment: MainAxisAlignment.center, children: [
     const Text("Menu not available for this session",
         style: TextStyle(fontSize: 20, fontStyle: FontStyle.italic)),
     RichText(
@@ -36,6 +36,8 @@ Widget newNoMenuWidget = Center(
         ],
         style: TextStyle(fontSize: 20, fontStyle: FontStyle.italic),
       ),
-    )
-  ], mainAxisAlignment: MainAxisAlignment.center),
+    ),
+  ]),
 );
+
+Uri ghURI = Uri.parse("https://github.com/kphanipavan/IIITB_Menu");
