@@ -5,19 +5,20 @@ const TEMP = 'flutter-temp-cache';
 const CACHE_NAME = 'flutter-app-cache';
 
 const RESOURCES = {"flutter.js": "f393d3c16b631f36852323de8e583132",
-"main.dart.js": "8510386cbd536c6bcbdd084e1ef4e7e6",
+"main.dart.js": "c6f3c41859897e37afda21d5af2a9c19",
 "assets/FontManifest.json": "3274beb994bbd7cf55c121a4f16da122",
-"assets/AssetManifest.bin": "514d105e6bbe9b63f32ff4fb37ad4716",
+"assets/AssetManifest.bin": "990a89963f96bc477b68001d11c31c3b",
 "assets/fonts/MaterialIcons-Regular.otf": "6fae1a793b66dc1008bb62610d5aa114",
 "assets/assets/plate.png": "89fc6540c9fa9a6b95e921d105f9314d",
+"assets/assets/excel.png": "287196047169a696e11e654c7ed71f87",
 "assets/assets/gh.png": "d627c9430c8d1454cd802529959c18c0",
 "assets/assets/robotoReg.ttf": "8a36205bd9b83e03af0591a004bc97f4",
 "assets/NOTICES": "cb895d583af027146d4d2770a84e3094",
 "assets/shaders/ink_sparkle.frag": "ecc85a2e95f5e9f53123dcaf8cb9b6ce",
-"assets/AssetManifest.json": "06a85092dd86d346e7a811dd5a066670",
-"assets/AssetManifest.bin.json": "d82c3eebf0962d8f07552d30c3455ac1",
-"index.html": "62de849c73a09cc7eb0dfef70e54d478",
-"/": "62de849c73a09cc7eb0dfef70e54d478",
+"assets/AssetManifest.json": "6ba2a5e9ad75045ccf10e651a7694e0b",
+"assets/AssetManifest.bin.json": "9c964ddb150b2e21c995a12a005cfe03",
+"index.html": "ddd90a14a7775c71670dc3d8acddccbe",
+"/": "ddd90a14a7775c71670dc3d8acddccbe",
 "manifest.json": "afd226ab6e25f82439d85dcf9262338e",
 "canvaskit/canvaskit.js": "66177750aff65a66cb07bb44b8c6422b",
 "canvaskit/canvaskit.js.symbols": "48c83a2ce573d9692e8d970e288d75f7",
@@ -38,7 +39,7 @@ const RESOURCES = {"flutter.js": "f393d3c16b631f36852323de8e583132",
 "icons/favicon-96x96.png": "ff924a53b1eb62b512264433643a72f0",
 "icons/android-chrome-192x192.png": "80d142675305ba3cdf3bafacf172ec21",
 "version.json": "d7fbd41faace5a7a02bb5da13e6049ec",
-"flutter_bootstrap.js": "da75faffc10832547c2d8d4f561de528"};
+"flutter_bootstrap.js": "dc6c85276c73802797d6254debdce1f0"};
 // The application shell files that are downloaded before a service worker can
 // start.
 const CORE = ["main.dart.js",
