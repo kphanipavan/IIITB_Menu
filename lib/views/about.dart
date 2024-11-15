@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import "package:iiitb_menu/constants.dart";
 import "package:url_launcher/url_launcher.dart";
+import "package:iiitb_menu/widgets/linkButton.dart";
 
 class AboutPage extends StatelessWidget {
   const AboutPage({Key? key}) : super(key: key);
@@ -33,14 +34,13 @@ class AboutPage extends StatelessWidget {
             child: Text(
                 "Menu updates every other Tuesday or when FoodComm does it."),
           ),
-          InkWell(
-              child:
-                  const Image(image: AssetImage("assets/gh.png"), height: 20),
-              onTap: () async {
-                if (await canLaunchUrl(ghURI)) {
-                  launchUrl(ghURI);
-                }
-              }),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              LinkButton(iconImage: "assets/gh.png", link: ghURI),
+              LinkButton(iconImage: "assets/excel.png", link: excelSheetURI),
+            ],
+          ),
         ],
       ),
     );
