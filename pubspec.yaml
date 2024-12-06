@@ -43,6 +43,7 @@ dependencies:
   # localstorage: ^4.0.1+4
   shared_preferences: ^2.2.0
   share_plus: ^10.1.1
+  url_launcher: ^6.3.1
   qr_flutter: ^4.1.0
   # sembast:
 
@@ -70,6 +71,8 @@ flutter:
   # To add assets to your application, add an assets section, like this:
   assets:
     - assets/plate.png
+    - assets/gh.png
+    - assets/excel.png
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see

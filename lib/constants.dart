@@ -39,7 +39,11 @@ Widget newNoMenuWidget = Center(
           ],
           style: TextStyle(fontSize: 20, fontStyle: FontStyle.italic),
         ),
-      )
+      ),
     ],
   ),
 );
+
+Uri ghURI = Uri.parse("https://github.com/kphanipavan/IIITB_Menu");
+Uri excelSheetURI = Uri.parse(
+    "https://iiitbac-my.sharepoint.com/:x:/g/personal/foodcommittee_iiitb_ac_in/ESrcRZMPYFpOgk2VEPd0zd8BDfsMkTUXWM4hRi-2QNF44g?e=fjFkFy");
