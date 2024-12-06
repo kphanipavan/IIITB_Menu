@@ -30,8 +30,8 @@ class HomePage extends StatelessWidget {
                 child: ListView(
                   children: [
                     ListTile(
-                        leading: Icon(Icons.arrow_back),
-                        title: Text("Menu"),
+                        leading: const Icon(Icons.arrow_back),
+                        title: const Text("Menu"),
                         onTap: () {
                           Navigator.pop(context);
                         }),
@@ -47,18 +47,19 @@ class HomePage extends StatelessWidget {
                     ListTile(
                         leading: const Icon(Icons.share_rounded),
                         title: const Text("Share"),
-                        onTap: () {
-                          var ret = Share.share(
-                            "Hey, use this to track IIITB's Mess Menu. https://kphanipavan.github.io/IIITB_Menu/",
-                            // subject: "IIITB Menu App",
-                          );
-                          ret.then((value) {
-                            print(value.status);
-                          });
-                        }),
+                        // onTap: () {
+                        //   var ret = Share.share(
+                        //     "Hey, use this to track IIITB's Mess Menu. https://kphanipavan.github.io/IIITB_Menu/",
+                        //     // subject: "IIITB Menu App",
+                        //   );
+                        //   ret.then((value) {
+                        //     print(value.status);
+                        //   });
+                        // },
+                        onTap: () => Navigator.pushNamed(context, "/share")),
                     ListTile(
-                        leading: Icon(Icons.info),
-                        title: Text("About"),
+                        leading: const Icon(Icons.info),
+                        title: const Text("About"),
                         onTap: () {
                           Navigator.pushNamed(context, "/info");
                         }),
