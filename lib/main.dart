@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:iiitb_menu/models/globalModel.dart';
 import 'package:iiitb_menu/views/homePage.dart';
 import 'package:provider/provider.dart';
+import "package:iiitb_menu/views/share.dart";
 import "package:iiitb_menu/views/about.dart";
 
 void main() {
@@ -22,8 +23,9 @@ class MainApp extends StatelessWidget {
         return MaterialApp(
           title: "IIITB Menu",
           routes: {
-            "/": (context) => HomePage(),
-            "/info": (context) => AboutPage(),
+            "/": (context) => const HomePage(),
+            "/info": (context) => const AboutPage(),
+            "/share": (context) => const SharePage(),
           },
           initialRoute: "/",
           // home: const HomePage(),
