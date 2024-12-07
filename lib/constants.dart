@@ -47,3 +47,24 @@ Widget newNoMenuWidget = Center(
 Uri ghURI = Uri.parse("https://github.com/kphanipavan/IIITB_Menu");
 Uri excelSheetURI = Uri.parse(
     "https://iiitbac-my.sharepoint.com/:x:/g/personal/foodcommittee_iiitb_ac_in/ESrcRZMPYFpOgk2VEPd0zd8BDfsMkTUXWM4hRi-2QNF44g?e=fjFkFy");
+
+const String guesture = "Guesture";
+const String college = "College";
+
+const List<Map<String, dynamic>> busTimimgs = [
+  {"time": "07.30AM", "count": 2, "from": guesture},
+  {"time": "07.45AM", "count": 1, "from": guesture},
+  {"time": "08.20AM", "count": 2, "from": guesture},
+  {"time": "08.45AM", "count": 1, "from": guesture},
+  {"time": "09.15AM", "count": 2, "from": guesture},
+  {"time": "11.00AM", "count": 1, "from": guesture},
+  {"time": "02.15PM", "count": 1, "from": college},
+  {"time": "03.15PM", "count": 1, "from": college},
+  {"time": "04.15PM", "count": 1, "from": college},
+  {"time": "05.15PM", "count": 1, "from": college},
+  {"time": "06.15PM", "count": 1, "from": college},
+  {"time": "07.15PM", "count": 1, "from": college},
+  {"time": "08.15PM", "count": 1, "from": college},
+  {"time": "09.15PM", "count": 1, "from": college},
+  {"time": "10.15PM", "count": 1, "from": college},
+];
