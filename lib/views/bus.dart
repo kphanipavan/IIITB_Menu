@@ -62,7 +62,7 @@ class BusTimingsPage extends StatelessWidget {
           SliverToBoxAdapter(
             child: (currentBusIndex >= 0)
                 ? const Header("Later Busses")
-                : const Header("No Busses Left for Today")),
+                : const Header("No Busses Left for Today"),
           ),
           SliverList(
             delegate: SliverChildBuilderDelegate(
