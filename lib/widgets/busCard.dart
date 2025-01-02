@@ -1,5 +1,5 @@
 import "package:flutter/material.dart";
-import "package:material_symbols_icons/symbols.dart";
+// import "package:material_symbols_icons/symbols.dart";
 
 class LeftBusCard extends StatelessWidget {
   const LeftBusCard({
@@ -13,13 +13,17 @@ class LeftBusCard extends StatelessWidget {
   final String loc;
   @override
   Widget build(BuildContext context) {
-    return Row(
-      children: [
-        Text(this.time),
-        Text("  From ${this.loc}"),
-        Text("  x${this.count}"),
-        Icon(Symbols.sprint_rounded),
-      ],
+    return Container(
+      padding: EdgeInsets.symmetric(horizontal: 8.0),
+      color: const Color(0x30ff0000),
+      child: Row(
+        children: [
+          Text(this.time, style: TextStyle(fontSize: 20)),
+          Text("  From ${this.loc}", style: TextStyle(fontSize: 20)),
+          // Text("  x${this.count}"),
+          // Icon(Symbols.sprint_rounded),
+        ],
+      ),
     );
   }
 }
@@ -38,18 +42,66 @@ class NextBusCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        Row(children: [Text("Current Bus:")]),
+        const Header("Next Bus"),
+        Container(
+          padding: EdgeInsets.symmetric(horizontal: 8.0),
+          color: const Color(0xa3ffac12),
+          child: Row(
+            mainAxisSize: MainAxisSize.max,
+            children: [
+              Text(
+                "${this.time}\nFrom ${this.loc}",
+                style: TextStyle(fontSize: 50),
+              ),
+            ],
+          ),
+        ),
       ],
     );
   }
 }
 
 class LaterBusCard extends StatelessWidget {
-  const LaterBusCard({Key? key}) : super(key: key);
+  const LaterBusCard({
+    Key? key,
+    required this.time,
+    required this.count,
+    required this.loc,
+  }) : super(key: key);
+  final String time;
+  final int count;
+  final String loc;
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      padding: EdgeInsets.symmetric(horizontal: 8.0),
+      color: const Color(0x3000ff00),
+      child: Row(
+        children: [
+          Text(this.time, style: TextStyle(fontSize: 20)),
+          Text("  From ${this.loc}", style: TextStyle(fontSize: 20)),
+          // Text("  x${this.count}"),
+          // Icon(Symbols.sprint_rounded),
+        ],
+      ),
+    );
+  }
+}
+
+class Header extends StatelessWidget {
+  const Header(this.text, {Key? key}) : super(key: key);
+  final String text;
 
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Padding(
+      padding: const EdgeInsets.all(8.0),
+      child: Text(
+        "$text:",
+        style: const TextStyle(fontSize: 30),
+      ),
+    );
   }
 }

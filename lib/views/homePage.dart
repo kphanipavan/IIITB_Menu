@@ -58,7 +58,7 @@ class HomePage extends StatelessWidget {
                         onTap: () => Navigator.pushNamed(context, "/share")),
                     ListTile(
                         leading: const Icon(Icons.bus_alert),
-                        title: const Text("Bus Schedule"),
+                        title: const Text("Guesture Bus Sch"),
                         onTap: () {
                           Navigator.pushNamed(context, "/bus");
                         }),
