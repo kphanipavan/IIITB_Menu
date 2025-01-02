@@ -6,7 +6,6 @@ import "package:iiitb_menu/models/globalModel.dart";
 import "package:iiitb_menu/models/initialPageIndexFunction.dart";
 import "package:iiitb_menu/views/menuListView.dart";
 import "package:provider/provider.dart";
-import "package:share_plus/share_plus.dart";
 
 class HomePage extends StatelessWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -57,6 +56,12 @@ class HomePage extends StatelessWidget {
                         //   });
                         // },
                         onTap: () => Navigator.pushNamed(context, "/share")),
+                    ListTile(
+                        leading: const Icon(Icons.bus_alert),
+                        title: const Text("Guesture Bus Sch"),
+                        onTap: () {
+                          Navigator.pushNamed(context, "/bus");
+                        }),
                     ListTile(
                         leading: const Icon(Icons.info),
                         title: const Text("About"),
