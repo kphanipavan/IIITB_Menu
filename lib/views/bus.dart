@@ -11,8 +11,8 @@ class BusTimingsPage extends StatelessWidget {
     DateFormat timeFromat = DateFormat("h.ma");
     int leftBusses = -1;
     int currentBusIndex = -1;
-    // DateTime currentTime = DateTime.now();
-    DateTime currentTime = timeFromat.parse("09.45PM");
+    DateTime currentTime = DateTime.now();
+    // DateTime currentTime = timeFromat.parse("09.45PM");
     int currentTimeInt = currentTime.hour * 60 + currentTime.minute;
     for (int i = 0; i < busTimimgs.length; i++) {
       Map curSch = busTimimgs[i];
