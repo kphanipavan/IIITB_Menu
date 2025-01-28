@@ -12,7 +12,23 @@ import "package:shared_preferences/shared_preferences.dart";
 class GlobalModel extends ChangeNotifier {
   late Map<dynamic, dynamic> mainData;
   DateTime currentDate = DateTime.now();
-  String menuTime = breakfast;
+  int iniPage=getInitialPageIndex();
+  switch (iniPage){
+    case 0:
+      String menuTime = breakfast;
+      break;
+    case 1:
+      String menuTime = lunch;
+      break;
+   case 2:
+      String menuTime = snak;
+      break;
+   case 3:
+      String menuTime = dinner;
+      break;
+   default:
+}
+  // String menuTime = breakfast;
   DataStatus menuAvailable = DataStatus.Loading;
 
   GlobalModel() {
