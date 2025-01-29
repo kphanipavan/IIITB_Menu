@@ -2,6 +2,7 @@
 
 import "dart:convert";
 import "package:iiitb_menu/constants.dart";
+import "package:iiitb_menu/models/initialPageIndexFunction.dart";
 import 'dart:io';
 import "package:flutter/material.dart";
 import "package:crypto/crypto.dart";
@@ -9,14 +10,33 @@ import "package:http/http.dart";
 import "package:intl/intl.dart";
 import "package:shared_preferences/shared_preferences.dart";
 
+
 class GlobalModel extends ChangeNotifier {
   late Map<dynamic, dynamic> mainData;
   DateTime currentDate = DateTime.now();
+
   String menuTime = breakfast;
   DataStatus menuAvailable = DataStatus.Loading;
 
   GlobalModel() {
     // print("In constructor");
+  int iniPage=getInitialPageIndex();
+  switch (iniPage){
+    case 0:
+      this.menuTime = breakfast;
+      break;
+    case 1:
+      this.menuTime = lunch;
+      break;
+   case 2:
+      this.menuTime = snak;
+      break;
+   case 3:
+      this.menuTime = dinner;
+      break;
+   default:
+}
+    notifyListeners();
     GlobalModel.loadData2().then((value) {
       mainData = value;
       if (this.mainData["dates"].keys.contains(this.date)) {
