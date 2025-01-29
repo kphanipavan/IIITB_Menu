@@ -13,7 +13,7 @@ class GlobalModel extends ChangeNotifier {
   late Map<dynamic, dynamic> mainData;
   DateTime currentDate = DateTime.now();
 
-  // String menuTime = breakfast;
+  String menuTime = breakfast;
   DataStatus menuAvailable = DataStatus.Loading;
 
   GlobalModel() {
