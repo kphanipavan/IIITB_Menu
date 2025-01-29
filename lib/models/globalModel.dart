@@ -2,7 +2,7 @@
 
 import "dart:convert";
 import "package:iiitb_menu/constants.dart";
-import "package:iiitb_menu/models/initialPageIndexFunction.dart"
+import "package:iiitb_menu/models/initialPageIndexFunction.dart";
 import 'dart:io';
 import "package:flutter/material.dart";
 import "package:crypto/crypto.dart";
