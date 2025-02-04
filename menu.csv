@@ -1,41 +1,41 @@
 Unnamed: 0,Unnamed: 1,Unnamed: 2,Unnamed: 3,Unnamed: 4,Unnamed: 5,Unnamed: 6,Unnamed: 7,Unnamed: 8
  , ,MONDAY,TUESDAY,WEDNESDAY,THURSDAY,FRIDAY,SATURDAY,SUNDAY
- , ,2025-01-20 00:00:00,2025-01-21 00:00:00,2025-01-22 00:00:00,2025-01-23 00:00:00,2025-01-24 00:00:00,2025-01-25 00:00:00,2025-01-26 00:00:00
- , ,2025-01-27 00:00:00,2025-01-28 00:00:00,2025-01-29 00:00:00,2025-01-30 00:00:00,2025-01-31 00:00:00,2025-02-01 00:00:00,2025-02-02 00:00:00
+ , ,2025-02-03 00:00:00,2025-02-04 00:00:00,2025-02-05 00:00:00,2025-02-06 00:00:00,2025-02-07 00:00:00,2025-02-08 00:00:00,2025-02-09 00:00:00
+ , ,2025-02-10 00:00:00,2025-02-11 00:00:00,2025-02-12 00:00:00,2025-02-13 00:00:00,2025-02-14 00:00:00,2025-02-15 00:00:00,2025-02-16 00:00:00
 BREAKFAST, , , , , , , , 
- ,BREAKFAST 1,IDLY,PLAIN POORI,Pongal,semiya bath,Mysore Bonda,Podi Masala Dosa,GOBI PARATHA
- ,BREAKFAST 2,Medu vada,MASALA UPMA,ALOO ONION PARATHA,Poha,Veg Sandwich,KESARI BATH without clove,Masala Upma
- ,SAMBAR OR KETCHUP,Veg sambar,,,sambar,sambar, Sambar,
- ,CURD,,,Curd,,,,CURD
- ,CHUTNEY,Coconut chutney ,COCONUT CHUTNEY,Peanut Chuteny,Coconut chutney,Peanut chutney,PEANUT CHUTNEY,Tomato Chutney
-,CURRY,,Aloo subzi,,,,,
- ,EGG,Boiled egg,,Egg Bhurji,,omelette,,
- ,JUICE/FRUITS,Banana,Fruits,,Fruits,banana,Pineapple Juice,watermelon juice
+ ,BREAKFAST 1,IDLY,Aloo Onion Paratha,MASALA UPMA,Bedmi POORI,GOBI PARATHA,Podi Masala Dosa,Akki roti
+ ,BREAKFAST 2,Medu vada,Poha,ONION Tomato Utappam,Dhokla,PONGAL,KESARI BATH without clove,Aloo Sandwich
+ ,SAMBAR OR KETCHUP,Veg sambar,,Sambaar,,,Sambar,Sambar
+ ,CURD,,Curd,,,CURD,,
+ ,CHUTNEY,Coconut chutney ,Peanut Chutney,Coconut Chutney,Green Chutney,Tomato Chutney,Peanut Chutney,Coconut Chutney
+,CURRY,,,,Aloo subzi(Spicy),,,
+ ,EGG,Boiled egg,,Egg Bhurji,,,,Omlette
+ ,JUICE/FRUITS,Banana,Fruits,,Fruits,watermelon juice,Pineapple Juice,Banana
 LUNCH, , , , , , , , 
-,INDIAN BREAD,CHAPATHI,AJWANI CHAPATI,JEERA CHAPATI, POORI,CORRIANDER CHAPATHI,Chapati,BHATURE
- ,VEG GRAVY,Malai Kofta,Gatta ki subji,Vaikai Kura,ALOO BHAJJI(Bedmi puri style),Egg curry/ Soya Capsicum curry,Dum aloo,PINDI CHOLE
- ,VEG DRY/ STARTERS,BHINDI kurkure,Dondakaya Semi Dry,kale chole,Bharwa mirchi,Cabbage fry,Tomato sev Curry,ALOO MUTTER DRY
- ,FLAVORED RICE,Puliogare,lemon rice without onion,CURD RICE,bisibelle bhat,Tomato Rice,JEERA RICE,VEG PULAO
+,INDIAN BREAD,CHAPATHI,Chapati,JEERA CHAPATI,POORI,CORRIANDER CHAPATHI,AJWANI CHAPATI,BHATURE
+ ,VEG GRAVY,Vankai Curry,Dum aloo,Dahi arbi,ALOO BHAJJI(Bedmi puri style),Egg curry/ Soya Capsicum curry,Gatta ki subji,PINDI CHOLE
+ ,VEG DRY/ STARTERS,BHINDI kurkure,Rajma masala,chole masala dry,Bharwa mirchi,Aloo Jeera,Dondakaya Semi Dry,ALOO MUTTER DRY
+ ,FLAVORED RICE,Puliogare,JEERA RICE,CURD RICE,Tomato rice,Bisi bele bath,lemon rice without onion,VEG PULAO
  ,PLAIN RICE,PLAIN RICE,PLAIN RICE,PLAIN RICE,PLAIN RICE,PLAIN RICE,PLAIN RICE,PLAIN RICE
- ,DAL,DAL TADKA,arhar dal,GREEN MOONG DAL,LASOONI DAL TADKA,Dal Panchmel,majjiga pulusu,Masoor Dal
- ,SAMBAR OR RASAM, Tomato RASAM,Malbar  Cucumber SAMBAR,PEPPER RASAM,Pumpkin Sambhar,TOMATO RASAM,Peanut gun powder with ghee,Garlic rasam
- ,CURD BASE,Curd,curd,lemonade,Curd,Raita,Rasam,Sweet Lassi
- ,SALAD/SPROUTS,PASTA SALAD,ALOO CHANA CHAT,green salad,CUCUMBER SALAD,GREEN SALAD,Tomato Green Salad,ONION\CHILLI\LEMON
- ,SWEETS,CHOCOLATE ICE CREAM,GUJIYA,BANANA SIRKIN SWEET,Ice Cream,PAYASAM,Moong Dal Halwa,Gulab Jamun
+ ,DAL,DAL TADKA,majjiga pulusu,GREEN MOONG DAL,LASOONI DAL TADKA,Dal Panchmel,arhar dal,Masoor Dal
+ ,SAMBAR OR RASAM,Tomato RASAM,Peanut gun powder with ghee,PEPPER RASAM,Pumpkin Sambhar,TOMATO RASAM,Malbar Cucumber SAMBAR,Garlic rasam
+ ,CURD BASE,Curd,Rasam,lemonade,Curd,Curd,curd,Sweet Lassi
+ ,SALAD/SPROUTS,PASTA SALAD,Tomato Green Salad,green salad,CUCUMBER SALAD,GREEN SALAD,ALOO CHANA CHAT,ONION\CHILLI\LEMON
+ ,SWEETS,CHOCOLATE ICE CREAM,Moong Dal Halwa,mysore pak,Chocolate pastry cake,Strawberry/butterscotch Milkshake,GUJIYA,Kala Jamun
 SNACKS, , , , , , , , 
-,SNACKS,ALOO BONDA,VADA PAV,PAV BHAJI,channa usuli,Samosa,Punugulu,Veg cutlet
- ,ACCOMPANIMENTS,GREEN CHUYNEY,GREEN CHUTNEY,,,tomato sauce,Tomato Chutney, 
+,SNACKS,Masala Idly,VADA PAV,Onion Bhajiya,Samosa,Veg cutlet,Dahi papdi chaat,Sabudana Vada
+ ,ACCOMPANIMENTS,GREEN CHUTNEY,GREEN CHUTNEY,Tomato sauce,Imlie chutney,Green chutney,Green Chutney and Imlie chutney,Tomato sauce
  ,TEA/COFFEE/MILK,TEA/COFFEE/MILK,TEA/COFFEE/MILK,TEA/COFFEE/MILK,TEA/COFFEE/MILK,TEA/COFFEE/MILK,TEA/COFFEE/MILK,TEA/COFFEE/MILK
 DINNER, , , , , , , , 
 ,INDIAN BREAD,PUDINA CHAPATI,CHAPATI,Tawa paratha,MASALA CHAPATI,Mint Paratha,ajwain chapati,METHI CHAPATHI
- ,VEG GRAVY,Tawa Subzi,Bhindi pulusu,Vangi bath,Tawa subzi,TAWA SUBZI,Honey chilli potato,SUBZI HANDI
- ,VEG DRY/ STARTERS,Masala Aloo Do Pyaza,Gobhi 65,ALOO METHI,small pieces Aloo fry,,BEGAN BARTHA,
- ,FLAVORED RICE,Red Sauce Pasta Live,VEG DUM BIRYANI,,Burnt Garlic Rice,VEG BIRYANI ( Hydarabadi style),Schezwan noodles with schezwan sauce,Veg Fried rice
+ ,VEG GRAVY,Tawa Subzi,Methi Malai Mattar,,Malai kofta,TAWA SUBZI,Subz Lahori,
+ ,VEG DRY/ STARTERS,Masala Aloo Do Pyaza,Gobhi 65,ALOO METHI,small pieces Aloo fry,,Honey chilli potato,SUBZI HANDI
+ ,FLAVORED RICE,Red Sauce Pasta Live,VEG DUM BIRYANI,veg biryani (hyderabadi style),Vangi bath,Tomato Rice,Schezwan noodles(live),Veg Fried rice
  ,PLAIN RICE,PLAIN RICE,PLAIN RICE,PLAIN RICE,PLAIN RICE,PLAIN RICE,Steam Rice,PLAIN RICE
- ,DAL,DAL PALAK,DAL MAKHANI,DAL PANCHMEL,BLACK DAL TADKA,DAL TADKA,GONGURA DAL,DAL TADKA
+ ,DAL,Arhar Daal,Black Dal Tadka,DAL PANCHMEL,Corn masala,Moong Daal,DAL Makhani,DAL TADKA
  ,SAMBAR OR RASAM,CARROT SAMBAR,PUMKIN SAMBAR,PINEPPAL Rasam,udupi sambar,LAUKI SAMBAR,Sambar,MANGLUR CUCUMBER SAMBAR
- ,CURD BASE,Buttermilk,CURD,Curd,Veg Raita,Mix Veg Raita,Curd,Curd
- ,SALAD/SPROUTS,Green Salad,PUNJABI SALAD,green salad,Red sauce PASTA  Salad,VEG CORN SALAD,,GREEN SALAD
- ,SWEETS,SOOJI HALWA,HOT BADAM MILK,Fruit custard,diljani,BADHUSHA,SIKAND SWEET,Rice kheer
- ,PANEER, ,,PANEER NAWABI, ,PANEER DRY SEMI ( South Style), ,CHILLI PANEER DRY
- ,CHICKEN, , ,CHILLI CHICKEN, ,HYDERABADI CHICKEN BIRYANI, ,LEMON CHICKEN
+ ,CURD BASE,Buttermilk,CURD,raitha,Curd,Mix Veg Raita,Curd,Curd
+ ,SALAD/SPROUTS,Green Salad,PUNJABI SALAD,green salad,Red sauce PASTA Salad,VEG CORN SALAD,,GREEN SALAD
+ ,SWEETS,Shahi Tukda,Gulaab Jamun,Fruit custard,Boondi Laddoo,Jalebi with Rabdi,Rasgulla,Hot Chocolate
+ ,PANEER,,,PANEER dry semi dry(south style),,Paneer Tikka Masala,,paneer lababdar
+ ,CHICKEN,,,hyderabadi style chicken biryani,,Chicken fry,,chicken lababdar
