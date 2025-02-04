@@ -43,6 +43,7 @@ class GlobalModel extends ChangeNotifier {
         this.menuAvailable = DataStatus.Loaded;
       } else {
         this.menuAvailable = DataStatus.NotFound;
+        updateLocal(); // if some data is available but current data is not, check for update.
       }
       notifyListeners();
     });
