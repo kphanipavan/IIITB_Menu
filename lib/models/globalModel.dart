@@ -14,6 +14,7 @@ class GlobalModel extends ChangeNotifier {
   DateTime currentDate = DateTime.now();
   String menuTime = breakfast;
   DataStatus menuAvailable = DataStatus.Loading;
+  bool searchEnable = false;
 
   GlobalModel() {
     // print("In constructor");
@@ -171,6 +172,25 @@ class GlobalModel extends ChangeNotifier {
     this.currentDate = this.currentDate.add(const Duration(days: -1));
     this.isMenuAvailable();
     notifyListeners();
+  }
+
+  void enableSearch() {
+    this.searchEnable = true;
+    notifyListeners();
+  }
+
+  void toggleSearch() {
+    this.searchEnable = !this.searchEnable;
+    notifyListeners();
+  }
+
+  void disableSearch() {
+    this.searchEnable = false;
+    notifyListeners();
+  }
+
+  bool get search {
+    return this.searchEnable;
   }
 
   void setMenuTime(int time) {

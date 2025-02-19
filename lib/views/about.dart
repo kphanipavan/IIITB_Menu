@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import "package:iiitb_menu/constants.dart";
-import "package:url_launcher/url_launcher.dart";
 import "package:iiitb_menu/widgets/linkButton.dart";
 
 class AboutPage extends StatelessWidget {

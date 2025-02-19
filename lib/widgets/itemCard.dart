@@ -3,6 +3,10 @@
 import "package:flutter/material.dart";
 import "package:iiitb_menu/constants.dart";
 import "package:iiitb_menu/widgets/vegIcons.dart";
+import "package:iiitb_menu/models/imageSearch.dart";
+import "package:url_launcher/url_launcher.dart";
+import "package:provider/provider.dart";
+import "package:iiitb_menu/models/globalModel.dart";
 
 class ItemCard extends StatelessWidget {
   const ItemCard(
@@ -38,20 +42,38 @@ class ItemCard extends StatelessWidget {
     if (this.itemName == EMPTY) {
       return Container();
     }
-    return Container(
-      margin: const EdgeInsets.symmetric(horizontal: 5, vertical: 5),
-      padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 5),
-      decoration: BoxDecoration(
-        borderRadius: BorderRadius.circular(2),
-        border: Border.all(width: 0.5, color: borderColor),
+    return ElevatedButton(
+      onPressed: Provider.of<GlobalModel>(context).search
+          ? () {
+              Provider.of<GlobalModel>(context, listen: false).disableSearch();
+              launchUrl(getGoogleImageEncodedURL(itemName.toLowerCase()));
+            }
+          : null,
+      style: ElevatedButton.styleFrom(
+        splashFactory: NoSplash.splashFactory,
+        enableFeedback: true,
+        disabledBackgroundColor: Colors.transparent,
+        disabledForegroundColor: Colors.black,
+        shape: const RoundedRectangleBorder(
+            borderRadius: BorderRadius.all(Radius.zero)),
+        padding: const EdgeInsets.all(0),
       ),
-      child: Row(mainAxisAlignment: MainAxisAlignment.spaceBetween, children: [
-        Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
-          Text(this.itemName, style: const TextStyle(fontSize: 25)),
-          Text(this.itemType, style: const TextStyle(fontSize: 15)),
+      child: Container(
+        margin: const EdgeInsets.symmetric(horizontal: 5, vertical: 5),
+        padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 5),
+        decoration: BoxDecoration(
+          borderRadius: BorderRadius.circular(2),
+          border: Border.all(width: 0.5, color: borderColor),
+        ),
+        child:
+            Row(mainAxisAlignment: MainAxisAlignment.spaceBetween, children: [
+          Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
+            Text(this.itemName, style: const TextStyle(fontSize: 25)),
+            Text(this.itemType, style: const TextStyle(fontSize: 15)),
+          ]),
+          vegClassIcon,
         ]),
-        vegClassIcon,
-      ]),
+      ),
     );
   }
 }

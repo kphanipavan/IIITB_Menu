@@ -25,6 +25,13 @@ class HomePage extends StatelessWidget {
           return Consumer<GlobalModel>(
               builder: (BuildContext context, GlobalModel data, Widget? child) {
             return Scaffold(
+              floatingActionButton: FloatingActionButton(
+                onPressed: Provider.of<GlobalModel>(context, listen: false)
+                    .toggleSearch,
+                child: Icon(Provider.of<GlobalModel>(context).search
+                    ? Icons.close
+                    : Icons.search),
+              ),
               drawer: Drawer(
                 child: ListView(
                   children: [
