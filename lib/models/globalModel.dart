@@ -18,6 +18,23 @@ class GlobalModel extends ChangeNotifier {
 
   GlobalModel() {
     // print("In constructor");
+    int iniPage = getInitialPageIndex();
+    switch (iniPage) {
+      case 0:
+        this.menuTime = breakfast;
+        break;
+      case 1:
+        this.menuTime = lunch;
+        break;
+      case 2:
+        this.menuTime = snak;
+        break;
+      case 3:
+        this.menuTime = dinner;
+        break;
+      default:
+    }
+    notifyListeners();
     GlobalModel.loadData2().then((value) {
       mainData = value;
       if (this.mainData["dates"].keys.contains(this.date)) {
