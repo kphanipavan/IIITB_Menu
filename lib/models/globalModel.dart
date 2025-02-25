@@ -2,6 +2,7 @@
 
 import "dart:convert";
 import "package:iiitb_menu/constants.dart";
+import "package:iiitb_menu/models/initialPageIndexFunction.dart";
 import 'dart:io';
 import "package:flutter/material.dart";
 import "package:crypto/crypto.dart";
@@ -10,9 +11,11 @@ import "package:intl/intl.dart";
 import "package:shared_preferences/shared_preferences.dart";
 import "package:iiitb_menu/models/initialPageIndexFunction.dart";
 
+
 class GlobalModel extends ChangeNotifier {
   late Map<dynamic, dynamic> mainData;
   DateTime currentDate = DateTime.now();
+
   String menuTime = breakfast;
   DataStatus menuAvailable = DataStatus.Loading;
   bool searchEnable = false;
@@ -42,6 +45,7 @@ class GlobalModel extends ChangeNotifier {
         this.menuAvailable = DataStatus.Loaded;
       } else {
         this.menuAvailable = DataStatus.NotFound;
+        updateLocal(); // if some data is available but current data is not, check for update.
       }
       notifyListeners();
     });

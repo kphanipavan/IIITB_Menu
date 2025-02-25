@@ -99,7 +99,7 @@ class Header extends StatelessWidget {
     return Padding(
       padding: const EdgeInsets.all(8.0),
       child: Text(
-        "$text:",
+        "$text",
         style: const TextStyle(fontSize: 30),
       ),
     );

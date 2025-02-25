@@ -12,8 +12,9 @@ class BusTimingsPage extends StatelessWidget {
     int leftBusses = -1;
     int currentBusIndex = -1;
     DateTime currentTime = DateTime.now();
+    // DateTime currentTime = timeFromat.parse("09.45PM");
     int currentTimeInt = currentTime.hour * 60 + currentTime.minute;
-    for (int i = 0; i <= busTimimgs.length; i++) {
+    for (int i = 0; i < busTimimgs.length; i++) {
       Map curSch = busTimimgs[i];
       DateTime curBusTime = timeFromat.parse(curSch["time"]);
       int curBusTimeInt = curBusTime.hour * 60 + curBusTime.minute;
@@ -53,15 +54,17 @@ class BusTimingsPage extends StatelessWidget {
             ),
           ),
           SliverToBoxAdapter(
-            child: NextBusCard(
-              count: busTimimgs[currentBusIndex]["count"],
-              loc: busTimimgs[currentBusIndex]["from"],
-              time: busTimimgs[currentBusIndex]["time"],
-            ),
+            child: currentBusIndex >= 0
+                ? NextBusCard(
+                    count: busTimimgs[currentBusIndex]["count"],
+                    loc: busTimimgs[currentBusIndex]["from"],
+                    time: busTimimgs[currentBusIndex]["time"],
+                  )
+                : Container(),
           ),
           SliverToBoxAdapter(
             child: (currentBusIndex >= 0)
-                ? const Header("Later Busses")
+                ? const Header("Later Busses:")
                 : const Header("No Busses Left for Today"),
           ),
           SliverList(
