@@ -8,6 +8,7 @@ import "package:crypto/crypto.dart";
 import "package:http/http.dart";
 import "package:intl/intl.dart";
 import "package:shared_preferences/shared_preferences.dart";
+import "package:iiitb_menu/models/initialPageIndexFunction.dart";
 
 class GlobalModel extends ChangeNotifier {
   late Map<dynamic, dynamic> mainData;
