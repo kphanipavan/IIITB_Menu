@@ -34,28 +34,9 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v3.6.0
 
-      # - name: Setup Python
-      #   uses: actions/setup-python@v4.7.0
-      #   with:
-      #     python-version: "3.11"
-
-      # - name: Install Packages
-      #   working-directory: ./scripts
-      #   run: |
-      #     python -m pip install --upgrade pip
-      #     pip install -r requirements.txt
-
-      # - name: Compile Menu
-      #   working-directory: ./scripts
-      #   run: python scrapeToJson.py
-
       # - name: Copy Data File
       #   run: cp ./scripts/data.dart ./lib/data.dart
-      # - name: Cache Flutter dependencies
-      #   uses: actions/cache@v1
-      #   with:
-      #     path: /opt/hostedtoolcache/flutter
-      #     key: ${{ runner.OS }}-flutter-install-cache-${{ env.flutter_version }}
+
       - name: Install Flutter
         uses: subosito/flutter-action@v2.10.0
         with:
@@ -64,8 +45,8 @@ jobs:
       - name: Get dependencies
         run: flutter pub get
 
-      # - name: Analyze project
-      #   run: flutter analyze
+      - name: Analyze project
+        run: flutter analyze --no-fatal-infos
 
       # - name: Test project
       #   run: flutter test

@@ -22,12 +22,8 @@ class MenuListView extends StatelessWidget {
         String menuIndex = data.mainData["dates"][data.date];
         return Column(
           children: [
-            Container(
-              // height: 10,
-              child: Text(data.mainData["menu"][menuIndex]
-                      ["${this.menuType}Timings"]
-                  .toString()),
-            ),
+            Text(data.mainData["menu"][menuIndex]["${this.menuType}Timings"]
+                .toString()),
             Expanded(
               child: ListView.builder(
                   itemCount: data.mainData["items"][this.menuType].length,

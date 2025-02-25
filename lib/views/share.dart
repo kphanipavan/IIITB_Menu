@@ -24,7 +24,7 @@ class SharePage extends StatelessWidget {
           InkWell(
             enableFeedback: true,
             onTap: () {
-              var ret = Share.share(
+              var _ = Share.share(
                 "Hey, use this to track IIITB's Mess Menu. https://kphanipavan.github.io/IIITB_Menu/",
                 // subject: "IIITB Menu App",
               );
