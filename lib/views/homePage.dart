@@ -32,8 +32,35 @@ class HomePage extends StatelessWidget {
                   if (data.searchEnable) {
                     ScaffoldMessenger.of(context).showSnackBar(
                       SnackBar(
-                          content: const Text(
-                              "Click to Lookup in Google Image Search"),
+                          content: RichText(
+                            text: const TextSpan(
+                              text: "Click to Lookup in ",
+                              style: TextStyle(color: Colors.white),
+                              children: [
+                                TextSpan(
+                                    text: "G",
+                                    style: TextStyle(color: Color(0xFF4285F4))),
+                                TextSpan(
+                                    text: "o",
+                                    style: TextStyle(color: Color(0xFFEA4335))),
+                                TextSpan(
+                                    text: "o",
+                                    style: TextStyle(color: Color(0xFFFBBC05))),
+                                TextSpan(
+                                    text: "g",
+                                    style: TextStyle(color: Color(0xFF4285F4))),
+                                TextSpan(
+                                    text: "l",
+                                    style: TextStyle(color: Color(0xFF34A853))),
+                                TextSpan(
+                                    text: "e",
+                                    style: TextStyle(color: Color(0xFFEA4335))),
+                                TextSpan(
+                                    text: " Image Search",
+                                    style: TextStyle(color: Colors.white))
+                              ],
+                            ),
+                          ),
                           behavior: SnackBarBehavior.fixed,
                           clipBehavior: Clip.hardEdge,
                           duration: const Duration(seconds: 10),
