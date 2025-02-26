@@ -26,11 +26,29 @@ class HomePage extends StatelessWidget {
               builder: (BuildContext context, GlobalModel data, Widget? child) {
             return Scaffold(
               floatingActionButton: FloatingActionButton(
-                onPressed: Provider.of<GlobalModel>(context, listen: false)
-                    .toggleSearch,
+                onPressed: () {
+                  Provider.of<GlobalModel>(context, listen: false)
+                      .toggleSearch();
+                  if (data.searchEnable) {
+                    ScaffoldMessenger.of(context).showSnackBar(
+                      SnackBar(
+                          content: const Text(
+                              "Click to Lookup in Google Image Search"),
+                          behavior: SnackBarBehavior.fixed,
+                          clipBehavior: Clip.hardEdge,
+                          duration: const Duration(seconds: 10),
+                          action: SnackBarAction(label: "X", onPressed: () {})),
+                    );
+                  }
+                },
+                splashColor: Colors.transparent,
+                elevation: 3,
+                hoverElevation: 2,
+                focusElevation: 0,
+                highlightElevation: 0,
                 child: Icon(Provider.of<GlobalModel>(context).search
-                    ? Icons.close
-                    : Icons.search),
+                    ? Icons.search_off_rounded
+                    : Icons.image_search_rounded),
               ),
               drawer: Drawer(
                 child: ListView(
