@@ -28,7 +28,7 @@ class BusTimingsPage extends StatelessWidget {
       leftBusses = busTimimgs.length;
       // currentBusIndex = busTimimgs.length - 1;
     }
-    print("$leftBusses  $currentBusIndex, $currentTimeInt");
+    // print("$leftBusses  $currentBusIndex, $currentTimeInt");
     return Scaffold(
       appBar: AppBar(
         title: const Text("Guesture Bus Timings (BETA)"),

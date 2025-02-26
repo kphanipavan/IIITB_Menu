@@ -14,12 +14,12 @@ class LeftBusCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: EdgeInsets.symmetric(horizontal: 8.0),
+      padding: const EdgeInsets.symmetric(horizontal: 8.0),
       color: const Color(0x30ff0000),
       child: Row(
         children: [
-          Text(this.time, style: TextStyle(fontSize: 20)),
-          Text("  From ${this.loc}", style: TextStyle(fontSize: 20)),
+          Text(time, style: const TextStyle(fontSize: 20)),
+          Text("  From $loc", style: const TextStyle(fontSize: 20)),
           // Text("  x${this.count}"),
           // Icon(Symbols.sprint_rounded),
         ],
@@ -46,14 +46,14 @@ class NextBusCard extends StatelessWidget {
       children: [
         const Header("Next Bus"),
         Container(
-          padding: EdgeInsets.symmetric(horizontal: 8.0),
+          padding: const EdgeInsets.symmetric(horizontal: 8.0),
           color: const Color(0xa3ffac12),
           child: Row(
             mainAxisSize: MainAxisSize.max,
             children: [
               Text(
-                "${this.time}\nFrom ${this.loc}",
-                style: TextStyle(fontSize: 50),
+                "$time\nFrom $loc",
+                style: const TextStyle(fontSize: 50),
               ),
             ],
           ),
@@ -76,12 +76,12 @@ class LaterBusCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: EdgeInsets.symmetric(horizontal: 8.0),
+      padding: const EdgeInsets.symmetric(horizontal: 8.0),
       color: const Color(0x3000ff00),
       child: Row(
         children: [
-          Text(this.time, style: TextStyle(fontSize: 20)),
-          Text("  From ${this.loc}", style: TextStyle(fontSize: 20)),
+          Text(time, style: const TextStyle(fontSize: 20)),
+          Text("  From $loc", style: const TextStyle(fontSize: 20)),
           // Text("  x${this.count}"),
           // Icon(Symbols.sprint_rounded),
         ],
@@ -99,7 +99,7 @@ class Header extends StatelessWidget {
     return Padding(
       padding: const EdgeInsets.all(8.0),
       child: Text(
-        "$text",
+        text,
         style: const TextStyle(fontSize: 30),
       ),
     );
