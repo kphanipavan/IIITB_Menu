@@ -10,32 +10,32 @@ import "package:http/http.dart";
 import "package:intl/intl.dart";
 import "package:shared_preferences/shared_preferences.dart";
 
-
 class GlobalModel extends ChangeNotifier {
   late Map<dynamic, dynamic> mainData;
   DateTime currentDate = DateTime.now();
 
   String menuTime = breakfast;
   DataStatus menuAvailable = DataStatus.Loading;
+  bool searchEnable = false;
 
   GlobalModel() {
     // print("In constructor");
-  int iniPage=getInitialPageIndex();
-  switch (iniPage){
-    case 0:
-      this.menuTime = breakfast;
-      break;
-    case 1:
-      this.menuTime = lunch;
-      break;
-   case 2:
-      this.menuTime = snak;
-      break;
-   case 3:
-      this.menuTime = dinner;
-      break;
-   default:
-}
+    int iniPage = getInitialPageIndex();
+    switch (iniPage) {
+      case 0:
+        this.menuTime = breakfast;
+        break;
+      case 1:
+        this.menuTime = lunch;
+        break;
+      case 2:
+        this.menuTime = snak;
+        break;
+      case 3:
+        this.menuTime = dinner;
+        break;
+      default:
+    }
     notifyListeners();
     GlobalModel.loadData2().then((value) {
       mainData = value;
@@ -69,9 +69,9 @@ class GlobalModel extends ChangeNotifier {
       } else {
         return "";
       }
-    } on (ClientException, SocketException, HttpException) catch (exce) {
-      print("Unable to download hash");
-      print(exce);
+    } on (ClientException, SocketException, HttpException) catch (_) {
+      // print("Unable to download hash");
+      // print(_);
       return "";
     }
   }
@@ -80,9 +80,9 @@ class GlobalModel extends ChangeNotifier {
     try {
       Response dataRequest = await get(Uri.parse(dataLink));
       return dataRequest.body;
-    } on SocketException catch (exce) {
-      print("Unable to download any data");
-      print(exce);
+    } on SocketException catch (_) {
+      // print("Unable to download any data");
+      // print(_);
       return "";
     }
   }
@@ -95,9 +95,9 @@ class GlobalModel extends ChangeNotifier {
     rawData ??= "";
     String rawHash = md5.convert(utf8.encode(rawData)).toString();
     if (remoteHash != rawHash) {
-      print("Local data is out of date, updating local");
-      print("Old Hash: $rawHash");
-      print("New Hash: $remoteHash");
+      // print("Local data is out of date, updating local");
+      // print("Old Hash: $rawHash");
+      // print("New Hash: $remoteHash");
       // Donwload new data and save it.
       rawData = await getLatestData();
       Map returnData = jsonDecode(rawData);
@@ -105,7 +105,7 @@ class GlobalModel extends ChangeNotifier {
       return returnData;
     } else {
       // return the same data
-      print("Local data is up to date");
+      // print("Local data is up to date");
       return jsonDecode(rawData);
     }
   }
@@ -129,11 +129,11 @@ class GlobalModel extends ChangeNotifier {
     String? rawData;
     rawData = prefs.getString(storageKey);
     if (rawData != null) {
-      print("Some data found");
+      // print("Some data found");
       returnData = jsonDecode(rawData);
       return returnData;
     } else {
-      print("Data Not Found");
+      // print("Data Not Found");
       return GlobalModel.updateLocal();
     }
   }
@@ -152,18 +152,18 @@ class GlobalModel extends ChangeNotifier {
       // print(rawHash);
       returnData = jsonDecode(rawData);
     } else {
-      print("Data Not Found");
+      // print("Data Not Found");
       returnData = {};
       rawHash = "";
     }
     String remoteHash = await GlobalModel.getLatestHash();
-    print("Remote Hash: $remoteHash");
+    // print("Remote Hash: $remoteHash");
     if (remoteHash == "") {
     } else if (remoteHash == rawHash) {
-      print("Remote hash $remoteHash is same as local hash $rawHash");
+      // print("Remote hash $remoteHash is same as local hash $rawHash");
     } else {
-      print("Remote hash $remoteHash is NOT the same as local hash $rawHash");
-      print("Getting data from remote");
+      // print("Remote hash $remoteHash is NOT the same as local hash $rawHash");
+      // print("Getting data from remote");
       rawData = await getLatestData();
       if (rawData == "") {
         return {};
@@ -192,6 +192,25 @@ class GlobalModel extends ChangeNotifier {
     this.currentDate = this.currentDate.add(const Duration(days: -1));
     this.isMenuAvailable();
     notifyListeners();
+  }
+
+  void enableSearch() {
+    this.searchEnable = true;
+    notifyListeners();
+  }
+
+  void toggleSearch() {
+    this.searchEnable = !this.searchEnable;
+    notifyListeners();
+  }
+
+  void disableSearch() {
+    this.searchEnable = false;
+    notifyListeners();
+  }
+
+  bool get search {
+    return this.searchEnable;
   }
 
   void setMenuTime(int time) {

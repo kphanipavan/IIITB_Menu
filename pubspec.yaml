@@ -45,7 +45,8 @@ dependencies:
   share_plus: ^10.1.1
   url_launcher: ^6.3.1
   qr_flutter: ^4.1.0
-  material_symbols_icons: ^4.2801.0
+  # auto_size_text: ^3.0.0
+  # material_symbols_icons: ^4.2801.0
   # sembast:
 
 dev_dependencies:

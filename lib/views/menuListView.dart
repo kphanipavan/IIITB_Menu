@@ -5,6 +5,7 @@ import 'package:iiitb_menu/constants.dart';
 import 'package:iiitb_menu/models/globalModel.dart';
 import 'package:iiitb_menu/widgets/itemCard.dart';
 import 'package:provider/provider.dart';
+// import "package:auto_size_text/auto_size_text.dart";
 
 class MenuListView extends StatelessWidget {
   const MenuListView({super.key, required this.menuType});
@@ -20,30 +21,49 @@ class MenuListView extends StatelessWidget {
               child: Text("Loading...", style: TextStyle(fontSize: 40)));
         }
         String menuIndex = data.mainData["dates"][data.date];
-        return Column(
+        return ListView(
           children: [
-            Container(
-              // height: 10,
+            Center(
               child: Text(data.mainData["menu"][menuIndex]
                       ["${this.menuType}Timings"]
                   .toString()),
             ),
-            Expanded(
-              child: ListView.builder(
-                  itemCount: data.mainData["items"][this.menuType].length,
-                  itemBuilder: (BuildContext context, int index) {
-                    String itemType =
-                        data.mainData["items"][this.menuType][index];
-                    String itemName = data.mainData["menu"][menuIndex]
-                        [this.menuType][itemType]["name"];
-                    String itemVeggness = data.mainData["menu"][menuIndex]
-                        [this.menuType][itemType]["eggy"];
-                    return ItemCard(
-                      itemName: itemName,
-                      itemType: itemType,
-                      vegClass: itemVeggness,
-                    );
-                  }),
+            ListView.builder(
+                physics: const ClampingScrollPhysics(),
+                shrinkWrap: true,
+                itemCount: data.mainData["items"][this.menuType].length,
+                itemBuilder: (BuildContext context, int index) {
+                  String itemType =
+                      data.mainData["items"][this.menuType][index];
+                  String itemName = data.mainData["menu"][menuIndex]
+                      [this.menuType][itemType]["name"];
+                  String itemVeggness = data.mainData["menu"][menuIndex]
+                      [this.menuType][itemType]["eggy"];
+                  return ItemCard(
+                    itemName: itemName,
+                    itemType: itemType,
+                    vegClass: itemVeggness,
+                  );
+                }),
+            const Padding(
+              padding: EdgeInsets.symmetric(horizontal: 8),
+              child: SizedBox(
+                height: 80,
+                // child: Row(
+                //   mainAxisAlignment: MainAxisAlignment.end,
+                //   children: [
+                // Expanded(
+                //   child: AutoSizeText(
+                //     "Lookup an Item in Google Image Search ->",
+                //     textAlign: TextAlign.right,
+                //     maxLines: 1,
+                //     minFontSize: 16,
+                //   ),
+                // ),
+                //     SizedBox(width: 75),
+                //   ],
+                // ),
+              ),
             ),
           ],
         );
