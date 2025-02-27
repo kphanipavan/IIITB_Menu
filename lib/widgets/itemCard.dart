@@ -62,8 +62,8 @@ class ItemCard extends StatelessWidget {
         margin: const EdgeInsets.symmetric(horizontal: 5, vertical: 5),
         padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 5),
         decoration: BoxDecoration(
-          borderRadius: BorderRadius.circular(2),
-          border: Border.all(width: 0.5, color: borderColor),
+          borderRadius: BorderRadius.circular(3),
+          border: Border.all(width: 0.75, color: borderColor),
         ),
         child:
             Row(mainAxisAlignment: MainAxisAlignment.spaceBetween, children: [

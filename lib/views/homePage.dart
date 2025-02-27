@@ -32,40 +32,48 @@ class HomePage extends StatelessWidget {
                   if (data.searchEnable) {
                     ScaffoldMessenger.of(context).showSnackBar(
                       SnackBar(
-                          content: RichText(
-                            text: const TextSpan(
-                              text: "Click to Lookup in ",
-                              style: TextStyle(color: Colors.white),
-                              children: [
-                                TextSpan(
-                                    text: "G",
-                                    style: TextStyle(color: Color(0xFF4285F4))),
-                                TextSpan(
-                                    text: "o",
-                                    style: TextStyle(color: Color(0xFFEA4335))),
-                                TextSpan(
-                                    text: "o",
-                                    style: TextStyle(color: Color(0xFFFBBC05))),
-                                TextSpan(
-                                    text: "g",
-                                    style: TextStyle(color: Color(0xFF4285F4))),
-                                TextSpan(
-                                    text: "l",
-                                    style: TextStyle(color: Color(0xFF34A853))),
-                                TextSpan(
-                                    text: "e",
-                                    style: TextStyle(color: Color(0xFFEA4335))),
-                                TextSpan(
-                                    text: " Image Search",
-                                    style: TextStyle(color: Colors.white))
-                              ],
-                            ),
+                        backgroundColor: const Color(0xFFCCC2DC),
+                        content: RichText(
+                          text: const TextSpan(
+                            text: "Select an Item for ",
+                            style: TextStyle(color: Colors.black),
+                            children: [
+                              TextSpan(
+                                  text: "G",
+                                  style: TextStyle(color: Color(0xFF4285F4))),
+                              TextSpan(
+                                  text: "o",
+                                  style: TextStyle(color: Color(0xFFEA4335))),
+                              TextSpan(
+                                  text: "o",
+                                  style: TextStyle(color: Color(0xFFFBBC05))),
+                              TextSpan(
+                                  text: "g",
+                                  style: TextStyle(color: Color(0xFF4285F4))),
+                              TextSpan(
+                                  text: "l",
+                                  style: TextStyle(color: Color(0xFF34A853))),
+                              TextSpan(
+                                  text: "e",
+                                  style: TextStyle(color: Color(0xFFEA4335))),
+                              TextSpan(
+                                  text: " Image Search",
+                                  style: TextStyle(color: Colors.black))
+                            ],
                           ),
-                          behavior: SnackBarBehavior.fixed,
-                          clipBehavior: Clip.hardEdge,
-                          duration: const Duration(seconds: 10),
-                          action: SnackBarAction(label: "X", onPressed: () {})),
+                        ),
+                        behavior: SnackBarBehavior.fixed,
+                        clipBehavior: Clip.hardEdge,
+                        duration: const Duration(seconds: 10),
+                        action: SnackBarAction(
+                          label: "X",
+                          onPressed: () {},
+                          textColor: Colors.black,
+                        ),
+                      ),
                     );
+                  } else {
+                    ScaffoldMessenger.of(context).hideCurrentSnackBar();
                   }
                 },
                 splashColor: Colors.transparent,
