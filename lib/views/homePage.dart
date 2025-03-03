@@ -46,7 +46,7 @@ class HomePage extends StatelessWidget {
                                   style: TextStyle(color: Color(0xFFEA4335))),
                               TextSpan(
                                   text: "o",
-                                  style: TextStyle(color: Color(0xFFFBBC05))),
+                                  style: TextStyle(color: Color(0xFFffcf3f))),
                               TextSpan(
                                   text: "g",
                                   style: TextStyle(color: Color(0xFF4285F4))),
@@ -64,10 +64,14 @@ class HomePage extends StatelessWidget {
                         ),
                         behavior: SnackBarBehavior.fixed,
                         clipBehavior: Clip.hardEdge,
-                        duration: const Duration(seconds: 10),
+                        duration: const Duration(seconds: 1000000),
                         action: SnackBarAction(
                           label: "X",
-                          onPressed: () {},
+                          onPressed: () {
+                            Provider.of<GlobalModel>(context, listen: false)
+                                .disableSearch();
+                            ScaffoldMessenger.of(context).hideCurrentSnackBar();
+                          },
                           textColor: Colors.black,
                         ),
                       ),

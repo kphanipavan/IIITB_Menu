@@ -47,6 +47,7 @@ class ItemCard extends StatelessWidget {
           ? () {
               Provider.of<GlobalModel>(context, listen: false).disableSearch();
               launchUrl(getGoogleImageEncodedURL(itemName.toLowerCase()));
+              ScaffoldMessenger.of(context).hideCurrentSnackBar();
             }
           : null,
       style: ElevatedButton.styleFrom(
