@@ -28,7 +28,7 @@ class BusTimingsPage extends StatelessWidget {
       leftBusses = busTimimgs.length;
       // currentBusIndex = busTimimgs.length - 1;
     }
-    print("$leftBusses  $currentBusIndex, $currentTimeInt");
+    // print("$leftBusses  $currentBusIndex, $currentTimeInt");
     return Scaffold(
       appBar: AppBar(
         title: const Text("Guesture Bus Timings (BETA)"),
@@ -43,8 +43,8 @@ class BusTimingsPage extends StatelessWidget {
             delegate: SliverChildBuilderDelegate(
               (BuildContext context, index) {
                 Map curSch = busTimimgs[index];
-                DateTime curTime = timeFromat.parse(curSch["time"]);
-                int curTimeInt = curTime.hour * 60 + curTime.minute;
+                // DateTime curTime = timeFromat.parse(curSch["time"]);
+                // int curTimeInt = curTime.hour * 60 + curTime.minute;
                 return LeftBusCard(
                     count: curSch["count"],
                     loc: curSch["from"],
@@ -71,8 +71,8 @@ class BusTimingsPage extends StatelessWidget {
             delegate: SliverChildBuilderDelegate(
               (BuildContext context, index) {
                 Map curSch = busTimimgs[index + leftBusses + 1];
-                DateTime curTime = timeFromat.parse(curSch["time"]);
-                int curTimeInt = curTime.hour * 60 + curTime.minute;
+                // DateTime curTime = timeFromat.parse(curSch["time"]);
+                // int curTimeInt = curTime.hour * 60 + curTime.minute;
                 return LaterBusCard(
                     count: curSch["count"],
                     loc: curSch["from"],

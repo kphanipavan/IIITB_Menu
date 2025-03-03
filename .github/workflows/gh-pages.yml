@@ -29,91 +29,72 @@ jobs:
   build:
     name: Build
     runs-on: ubuntu-latest
-    
+
     steps:
-    - name: Checkout code
-      uses: actions/checkout@v3.6.0
+      - name: Checkout code
+        uses: actions/checkout@v3.6.0
 
-    # - name: Setup Python
-    #   uses: actions/setup-python@v4.7.0
-    #   with:
-    #     python-version: "3.11"
+      # - name: Copy Data File
+      #   run: cp ./scripts/data.dart ./lib/data.dart
 
-    # - name: Install Packages
-    #   working-directory: ./scripts
-    #   run: |
-    #     python -m pip install --upgrade pip
-    #     pip install -r requirements.txt
+      - name: Install Flutter
+        uses: subosito/flutter-action@v2.10.0
+        with:
+          channel: "stable"
 
-    # - name: Compile Menu
-    #   working-directory: ./scripts
-    #   run: python scrapeToJson.py
-    
-    # - name: Copy Data File
-    #   run: cp ./scripts/data.dart ./lib/data.dart
-    # - name: Cache Flutter dependencies
-    #   uses: actions/cache@v1
-    #   with:
-    #     path: /opt/hostedtoolcache/flutter
-    #     key: ${{ runner.OS }}-flutter-install-cache-${{ env.flutter_version }}
-    - name: Install Flutter
-      uses: subosito/flutter-action@v2.10.0
-      with:
-        channel: 'stable' 
-    
-    - name: Get dependencies
-      run: flutter pub get
-    
-    # - name: Analyze project
-    #   run: flutter analyze
+      - name: Get dependencies
+        run: flutter pub get
 
-    # - name: Test project
-    #   run: flutter test
-    
-    - name: Build Web Release
-      run: flutter build web --base-href "/$HREFREPLACE/" --web-renderer canvaskit --no-web-resources-cdn
+      - name: Analyze project
+        run: flutter analyze --no-fatal-infos
 
-    # - name: Build Android Release
-    #   run: flutter build apk --split-per-abi --release --no-track-widget-creation --analyze-size --target-platform "android-arm64"
-    
-    - name: Fix PWA Offline Support 
-      run: |
-        cp scripts/fixOfflinePWA.sh .
-        chmod +x fixOfflinePWA.sh
-        ./fixOfflinePWA.sh
-        cat ./build/web/flutter_service_worker.js
+      # - name: Test project
+      #   run: flutter test
 
-    # - name: Create Release
-    #   uses: marvinpinto/action-automatic-releases@v1.2.1
-    #   with:
-    #     repo_token: "${{ secrets.GITHUB_TOKEN }}"
-    #     automatic_release_tag: "latest"
-    #     prerelease: true
-    #     draft: false
-    #     title: "Git Build"
-    #     files: build/app/outputs/flutter-apk/app-arm64-v8a-release.apk
+      - name: Build Web Release
+        run: flutter build web --base-href "/$HREFREPLACE/" --no-web-resources-cdn
 
-    - name: Upload production-ready build files
-      uses: actions/upload-artifact@v4.4.3
-      with:
-        name: production-files
-        path: ./build/web
-  
+      # - name: Build Android Release
+      #   run: flutter build apk --split-per-abi --release --no-track-widget-creation --analyze-size --target-platform "android-arm64"
+
+      - name: Fix PWA Offline Support
+        run: |
+          cp scripts/fixOfflinePWA.sh .
+          chmod +x fixOfflinePWA.sh
+          ./fixOfflinePWA.sh
+          cat ./build/web/flutter_service_worker.js
+
+      # - name: Create Release
+      #   uses: marvinpinto/action-automatic-releases@v1.2.1
+      #   with:
+      #     repo_token: "${{ secrets.GITHUB_TOKEN }}"
+      #     automatic_release_tag: "latest"
+      #     prerelease: true
+      #     draft: false
+      #     title: "Git Build"
+      #     files: build/app/outputs/flutter-apk/app-arm64-v8a-release.apk
+
+      - name: Upload production-ready build files
+        uses: actions/upload-artifact@v4.4.3
+        with:
+          name: production-files
+          path: ./build/web
+
   deploy:
     name: Deploy
     needs: build
     runs-on: ubuntu-latest
     if: github.ref == 'refs/heads/master'
-    
-    steps:
-    - name: Download artifact
-      uses: actions/download-artifact@v4.1.8
-      with:
-        name: production-files
-        path: ./build
 
-    - name: Deploy to gh-pages
-      uses: peaceiris/actions-gh-pages@v3.9.3
-      with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: ./build
+    steps:
+      - name: Download artifact
+        uses: actions/download-artifact@v4.1.8
+        with:
+          name: production-files
+          path: ./build
+
+      - name: Deploy to gh-pages
+        uses: peaceiris/actions-gh-pages@v3.9.3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./build

@@ -25,6 +25,70 @@ class HomePage extends StatelessWidget {
           return Consumer<GlobalModel>(
               builder: (BuildContext context, GlobalModel data, Widget? child) {
             return Scaffold(
+              floatingActionButton: FloatingActionButton(
+                onPressed: () {
+                  Provider.of<GlobalModel>(context, listen: false)
+                      .toggleSearch();
+                  if (data.searchEnable) {
+                    ScaffoldMessenger.of(context).showSnackBar(
+                      SnackBar(
+                        backgroundColor: const Color(0xFFCCC2DC),
+                        content: RichText(
+                          text: const TextSpan(
+                            text: "Select an Item for ",
+                            style: TextStyle(color: Colors.black),
+                            children: [
+                              TextSpan(
+                                  text: "G",
+                                  style: TextStyle(color: Color(0xFF4285F4))),
+                              TextSpan(
+                                  text: "o",
+                                  style: TextStyle(color: Color(0xFFEA4335))),
+                              TextSpan(
+                                  text: "o",
+                                  style: TextStyle(color: Color(0xFFffcf3f))),
+                              TextSpan(
+                                  text: "g",
+                                  style: TextStyle(color: Color(0xFF4285F4))),
+                              TextSpan(
+                                  text: "l",
+                                  style: TextStyle(color: Color(0xFF34A853))),
+                              TextSpan(
+                                  text: "e",
+                                  style: TextStyle(color: Color(0xFFEA4335))),
+                              TextSpan(
+                                  text: " Image Search",
+                                  style: TextStyle(color: Colors.black))
+                            ],
+                          ),
+                        ),
+                        behavior: SnackBarBehavior.fixed,
+                        clipBehavior: Clip.hardEdge,
+                        duration: const Duration(seconds: 1000000),
+                        action: SnackBarAction(
+                          label: "X",
+                          onPressed: () {
+                            Provider.of<GlobalModel>(context, listen: false)
+                                .disableSearch();
+                            ScaffoldMessenger.of(context).hideCurrentSnackBar();
+                          },
+                          textColor: Colors.black,
+                        ),
+                      ),
+                    );
+                  } else {
+                    ScaffoldMessenger.of(context).hideCurrentSnackBar();
+                  }
+                },
+                splashColor: Colors.transparent,
+                elevation: 3,
+                hoverElevation: 2,
+                focusElevation: 0,
+                highlightElevation: 0,
+                child: Icon(Provider.of<GlobalModel>(context).search
+                    ? Icons.search_off_rounded
+                    : Icons.image_search_rounded),
+              ),
               drawer: Drawer(
                 child: ListView(
                   children: [
