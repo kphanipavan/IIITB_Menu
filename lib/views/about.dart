@@ -27,7 +27,7 @@ class AboutPage extends StatelessWidget {
             ),
           ),
           const Center(
-            child: Text("Proud Ass Web 1.0 App built with Flutter"),
+            child: Text("Built with Flutter"),
           ),
           const Center(
             child: Text(
