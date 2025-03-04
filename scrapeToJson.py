@@ -71,7 +71,7 @@ if __name__ == "__main__":
                     "egg" in part.strip().lower()
                     or "omlet" in part.strip().lower()
                     or "omelet" in part.strip().lower()
-                ):
+                ) and ("eggless" not in part.strip().lower()):
                     print(f"EGG Found, {part} at {ses}")
                     eggy = "EGG"
                 elif "chicken" in part.strip().lower():
