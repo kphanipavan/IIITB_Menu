@@ -46,7 +46,7 @@ class ItemCard extends StatelessWidget {
       onPressed: Provider.of<GlobalModel>(context).search
           ? () {
               Provider.of<GlobalModel>(context, listen: false).disableSearch();
-              launchUrl(getGoogleImageEncodedURL(itemName.toLowerCase()));
+              launchUrl(getImageSearchEncodedURL(itemName.toLowerCase()));
               ScaffoldMessenger.of(context).hideCurrentSnackBar();
             }
           : null,
