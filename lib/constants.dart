@@ -11,7 +11,7 @@ const String NONVEG = "NON";
 const String EGG = "EGG";
 const String EMPTY = "Mt";
 const String storageKey = "FullMenu";
-const String appURL = "https://kphanipavan.github.io/IIITB_Menu";
+const String appURL = "kphanipavan.github.io/IIITB_Menu";
 const Center noMenuWidget = Center(
     child: Text("Menu not available for this session",
         style: TextStyle(fontSize: 20, fontStyle: FontStyle.italic)));
