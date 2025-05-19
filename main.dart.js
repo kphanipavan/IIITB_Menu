@@ -24830,7 +24830,7 @@ s=7
 return A.U(A.aBi(A.en("https://raw.githubusercontent.com/kphanipavan/IIITB_Menu/menu_scraper/out.txt",0,null)),$async$a2P)
 case 7:n=b
 if(n.b===200){m=n
-m=A.aBb(A.aAf(m.e).c.a.h(0,"charset")).eU(m.w)
+m=A.aBb(A.aAf(m.e)).eU(m.w)
 m=A.lk(m,"\n","")
 q=m
 s=1
@@ -24856,7 +24856,7 @@ s=7
 return A.U(A.aBi(A.en("https://raw.githubusercontent.com/kphanipavan/IIITB_Menu/menu_scraper/out.json",0,null)),$async$a2O)
 case 7:n=b
 m=n
-m=A.aBb(A.aAf(m.e).c.a.h(0,"charset")).eU(m.w)
+m=A.aBb(A.aAf(m.e)).eU(m.w)
 q=m
 s=1
 break
@@ -26549,10 +26549,11 @@ a1s(a){a.gS().wa(B.MN)
 switch(A.aR().a){case 0:case 1:return A.JI()
 case 2:return A.rH(A.a([A.BB(B.yH),A.a2S()],t.mo),t.H)
 case 3:case 4:case 5:return A.ct(null,t.H)}},
-aBb(a){var s
-if(a==null)return B.bl
-s=A.aGZ(a)
-return s==null?B.bl:s},
+aBb(a){var s,r=a.c.a.h(0,"charset")
+if(a.a==="application"&&a.b==="json"&&r==null)return B.W
+if(r!=null){s=A.aGZ(r)
+if(s==null)s=B.bl}else s=B.bl
+return s},
 aRa(a){return a},
 aR4(a){return new A.qW(a)},
 aRg(a,b,c){var s,r,q,p
@@ -82901,7 +82902,7 @@ s=3
 return A.U(new A.qW(new A.hG(a,b.i("hG<1>"))).XC(),$async$hh)
 case 3:m=b0
 p=5
-b=self.window
+b=self
 a=a8.b
 a0=a.k(0)
 a1=!J.nx(m)?m:null
