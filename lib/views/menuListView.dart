@@ -21,12 +21,14 @@ class MenuListView extends StatelessWidget {
               child: Text("Loading...", style: TextStyle(fontSize: 40)));
         }
         String menuIndex = data.mainData["dates"][data.date];
+        Map timings =
+            data.mainData["menu"][menuIndex]["${this.menuType}Timings"];
         return ListView(
           children: [
             Center(
-              child: Text(data.mainData["menu"][menuIndex]
-                      ["${this.menuType}Timings"]
-                  .toString()),
+              child: Text(
+                  "Starts: ${timings['start']}, Ends: ${timings['end']}",
+                  style: const TextStyle(fontSize: 15)),
             ),
             ListView.builder(
                 physics: const ClampingScrollPhysics(),

@@ -11,7 +11,7 @@ const String NONVEG = "NON";
 const String EGG = "EGG";
 const String EMPTY = "Mt";
 const String storageKey = "FullMenu";
-const String appURL = "https://kphanipavan.github.io/IIITB_Menu";
+const String appURL = "kphanipavan.github.io/IIITB_Menu";
 const Center noMenuWidget = Center(
     child: Text("Menu not available for this session",
         style: TextStyle(fontSize: 20, fontStyle: FontStyle.italic)));
@@ -56,7 +56,8 @@ const List<Map<String, dynamic>> busTimimgs = [
   {"time": "07.45AM", "count": 1, "from": guesture},
   {"time": "08.20AM", "count": 2, "from": guesture},
   {"time": "08.45AM", "count": 1, "from": guesture},
-  {"time": "09.15AM", "count": 2, "from": guesture},
+  {"time": "09.15AM", "count": 1, "from": guesture},
+  {"time": "09.30AM", "count": 1, "from": guesture},
   {"time": "10.30AM", "count": 1, "from": guesture},
   {"time": "11.00AM", "count": 1, "from": guesture},
   {"time": "11.30AM", "count": 1, "from": college},

@@ -33,8 +33,9 @@ class HomePage extends StatelessWidget {
                     ScaffoldMessenger.of(context).showSnackBar(
                       SnackBar(
                         backgroundColor: const Color(0xFFCCC2DC),
-                        content:
-                            const Text("Select an Item for DDG Image Search"),
+                        content: const Text(
+                            "Select an Item for DDG Image Search",
+                            style: TextStyle(color: Colors.black)),
                         behavior: SnackBarBehavior.fixed,
                         clipBehavior: Clip.hardEdge,
                         duration: const Duration(seconds: 1000000),
