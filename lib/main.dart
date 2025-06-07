@@ -6,6 +6,7 @@ import "package:iiitb_menu/views/share.dart";
 import "package:iiitb_menu/views/about.dart";
 import "package:iiitb_menu/views/bus.dart";
 import "package:pwa_install/pwa_install.dart";
+import "package:iiitb_menu/views/docs.dart";
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
@@ -40,6 +41,7 @@ class MainApp extends StatelessWidget {
             "/info": (context) => const AboutPage(),
             "/share": (context) => const SharePage(),
             "/bus": (context) => const BusTimingsPage(),
+            "/doc": (context) => const DocScreen(),
           },
           initialRoute: "/",
           // home: const HomePage(),

@@ -72,10 +72,6 @@ class HomePage extends StatelessWidget {
                         onTap: () {
                           Navigator.pop(context);
                         }),
-                    // ListTile(
-                    //   leading: Icon(Icons.star),
-                    //   title: Text("Specials"),
-                    // ),
                     const Divider(),
                     // ListTile(
                     //   leading: Icon(Icons.settings),
@@ -84,22 +80,15 @@ class HomePage extends StatelessWidget {
                     ListTile(
                         leading: const Icon(Icons.share_rounded),
                         title: const Text("Share"),
-                        // onTap: () {
-                        //   var ret = Share.share(
-                        //     "Hey, use this to track IIITB's Mess Menu. https://kphanipavan.github.io/IIITB_Menu/",
-                        //     // subject: "IIITB Menu App",
-                        //   );
-                        //   ret.then((value) {
-                        //     print(value.status);
-                        //   });
-                        // },
                         onTap: () => Navigator.pushNamed(context, "/share")),
                     ListTile(
                         leading: const Icon(Icons.bus_alert),
                         title: const Text("Guesture Bus Sch"),
-                        onTap: () {
-                          Navigator.pushNamed(context, "/bus");
-                        }),
+                        onTap: () => Navigator.pushNamed(context, "/bus")),
+                    ListTile(
+                        leading: const Icon(Icons.medical_information_outlined),
+                        title: const Text("Campus Doctor Sch"),
+                        onTap: () => Navigator.pushNamed(context, "/doc")),
                     ListTile(
                         leading: const Icon(Icons.info),
                         title: const Text("About"),

@@ -31,13 +31,22 @@ class AboutPage extends StatelessWidget {
           ),
           const Center(
             child: Text(
-                "Menu updates every other Tuesday or when FoodComm does it."),
+              "Menu updates every other Tuesday or when FoodComm does it.",
+              textAlign: TextAlign.center,
+            ),
           ),
           Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               LinkButton(iconImage: "assets/gh.png", link: ghURI),
               LinkButton(iconImage: "assets/excel.png", link: excelSheetURI),
+              InkWell(
+                onTap: () => Navigator.pushNamed(context, "/share"),
+                child: const Padding(
+                  padding: EdgeInsets.symmetric(vertical: 8.0, horizontal: 1),
+                  child: Icon(Icons.share, size: 30),
+                ),
+              ),
             ],
           ),
         ],

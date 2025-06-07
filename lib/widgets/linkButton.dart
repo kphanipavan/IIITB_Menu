@@ -11,15 +11,16 @@ class LinkButton extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.all(8.0),
-      child: InkWell(
-          child: Image(image: AssetImage(iconImage), height: height),
-          onTap: () async {
-            if (await canLaunchUrl(link)) {
-              launchUrl(link);
-            }
-          }),
+    return InkWell(
+      onTap: () async {
+        if (await canLaunchUrl(link)) {
+          launchUrl(link);
+        }
+      },
+      child: Padding(
+        padding: const EdgeInsets.all(8.0),
+        child: Image(image: AssetImage(iconImage), height: height),
+      ),
     );
   }
 }

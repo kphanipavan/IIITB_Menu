@@ -73,3 +73,55 @@ const List<Map<String, dynamic>> busTimimgs = [
   {"time": "09.15PM", "count": 1, "from": college},
   {"time": "10.15PM", "count": 1, "from": college},
 ];
+
+class Doctor {
+  final String name;
+  final String email;
+  final String shortName;
+  final int? phno;
+
+  const Doctor(
+      {required this.name,
+      required this.shortName,
+      required this.email,
+      this.phno});
+}
+
+class DocEntry {
+  final String startTime;
+  final String endTime;
+  final Doctor doc;
+
+  const DocEntry(this.startTime, this.endTime, this.doc);
+}
+
+const drJayanthi = Doctor(
+    name: "Dr. Jayanthi",
+    shortName: "Dr. Jayanthi",
+    email: "jayanthi.a@iiitb.ac.in");
+
+const drMuniswamy = Doctor(
+    name: "Dr. Sachidanandam Muniswamy",
+    shortName: "Dr. Muniswamy",
+    email: "sachidanandam.cm@iiitb.ac.in");
+
+/*
+main list is a map this time
+main map contains weekdays as keys and list as values.
+
+each of the value list contains one doctor
+
+
+*/
+
+// const List<Map<>>
+
+const Map<String, List<DocEntry>> docMap = {
+  "sun": [],
+  "mon": [DocEntry("10.30AM", "01.30PM", drJayanthi)],
+  "tue": [DocEntry("06.00PM", "09.00PM", drMuniswamy)],
+  "wed": [DocEntry("10.30AM", "01.30PM", drJayanthi)],
+  "thu": [DocEntry("10.30AM", "01.30PM", drJayanthi)],
+  "fri": [DocEntry("06.00PM", "09.00PM", drMuniswamy)],
+  "sat": [DocEntry("06.00PM", "09.00PM", drMuniswamy)],
+};
