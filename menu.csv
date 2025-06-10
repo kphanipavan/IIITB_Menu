@@ -1,44 +1,44 @@
 Unnamed: 0,Unnamed: 1,Unnamed: 2,Unnamed: 3,Unnamed: 4,Unnamed: 5,Unnamed: 6,Unnamed: 7,Unnamed: 8
  , ,MONDAY,TUESDAY,WEDNESDAY,THURSDAY,FRIDAY,SATURDAY,SUNDAY
- , ,2025-06-02 00:00:00,2025-06-03 00:00:00,2025-06-04 00:00:00,2025-06-05 00:00:00,2025-06-06 00:00:00,2025-06-07 00:00:00,2025-06-08 00:00:00
- , ,2025-06-09 00:00:00,2025-06-10 00:00:00,2025-06-11 00:00:00,2025-06-12 00:00:00,2025-06-13 00:00:00,2025-06-14 00:00:00,2025-06-15 00:00:00
+ , ,2025-05-12 00:00:00,2025-05-13 00:00:00,2025-05-14 00:00:00,2025-05-15 00:00:00,2025-05-16 00:00:00,2025-05-17 00:00:00,2025-05-18 00:00:00
+ , ,2025-05-19 00:00:00,2025-05-20 00:00:00,2025-05-21 00:00:00,2025-05-22 00:00:00,2025-05-23 00:00:00,2025-05-24 00:00:00,2025-05-25 00:00:00
 BREAKFAST, , , , , , , , 
- ,BREAKFAST 1,IDLY,Aloo Onion Paratha,Onion Uttapam,Bedmi Poori,Rawa Dosa,Gobi Aloo Paratha,MASALA DOSA
- ,BREAKFAST 2,Medu vada,Semiya Bath,MASALA UPMA,Poha with Aloo,PONGAL,Veg Sandwich,Kesari Bath
- ,SAMBAR,Veg sambar,,Sambar,SAMBAR,Sambar,,SAMBAR 
+ ,BREAKFAST 1,Rava Idly,Aloo+Onion Paratha,Pongal,Bedmi Poori,Aloo+Goobi Paratha,Podi Masala Dosa,Rawa Dosa
+ ,BREAKFAST 2,Medu vada,Puliyogare,Methu Vada Big,Semiya Upma,Wheat Rava Upma,Poha,Upma
+ ,SAMBAR,Sambar,,Sambar,,,Sambar,Sambar
 ,KETCHUP,,,,,,,
- ,CURD,,Curd,,,,Curd,
- ,CHUTNEY,Coconut Chutney,Peanut Chutney,Coconut Chutney,,COCONUT CHUTNEY,Tomato Chutney,COCONUT CHUTNEY 
+ ,CURD,,Curd,,,Curd,,
+ ,CHUTNEY,Peanut Chutney,Coconut Chutney,Coconut Chutney,Coconut Chutney,Tomato chutney,Peanut Chutney (Spicy),Coconut Chutney
 ,CHUTNEY 2,,,,,,,
-,CURRY,,,,ALOO SUBZI(BEDMI SPICY),,,
- ,EGG,Boiled Egg,,EGG BHURJI,,Omelette,,
- ,JUICE/FRUITS,,Fruits,,FRUITS,,Cut Fruits Mango,Watermelon Cut Fruits
-LUNCH, , , , , , ,,
-,INDIAN BREAD,CHAPATHI,Chapati,JEERA CHAPATI,AJWANI CHAPATI,Poori,Corriander Chapathi,BHATURE
- ,VEG GRAVY,Lobia Masala Gravy,Mathi Malai Mutter,Malai Kofta,SEV TAMOTA CURRY,Aloo Bhajji,Egg/Soya Capsicum Curry,PINDI CHOLE
-,VEG DRY/ STARTERS,Aloo Chips,Black Channa Dry,Mix Veg Dry,Aloo Fry Small Pieces,Layki Channa,Aloo Jeera,ALOO MUTTER DRY
- ,FLAVORED RICE,Mango Pulihora,Jeera Rice,CURD RICE,LEMON RICE WITHOUT ONION,Tomato Rice,Bisi Bele Bath with Kara Boondi,VEG PULAO
- ,PLAIN RICE,PLAIN RICE,PLAIN RICE,PLAIN RICE,PLAIN RICE,PLAIN RICE,PLAIN RICE,PLAIN RICE
- ,DAL,Majjiga Pulusu,DAL TADKA,MANGO PAPPU,Andhra Pappu,Lasooni Dal Tadka,Palak Pappu,MASOOR DAL
- ,SAMBAR OR RASAM,Tomato Rasam,Rasam,KOLLU RASAM (horse gram), SAMBAR,Rasam,Tomato Rasam,GARLIC RASAM
-,PICKLE,,Peanut Powder with Ghee,,,,,
- ,CURD BASE,Curd,Curd,LEMONADE WITH CIA SEEDS,CURD,Curd,Butter Milk without Tadka,SWEET LASSI
- ,SALAD/SPROUTS,Pasta Salad,Green Salad,Carrot Beetroot Salad,Carrot Beetroot Salad,Cucumber Salad,ALOO CHANA CHAT,ONION\CHILLI\LEMON
- ,SWEETS,Banana Milkshake,Ice Cream,BOONDI LADDU,Hot Semiya Paysam,Banana,Sabudana Kheer,RASMALAI
+,CURRY,,,,Aloo Bhaji,,,
+ ,EGG,Boiled Egg,,Egg Bhurji,,,,Omlette
+ ,JUICE/FRUITS,,Cut Watermelon,,Fruits,Banana,Fruits,
+LUNCH, , , , , , , , 
+,INDIAN BREAD,Chapathi,Poori,Chapathi,Ajwani Chapathi,Chapathi,Methi Chapahi,Batura
+ ,VEG GRAVY,Black Channa Gravy,Aloo Sabji,Veg Lahori Gravy,Chole Masala,Egg/Soya Beans Curry,Kollu Palya (Horse Gram),Chole
+,VEG DRY/ STARTERS,Carrot+Beans Poriyal,Potyakaya Palya (Snake Guard),Heerakai Palya (Ridge Guard),Aloo Gobhi Mattar Dry,Beetroot Fry,Methi Malai Mutter,Aloo Jeera Dry
+ ,FLAVORED RICE,Ghee Rice,Curd Rice,Lemon Rice,Tomato Rice,Bisi Bela Bath w/ Kara Boondi,Veg Pulao,Vangee Bath
+ ,PLAIN RICE,Plain Rice,Plain Rice,Plain Rice,Plain Rice,Plain Rice,Plain Rice,Plain Rice
+ ,DAL,Andra Pappu,Plain Dal,Lasooni Dal Tadka,Dosakaya Pappu,Thotakura Pappu,Arha Dal,Masoor Dal
+ ,SAMBAR OR RASAM,Drumstick Sambar,Rasam,Sambar,Rasam,Sambar,Rasam,Garlic Rasam
+,PICKLE,,,,,,,
+ ,CURD BASE,Majjiga Pulusu,Lemonade,Curd,Curd,Curd,Raitha,Lassi
+ ,SALAD/SPROUTS,Salad,Green Salad,Beetroot+Carrot Salad,Pasta Salad,Salad + Tomato,Salad,Salad + Onion
+ ,SWEETS,Banana Milkshake,Boondi Laddu,Fruit Punch,Black Chom Chom,Ice Cream,Semiya Payasam,Rasamalai
 SNACKS, , , , , , , , 
-,SNACKS,Samosa,Pani Pori,Channa Usali,Dal Pakwan,MYSORE BONDA,Dahi Papadi Chat,PAV BHAJI
- ,ACCOMPANIMENTS,IMLI CHUTNEY,,,,COCONUT CHUTNEY,,
+,SNACKS,Samosa,White Channa Usurli,Masala Sweet Corn,Dal Pakwan,Saute Veg Sandwich,Onion Pakoda,Dahi Papdi Chat
+ ,ACCOMPANIMENTS,Imlie Chutney,,,Imlie Chutney,,Ketchup,
  ,TEA/COFFEE/MILK,TEA/COFFEE/MILK,TEA/COFFEE/MILK,TEA/COFFEE/MILK,TEA/COFFEE/MILK,TEA/COFFEE/MILK,TEA/COFFEE/MILK,TEA/COFFEE/MILK
 DINNER, , , , , , , , 
-,INDIAN BREAD,PUDINA CHAPATI,CHAPATI,Tawa Paratha,MASALA CHAPATI,METHI CHAPATHI,AJWAIN CHAPATI,METHI CHAPATHI
- ,VEG GRAVY,Rajma Gravy,MIX VEG DRY,,LOBIA MASALA,,Veg Manchurian Dry,
-,VEG DRY/ STARTERS,Tawa Subzi,French Fries,ALOO METHI,Veg Jalfrezi,,MIX VEG GRAVY,Subzi Handi
- ,FLAVORED RICE,Vangi Bath,Veg Pulao,Veg Biryani (Hyderabadi Style),VEG FRIED RICE,Red Sauce Pasta (Live),SZECHUAN GOBI FRIED RICE,Veg Biryani
- ,PLAIN RICE,PLAIN RICE,PLAIN RICE,PLAIN RICE,PLAIN RICE,PLAIN RICE,STEAM RICE,PLAIN RICE
- ,DAL,Arhar dal,BLACK DAL TADKA,DAL PANCHMEL,DAL FRY,MOONG DAAL, DAL MAKHANI,DAL TADKA
- ,SAMBAR OR RASAM,Rasam,Sambar,Pepper Rasam,Rasam,LAUKI SAMBAR,SAMBAR,RASAM
- ,CURD BASE,Buttermilk,CURD,Raitha,CURD,Mix Veg Raita,CURD,CURD
- ,SALAD/SPROUTS,Green Salad,PUNJABI SALAD,Green Salad,CUCUMBER SALAD,Carrot Beetroot Salad,GREENSALAD,GREEN SALAD
- ,SWEETS,Hot Badam Milk,Chocolate Burfi,Shahi Tukda,JALEBI WITH RABDI,BLACK CHOM CHOM,MANGO LASSI,GULAB JAMUN
- ,PANEER,,,Paneer Semi Dry,,Paneer Chilly, ,Palak Paneer
- ,CHICKEN,,,Hyderabadi Chicken Biryani,,Chicken Chilly, ,ANDHRA STYLE CHICKEN CURRY
+,INDIAN BREAD,Chapathi,Chapathi,Chapathi,Uthapam,Chapathi,Chapathi,Chapathi
+ ,VEG GRAVY,Dosakaya Tomato Curry,Malai Kofta,,Peanut Chutney Spicy,,Gutti Vankay,
+,VEG DRY/ STARTERS,Mix Veg Manchurian,Black Channa Dry,Aloo Methi,Aloo Methi Dry,,Veg Ball Manchurian Dry,
+ ,FLAVORED RICE,Veg Pulao,Coconut Rice,Hyderabadi Veg Biryani,Jeera Rice,Veg Fried Rice,Pudina Rice,Veg Biryani
+ ,PLAIN RICE,Plain Rice,Plain Rice,Plain Rice,Plain Rice,Plain Rice,Plain Rice,Plain Rice
+ ,DAL,Dal Makhani,Palak Pappu,,Arhar Dal,Menthi Pappu,Dal Tudka,Masoor Dal
+ ,SAMBAR OR RASAM,Rasam,Sambar,Rasam,Sambar,Rasam,Sambar,Rasam
+ ,CURD BASE,Curd,Curd,Raitha,Butter Milk,Curd,Curd,Raitha
+ ,SALAD/SPROUTS,Salad,Sweet Corn Cucumber Salad,Salad + Onion,Salad,Salad + Onion,Salad,Salad + Onion
+ ,SWEETS,Sweet Pongal,Badhusha,Shahi Tukda,Chocolate Barfi,Fruit Custard,Gulab Jamun,Jalebi Rabdi
+ ,PANEER,,,Paneer Semi Gravy,,Chilli Paneer,,Paneer Butter Masala
+ ,CHICKEN,,,Hyderabadi Chicken Biryani,,South Indian Chicken Dry,,Butter Chicken
