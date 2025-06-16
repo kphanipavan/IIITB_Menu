@@ -6,7 +6,7 @@ import "package:iiitb_menu/views/share.dart";
 import "package:iiitb_menu/views/about.dart";
 import "package:iiitb_menu/views/bus.dart";
 import "package:pwa_install/pwa_install.dart";
-import "package:iiitb_menu/views/docs.dart";
+import "package:iiitb_menu/views/doctor.dart";
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();

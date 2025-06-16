@@ -116,12 +116,12 @@ each of the value list contains one doctor
 
 // const List<Map<>>
 
-const Map<String, List<DocEntry>> docMap = {
-  "sun": [],
-  "mon": [DocEntry("10.30AM", "01.30PM", drJayanthi)],
-  "tue": [DocEntry("06.00PM", "09.00PM", drMuniswamy)],
-  "wed": [DocEntry("10.30AM", "01.30PM", drJayanthi)],
-  "thu": [DocEntry("10.30AM", "01.30PM", drJayanthi)],
-  "fri": [DocEntry("06.00PM", "09.00PM", drMuniswamy)],
-  "sat": [DocEntry("06.00PM", "09.00PM", drMuniswamy)],
+const Map<int, List<DocEntry>> docMap = {
+  7: [],
+  1: [DocEntry("10.30AM", "01.30PM", drJayanthi)],
+  2: [DocEntry("06.00PM", "09.00PM", drMuniswamy)],
+  3: [DocEntry("10.30AM", "01.30PM", drJayanthi)],
+  4: [DocEntry("10.30AM", "01.30PM", drJayanthi)],
+  5: [DocEntry("06.00PM", "09.00PM", drMuniswamy)],
+  6: [DocEntry("06.00PM", "09.00PM", drMuniswamy)],
 };
