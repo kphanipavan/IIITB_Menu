@@ -38,7 +38,7 @@ class BusTimingsPage extends StatelessWidget {
         slivers: [
           SliverToBoxAdapter(
             child:
-                (leftBusses != 0) ? const Header("Past Busses") : Container(),
+                (leftBusses != 0) ? const Header("Past Buses") : Container(),
           ),
           DecoratedSliver(
             decoration: const BoxDecoration(
@@ -74,7 +74,7 @@ class BusTimingsPage extends StatelessWidget {
           ),
           SliverToBoxAdapter(
             child: (currentBusIndex >= 0)
-                ? const Header("Later Busses")
+                ? const Header("Later Buses")
                 : const Header("No Busses Left for Today"),
           ),
           DecoratedSliver(
