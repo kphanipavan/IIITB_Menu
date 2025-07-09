@@ -87,7 +87,8 @@ class BusTimingsPage extends StatelessWidget {
                 (BuildContext context, index) {
                   final int itemIndex = index % 2;
                   if (itemIndex.isEven) {
-                    Map curSch = busTimimgs[itemIndex + leftBusses + 1];
+                    Map curSch =
+                        busTimimgs[(index / 2).floor() + leftBusses + 1];
                     // DateTime curTime = timeFromat.parse(curSch["time"]);
                     // int curTimeInt = curTime.hour * 60 + curTime.minute;
                     return LaterBusCard(
