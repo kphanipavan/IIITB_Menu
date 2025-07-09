@@ -192,20 +192,21 @@ class HomePage extends StatelessWidget {
                 ],
               ),
               body: TabBarView(
-                  controller: cont,
-                  children: data.menuAvailable != DataStatus.NotFound
-                      ? const [
-                          MenuListView(menuType: "bf"),
-                          MenuListView(menuType: "ln"),
-                          MenuListView(menuType: "sk"),
-                          MenuListView(menuType: "dn"),
-                        ]
-                      : [
-                          newNoMenuWidget,
-                          newNoMenuWidget,
-                          newNoMenuWidget,
-                          newNoMenuWidget,
-                        ]),
+                controller: cont,
+                children: data.menuAvailable != DataStatus.NotFound
+                    ? const [
+                        MenuListView(menuType: "bf"),
+                        MenuListView(menuType: "ln"),
+                        MenuListView(menuType: "sk"),
+                        MenuListView(menuType: "dn"),
+                      ]
+                    : [
+                        newNoMenuWidget,
+                        newNoMenuWidget,
+                        newNoMenuWidget,
+                        newNoMenuWidget,
+                      ],
+              ),
             );
           });
         }),

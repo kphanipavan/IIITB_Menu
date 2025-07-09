@@ -5,21 +5,21 @@ import 'package:provider/provider.dart';
 import "package:iiitb_menu/views/share.dart";
 import "package:iiitb_menu/views/about.dart";
 import "package:iiitb_menu/views/bus.dart";
-import "package:pwa_install/pwa_install.dart";
+// import "package:pwa_install/pwa_install.dart";
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
-  if (PWAInstall().installPromptEnabled) {
-    try {
-      PWAInstall().promptInstall_();
-    } catch (e) {
-      print("Unable to install app:");
-      print(e.toString());
-    }
-  }
-  PWAInstall().setup(installCallback: () {
-    print("Installed!!");
-  });
+  // if (PWAInstall().installPromptEnabled) {
+  // try {
+  // PWAInstall().promptInstall_();
+  // } catch (e) {
+  // print("Unable to install app:");
+  // print(e.toString());
+  // }
+  // }
+  // PWAInstall().setup(installCallback: () {
+  // print("Installed!!");
+  // });
 
   runApp(const MainApp());
 }

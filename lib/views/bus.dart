@@ -2,6 +2,7 @@ import "package:flutter/material.dart";
 import "package:iiitb_menu/widgets/busCard.dart";
 import "package:iiitb_menu/constants.dart";
 import "package:intl/intl.dart";
+import "dart:math" as math;
 
 class BusTimingsPage extends StatelessWidget {
   const BusTimingsPage({Key? key}) : super(key: key);
@@ -31,56 +32,77 @@ class BusTimingsPage extends StatelessWidget {
     // print("$leftBusses  $currentBusIndex, $currentTimeInt");
     return Scaffold(
       appBar: AppBar(
-        title: const Text("Guesture Bus Timings (BETA)"),
+        title: const Text("College Bus Timings (BETA)"),
       ),
       body: CustomScrollView(
         slivers: [
           SliverToBoxAdapter(
-              child: (leftBusses != 0)
-                  ? const Header("Past Busses")
-                  : Container()),
-          SliverList(
-            delegate: SliverChildBuilderDelegate(
-              (BuildContext context, index) {
-                Map curSch = busTimimgs[index];
-                // DateTime curTime = timeFromat.parse(curSch["time"]);
-                // int curTimeInt = curTime.hour * 60 + curTime.minute;
-                return LeftBusCard(
-                    count: curSch["count"],
-                    loc: curSch["from"],
-                    time: curSch["time"]);
-              },
-              childCount: leftBusses,
+            child:
+                (leftBusses != 0) ? const Header("Past Busses") : Container(),
+          ),
+          DecoratedSliver(
+            decoration: const BoxDecoration(
+              boxShadow: [kBusCardBlur],
+              color: Color(0x30ff0000),
+            ),
+            sliver: SliverList(
+              delegate: SliverChildBuilderDelegate(
+                (BuildContext context, index) {
+                  final int itemIndex = index % 2;
+                  if (itemIndex.isEven) {
+                    Map curSch = busTimimgs[(index / 2).floor()];
+                    return PastBusCard(
+                        count: curSch["count"],
+                        loc: curSch["routes"],
+                        time: curSch["time"]);
+                  } else {
+                    return const Divider(height: 1, color: Color(0x30ff0000));
+                  }
+                },
+                childCount: math.max(0, 2 * leftBusses - 1),
+              ),
             ),
           ),
           SliverToBoxAdapter(
             child: currentBusIndex >= 0
                 ? NextBusCard(
                     count: busTimimgs[currentBusIndex]["count"],
-                    loc: busTimimgs[currentBusIndex]["from"],
+                    loc: busTimimgs[currentBusIndex]["routes"],
                     time: busTimimgs[currentBusIndex]["time"],
                   )
                 : Container(),
           ),
           SliverToBoxAdapter(
             child: (currentBusIndex >= 0)
-                ? const Header("Later Busses:")
+                ? const Header("Later Busses")
                 : const Header("No Busses Left for Today"),
           ),
-          SliverList(
-            delegate: SliverChildBuilderDelegate(
-              (BuildContext context, index) {
-                Map curSch = busTimimgs[index + leftBusses + 1];
-                // DateTime curTime = timeFromat.parse(curSch["time"]);
-                // int curTimeInt = curTime.hour * 60 + curTime.minute;
-                return LaterBusCard(
-                    count: curSch["count"],
-                    loc: curSch["from"],
-                    time: curSch["time"]);
-              },
-              childCount: busTimimgs.length - leftBusses - 1,
+          DecoratedSliver(
+            decoration: const BoxDecoration(
+              color: Color(0x3000ff00),
+              boxShadow: [kBusCardBlur],
+            ),
+            sliver: SliverList(
+              delegate: SliverChildBuilderDelegate(
+                (BuildContext context, index) {
+                  final int itemIndex = index % 2;
+                  if (itemIndex.isEven) {
+                    Map curSch = busTimimgs[itemIndex + leftBusses + 1];
+                    // DateTime curTime = timeFromat.parse(curSch["time"]);
+                    // int curTimeInt = curTime.hour * 60 + curTime.minute;
+                    return LaterBusCard(
+                        count: curSch["count"],
+                        loc: curSch["routes"],
+                        time: curSch["time"]);
+                  } else {
+                    return const Divider(height: 1, color: Color(0x30005a00));
+                  }
+                },
+                childCount: (2 * (busTimimgs.length - leftBusses - 1)) - 1,
+              ),
             ),
           ),
+          const SliverToBoxAdapter(child: SizedBox(height: 40)),
         ],
       ),
     );

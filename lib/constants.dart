@@ -1,6 +1,7 @@
 //ignore_for_file: constant_identifier_names
 
 import 'package:flutter/material.dart';
+import "package:iiitb_menu/models/busModels.dart";
 
 const String breakfast = "Breakfast";
 const String lunch = "Lunch";
@@ -48,28 +49,142 @@ Uri ghURI = Uri.parse("https://github.com/kphanipavan/IIITB_Menu");
 Uri excelSheetURI = Uri.parse(
     "https://iiitbac-my.sharepoint.com/:x:/g/personal/foodcommittee_iiitb_ac_in/ESrcRZMPYFpOgk2VEPd0zd8BDfsMkTUXWM4hRi-2QNF44g?e=fjFkFy");
 
-const String guesture = "Guesture";
-const String college = "College";
+const Location uniworld = Location("Uniworld", "UNW");
+const Location college = Location("College", "CLG");
+
+const BusRoute u2c = BusRoute(uniworld, college);
+const BusRoute c2u = BusRoute(college, uniworld);
 
 const List<Map<String, dynamic>> busTimimgs = [
-  {"time": "07.30AM", "count": 2, "from": guesture},
-  {"time": "07.45AM", "count": 1, "from": guesture},
-  {"time": "08.20AM", "count": 2, "from": guesture},
-  {"time": "08.45AM", "count": 1, "from": guesture},
-  {"time": "09.15AM", "count": 1, "from": guesture},
-  {"time": "09.30AM", "count": 1, "from": guesture},
-  {"time": "10.30AM", "count": 1, "from": guesture},
-  {"time": "11.00AM", "count": 1, "from": guesture},
-  {"time": "11.30AM", "count": 1, "from": college},
-  {"time": "01.15PM", "count": 1, "from": college},
-  {"time": "02.15PM", "count": 1, "from": college},
-  {"time": "03.15PM", "count": 1, "from": college},
-  {"time": "03.45PM", "count": 1, "from": college},
-  {"time": "04.15PM", "count": 1, "from": college},
-  {"time": "05.30PM", "count": 1, "from": college},
-  {"time": "06.15PM", "count": 1, "from": college},
-  {"time": "07.15PM", "count": 1, "from": college},
-  {"time": "08.15PM", "count": 1, "from": college},
-  {"time": "09.15PM", "count": 1, "from": college},
-  {"time": "10.15PM", "count": 1, "from": college},
+  {
+    "time": "07.00AM",
+    "count": 1,
+    "routes": [u2c]
+  },
+  {
+    "time": "07.30AM",
+    "count": 1,
+    "routes": [u2c]
+  },
+  {
+    "time": "08.00AM",
+    "count": 1,
+    "routes": [u2c]
+  },
+  {
+    "time": "08.30AM",
+    "count": 1,
+    "routes": [u2c]
+  },
+  {
+    "time": "09.00AM",
+    "count": 1,
+    "routes": [u2c]
+  },
+  {
+    "time": "09.30AM",
+    "count": 1,
+    "routes": [u2c]
+  },
+  {
+    "time": "10.30AM",
+    "count": 1,
+    "routes": [u2c]
+  },
+  {
+    "time": "11.30AM",
+    "count": 1,
+    "routes": [c2u]
+  },
+  {
+    "time": "12.30PM",
+    "count": 1,
+    "routes": [c2u, u2c]
+  },
+  {
+    "time": "01.30PM",
+    "count": 1,
+    "routes": [c2u, u2c]
+  },
+  {
+    "time": "02.30PM",
+    "count": 1,
+    "routes": [c2u, u2c]
+  },
+  {
+    "time": "03.30PM",
+    "count": 1,
+    "routes": [u2c]
+  },
+  {
+    "time": "04.00PM",
+    "count": 1,
+    "routes": [c2u]
+  },
+  {
+    "time": "04.30PM",
+    "count": 1,
+    "routes": [u2c]
+  },
+  {
+    "time": "05.00PM",
+    "count": 1,
+    "routes": [c2u]
+  },
+  {
+    "time": "05.30PM",
+    "count": 1,
+    "routes": [u2c]
+  },
+  {
+    "time": "06.00PM",
+    "count": 1,
+    "routes": [c2u]
+  },
+  {
+    "time": "06.30PM",
+    "count": 1,
+    "routes": [u2c]
+  },
+  {
+    "time": "07.00PM",
+    "count": 1,
+    "routes": [c2u]
+  },
+  {
+    "time": "07.30PM",
+    "count": 1,
+    "routes": [u2c]
+  },
+  {
+    "time": "08.00PM",
+    "count": 1,
+    "routes": [c2u]
+  },
+  {
+    "time": "09.00PM",
+    "count": 1,
+    "routes": [u2c]
+  },
+  {
+    "time": "09.30PM",
+    "count": 1,
+    "routes": [c2u]
+  },
+  {
+    "time": "10.30PM",
+    "count": 1,
+    "routes": [c2u]
+  },
+  {
+    "time": "11.30PM",
+    "count": 1,
+    "routes": [c2u]
+  },
 ];
+
+const BoxShadow kBusCardBlur = BoxShadow(
+  color: Colors.black54,
+  blurRadius: 3,
+  blurStyle: BlurStyle.outer,
+);
