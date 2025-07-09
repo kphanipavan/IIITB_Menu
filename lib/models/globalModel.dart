@@ -37,7 +37,7 @@ class GlobalModel extends ChangeNotifier {
       default:
     }
     notifyListeners();
-    GlobalModel.loadData2().then((value) {
+    GlobalModel.loadData().then((value) {
       mainData = value;
       if (this.mainData["dates"].keys.contains(this.date)) {
         this.menuAvailable = DataStatus.Loaded;
@@ -58,7 +58,7 @@ class GlobalModel extends ChangeNotifier {
     if (this.mainData["dates"].keys.contains(this.date)) {
       this.menuAvailable = DataStatus.Loaded;
     } else {
-      this.menuAvailable = DataStatus.NotFound;
+      this.menuAvailable = DataStatus.NotFoundNOUpdate;
     }
     notifyListeners();
   }
@@ -241,7 +241,10 @@ class GlobalModel extends ChangeNotifier {
     if (this.mainData["dates"].keys.contains(this.date)) {
       this.menuAvailable = DataStatus.Loaded;
     } else {
-      this.menuAvailable = DataStatus.NotFound;
+      if (this.menuAvailable == DataStatus.NotFoundNOUpdate) {
+      } else {
+        this.menuAvailable = DataStatus.NotFound;
+      }
     }
   }
 

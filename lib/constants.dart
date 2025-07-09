@@ -18,12 +18,12 @@ const Center noMenuWidget = Center(
         style: TextStyle(fontSize: 20, fontStyle: FontStyle.italic)));
 
 const String hashLink =
-    "https://raw.githubusercontent.com/kphanipavan/IIITB_Menu/menu_scraper/out.txt";
+    "https://raw.githubusercontent.com/kphanipavan/IIITB_Menu/refs/heads/menu_scraper/out.txt";
 
 const String dataLink =
-    "https://raw.githubusercontent.com/kphanipavan/IIITB_Menu/menu_scraper/out.json";
+    "https://raw.githubusercontent.com/kphanipavan/IIITB_Menu/refs/heads/menu_scraper/out.json";
 
-enum DataStatus { Loaded, Loading, NotFound }
+enum DataStatus { Loaded, Loading, NotFound, NotFoundNOUpdate }
 
 Widget newNoMenuWidget = Center(
   child: Column(

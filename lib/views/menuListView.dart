@@ -18,7 +18,21 @@ class MenuListView extends StatelessWidget {
         DataStatus dataStatus = data.menuAvailable;
         if (dataStatus == DataStatus.Loading) {
           return const Center(
-              child: Text("Loading...", style: TextStyle(fontSize: 40)));
+              child: Text("Updating...", style: TextStyle(fontSize: 40)));
+        } else if (dataStatus == DataStatus.NotFoundNOUpdate) {
+          return const Center(
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Text("No menu found online for this session. ",
+                    style:
+                        TextStyle(fontSize: 20, fontStyle: FontStyle.italic)),
+                Text("Please check back later",
+                    style:
+                        TextStyle(fontSize: 20, fontStyle: FontStyle.italic)),
+              ],
+            ),
+          );
         }
         String menuIndex = data.mainData["dates"][data.date];
         Map timings =
