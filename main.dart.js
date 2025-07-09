@@ -84523,13 +84523,13 @@ i=s
 break}}if(k.a<0)k.a=25
 q=A.Yc(l,l,B.YQ)
 p=k.a
-o=p!==0?B.FF:A.eF(l,l,B.w,l,l,l,l,l,l,l,l,l,l)
+o=p!==0?B.FH:A.eF(l,l,B.w,l,l,l,l,l,l,l,l,l,l)
 p=A.ax3(B.AT,A.auk(new A.pP(new A.Z6(),Math.max(0,2*p-1),!0,!0,!0,l)))
 n=i>=0
 if(n){B.dl[i].h(0,"count")
 m=B.dl[i].h(0,"routes")
 m=new A.L9(B.dl[i].h(0,"time"),m,l)}else m=A.eF(l,l,B.w,l,l,l,l,l,l,l,l,l,l)
-n=n?B.FI:B.FH
+n=n?B.FI:B.FG
 n=A.b([new A.pQ(o,l),p,new A.pQ(m,l),new A.pQ(n,l),A.ax3(B.AS,A.auk(new A.pP(new A.Z7(k),2*(25-k.a-1)-1,!0,!0,!0,l))),B.Tx],t.p)
 return A.acw(q,new A.IK(n,B.ar,!1,l,l,B.ix,l,!1,l,0,l,l,B.a9,l,l,B.Q,B.ak,l),l,l)}}
 A.Z6.prototype={
@@ -84661,7 +84661,7 @@ K(a){var s,r,q=null,p=A.b([],t.s),o=A.br("busString"),n=this.e,m=n.length
 if(m!==0){for(s=0;s<m;++s){r=n[s]
 p.push("\n"+r.a.a+"\u2192"+r.b.b)}o.scE(B.b.bp(p,", "))}else o.scE("\nNo Busses")
 n=t.p
-return A.ff(A.b([B.FG,A.eF(q,A.h2(A.b([A.cw("At "+this.c+A.l(o.aO()),q,q,q,q,B.zA,q,q,q)],n),B.Y,B.Z,B.a5),B.w,q,q,B.AV,q,q,q,B.ci,q,q,q)],n),B.bC,B.Z,B.a5)}}
+return A.ff(A.b([B.FF,A.eF(q,A.h2(A.b([A.cw("At "+this.c+A.l(o.aO()),q,q,q,q,B.zA,q,q,q)],n),B.Y,B.Z,B.a5),B.w,q,q,B.AV,q,q,q,B.ci,q,q,q)],n),B.bC,B.Z,B.a5)}}
 A.Ky.prototype={
 K(a){var s,r,q,p,o,n=null,m=A.b([],t.s)
 for(s=this.e,r=s.length,q=0;q<r;++q){p=s[q]
@@ -91055,10 +91055,10 @@ B.fZ=new A.ym(1,"possible")
 B.FE=new A.ym(2,"defunct")
 B.h_=new A.JU(0,"forward")
 B.nr=new A.JU(1,"reverse")
-B.FF=new A.ow("Past Busses",null)
-B.FG=new A.ow("Next Bus",null)
-B.FH=new A.ow("No Busses Left for Today",null)
-B.FI=new A.ow("Later Busses",null)
+B.FF=new A.ow("Next Bus",null)
+B.FG=new A.ow("No Busses Left for Today",null)
+B.FH=new A.ow("Past Buses",null)
+B.FI=new A.ow("Later Buses",null)
 B.dh=new A.rU(0,"push")
 B.di=new A.rU(1,"pop")
 B.bD=new A.ys(0,"deferToChild")
