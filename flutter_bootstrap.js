@@ -34,11 +34,11 @@ addEventListener("message", eventListener);
 if (!window._flutter) {
   window._flutter = {};
 }
-_flutter.buildConfig = {"engineRevision":"dd93de6fb1776398bf586cbd477deade1391c7e4","builds":[{"compileTarget":"dart2js","renderer":"canvaskit","mainJsPath":"main.dart.js"}],"useLocalCanvasKit":true};
+_flutter.buildConfig = {"engineRevision":"72f2b18bb094f92f62a3113a8075240ebb59affa","builds":[{"compileTarget":"dart2js","renderer":"canvaskit","mainJsPath":"main.dart.js"}],"useLocalCanvasKit":true};
 
 
 _flutter.loader.load({
   serviceWorkerSettings: {
-    serviceWorkerVersion: "3576449424"
+    serviceWorkerVersion: "2470482881"
   }
 });
