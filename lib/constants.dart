@@ -94,7 +94,7 @@ const List<Map<String, dynamic>> busTimimgs = [
   {
     "time": "11.30AM",
     "count": 1,
-    "routes": [c2u]
+    "routes": [u2c]
   },
   {
     "time": "12.30PM",
