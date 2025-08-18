@@ -1,8 +1,9 @@
-import pandas
-import numpy
 import datetime
-import json
 import hashlib
+import json
+
+import numpy
+import pandas
 
 ALLDAYS = [
     "SUNDAY",
@@ -23,7 +24,12 @@ if __name__ == "__main__":
     breaksLoc = numpy.append(breaksLoc, [len(mainData)])
     print(breaksLoc)
     rowNames = mainData["\xa0.1"].to_numpy()
-    finalData = {"menu": {}, "dates": {}, "items": {}}
+    finalData = {
+        "menu": {},
+        "dates": {},
+        "items": {},
+        "vDate": datetime.datetime.now().strftime("%a, %-d %b, %Y, %-I.%M%p"),
+    }
     for sesNum, ses in enumerate(["bf", "ln", "sk", "dn"]):
         finalData["items"][ses] = mainData["\xa0.1"].to_list()[
             breaksLoc[sesNum] + 1 : breaksLoc[sesNum + 1]
