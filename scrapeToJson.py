@@ -28,7 +28,7 @@ if __name__ == "__main__":
         "menu": {},
         "dates": {},
         "items": {},
-        "vDate": datetime.datetime.now().strftime("%a, %-d %b, %Y, %-I.%M%p"),
+        "vDate": datetime.datetime.now().strftime("%-d %b, %Y, %-I.%M%p"),
     }
     for sesNum, ses in enumerate(["bf", "ln", "sk", "dn"]):
         finalData["items"][ses] = mainData["\xa0.1"].to_list()[
