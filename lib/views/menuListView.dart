@@ -61,6 +61,12 @@ class MenuListView extends StatelessWidget {
                     vegClass: itemVeggness,
                   );
                 }),
+            Center(
+              child: Text(
+                "Menu Version: ${data.mainData["vDate"]}",
+                style: const TextStyle(fontSize: 20),
+              ),
+            ),
             const Padding(
               padding: EdgeInsets.symmetric(horizontal: 8),
               child: SizedBox(
